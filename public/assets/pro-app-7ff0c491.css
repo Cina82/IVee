@@ -1,0 +1,78 @@
+.pro-app {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #fafafa;
+    text-align: center
+}
+.pro-app__heading {
+    margin-bottom: 8px
+}
+.pro-app__image {
+    height: 435px;
+    background: url(http://localhost/Thumbtack/public/assets/img/apps_small.png) center center no-repeat;
+    margin-bottom: 24px
+}
+@media (min-width: 700px) {
+    .pro-app {
+        text-align: left
+    }
+    .pro-app__image {
+        width: 50%;
+        background-position: left center;
+        margin-bottom: 0
+    }
+}
+.pro-app__icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px
+}
+@media (min-width: 1025px) {
+    .pro-app {
+        padding-top: 64px;
+        padding-bottom: 64px
+    }
+    .pro-app__image {
+        background-image: url(http://localhost/Thumbtack/public/assets/img/apps_large.png);
+        background-position: center center;
+        height: 570px
+    }
+    .pro-app__icons {
+        margin-top: 32px
+    }
+}
+.pro-app__icon {
+    width: 120px;
+    height: 36px;
+    margin-right: 12px;
+    margin-left: 12px;
+    background-size: 100% auto
+}
+.pro-app__icon--ios {
+    background-image: url(http://localhost/Thumbtack/public/assets/img/apple-app.svg)
+}
+.pro-app__icon--android {
+    background-image: url(http://localhost/Thumbtack/public/assets/img/android_button.svg)
+}
+@media (min-width: 1025px) {
+    .pro-app__icon {
+        width: 160px;
+        height: 48px
+    }
+}
+@media (min-width: 700px) {
+    .pro-app__icons {
+        justify-content: flex-start
+    }
+    .pro-app__icon {
+        margin-left: 0;
+        margin-right: 24px
+    }
+    .pro-app__wrap {
+        display: flex;
+        align-items: center
+    }
+    .pro-app__content {
+        width: 50%
+    }
+}

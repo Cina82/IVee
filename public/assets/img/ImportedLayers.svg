@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>Imported Layers</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g id="Forms-&amp;-Input" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSArtboardGroup" transform="translate(-533.000000, -4825.000000)" id="Checkboxes-+-Radio-Buttons" stroke="#4092F1" fill="#4092F1">
+            <g sketch:type="MSLayerGroup" transform="translate(531.000000, 4371.000000)">
+                <g id="Blue" transform="translate(0.000000, 450.000000)" sketch:type="MSShapeGroup">
+                    <g id="Checkboxes">
+                        <g id="Selected-Checkbox">
+                            <path d="M16.8431016,5.129 C16.6737891,4.957 16.3994766,4.957 16.2301641,5.129 L7.78685156,13.7065556 L3.74675781,9.60255556 C3.57613281,9.42922222 3.29897656,9.42922222 3.12813281,9.60255556 C2.95728906,9.77611111 2.95728906,10.0576667 3.12813281,10.231 L7.45916406,14.631 C7.46200781,14.6341111 7.46572656,14.6361111 7.46857031,14.639 C7.47075781,14.6412222 7.47228906,14.6441111 7.47447656,14.6463333 C7.64378906,14.8181111 7.91788281,14.8181111 8.08719531,14.6463333 L16.8431016,5.75122222 C17.0124141,5.57944444 17.0124141,5.30077778 16.8431016,5.129" id="Imported-Layers"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
