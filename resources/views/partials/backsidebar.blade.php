@@ -55,6 +55,9 @@
                         <div class="collapse" id="userExamples" aria-expanded="false" style="height: auto;">
                             <ul class="nav">
                                 <li>
+                                    <a href="createAdmin">Admin</a>
+                                </li>
+                                <li>
                                     <a href="createProfessionalUser">Professional</a>
                                 </li>
                                 <li>

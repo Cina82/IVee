@@ -26,6 +26,7 @@
 	height: 100%;
 	width: 100%;
 	border: 1px solid #000;
+	
 }
 </style>
 <?php $__env->stopSection(); ?>
@@ -195,7 +196,7 @@
 		
 		var randomnumber=Math.floor(Math.random()*150);
      	var i = randomnumber;
-		$('#AddMoreQuestion').append("<div class='col-md-12'>&nbsp;</div><div class='col-md-12 mybox' id='Question"+i+"'>"+
+		$('#AddMoreQuestion').append("<div class='col-md-12' id='test'>&nbsp;</div><div class='col-md-12 mybox' id='Question"+i+"'>"+
 					"<div class='col-md-12'>"+
 					"<div class='col-md-6'>"+
 	                "<div class='form-group label-floating is-empty <?php echo e($errors->has('question') ? ' has-error' : ''); ?>'>"+
@@ -325,6 +326,7 @@
   	function removeQuestion(i)
 	{
 		$('#Question'+i).remove();
+		$('#test').remove();
   	}
 </script>
 

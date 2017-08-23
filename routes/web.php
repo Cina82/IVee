@@ -127,20 +127,24 @@ Route::get('getHiredGuideHired', 'getHiredGuide\getHiredGuideManageController@ge
 
 // Registered, activated, and is admin routes.
 Route::group(['middleware'=> ['auth', 'activated', 'role:superadmin']], function () {
-  //controller for Organiser
+  //controller for Admin
   Route::get('createAdmin', 'Admin\adminManageController@index');
   Route::get('newAdmin', 'Admin\adminManageController@newAdmin');
   Route::post('saveAdmin', 'Admin\adminManageController@saveAdmin');
-  Route::get('editAdmin{id}', 'Admin\adminManageController@showEditAdmin');
+  Route::get('editAdmin{id}', 'Admin\adminManageController@showAdmin');
   Route::post('editAdmin', 'Admin\adminManageController@EditAdmin');
   Route::get('deleteAdmin{id}', 'Admin\adminManageController@deleteAdmin');
-  
-  
 });
 
 // Registered, activated, and is Owner routes.
 Route::group(['middleware'=> ['auth', 'activated', 'role:admin']], function () {
 
+  Route::get('createAdmin', 'Admin\adminManageController@index');
+  Route::get('newAdmin', 'Admin\adminManageController@newAdmin');
+  Route::post('saveAdmin', 'Admin\adminManageController@saveAdmin');
+  Route::get('editAdmin{id}', 'Admin\adminManageController@showAdmin');
+  Route::post('editAdmin', 'Admin\adminManageController@EditAdmin');
+  
   Route::get('createProfessionalUser', 'profetional\profetionalManageController@index');
   Route::get('newProfessionalUser', 'profetional\profetionalManageController@newProfetional');
   Route::post('saveProfessionalUser', 'profetional\profetionalManageController@saveProfetional');

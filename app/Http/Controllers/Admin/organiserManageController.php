@@ -27,6 +27,7 @@ class adminManageController extends Controller
         //show all organiser controller
     	public function index()
     	{
+            
 			$post = User::where('role_data','2')->get();
 			return view('pages.superadmin.pages.organiser',compact('post'));
     	}
@@ -56,9 +57,9 @@ class adminManageController extends Controller
             $user->role_id=$data['role_id'];
             $user->user_id=$insertedId;
             $user->save();
-            Session::flash('message', 'admin data Saved.');
+            Session::flash('message', 'admin added successfully.');
             Session::flash('alert-class', 'alert-success');
-            return redirect('admin');
+            return redirect('createAdmin');
         }
         public function showAdmin($id)
         {
@@ -67,17 +68,16 @@ class adminManageController extends Controller
         }
         public function editAdmin(Request $request)
         {
+             
              $post = array();
              $post['first_name'] = $request->input('firstName');
              $post['last_name'] = $request->input('familyName');
              $post['email'] = $request->input('email');
              $post['mobile'] = $request->input('mobile');
-             $post['noManagerCreate'] = $request->input('noManagerCreate');
-             $post['noParkingCreate'] = $request->input('noParkingCreate');
              $pages = User::where('id',$request->input('id'))->update($post);
-             Session::flash('message', 'Organiser data Updated.');
+             Session::flash('message', 'admin Updated successfully.');
              Session::flash('alert-class', 'alert-success');
-             return redirect('admin');
+             return redirect('createAdmin');
         }
         public function deleteAdmin($id)
         {
@@ -85,9 +85,9 @@ class adminManageController extends Controller
              $post->delete();
              $role = roleManage::where('user_id',$id);    
              $role->delete();
-             Session::flash('message', 'admin data Deleted.');
+             Session::flash('message', 'admin Deleted successfully.');
              Session::flash('alert-class', 'alert-success');
-             return redirect('admin');
+             return redirect('createAdmin');
         }
     	    
 }

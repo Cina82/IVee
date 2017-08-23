@@ -387,7 +387,7 @@
 				count = count + count1 ;
 				var randomnumber=Math.floor(Math.random()*150);
      			var i = randomnumber;
-				$('#AddMoreQuestion').append("<div class='col-md-12'>&nbsp;</div><div class='col-md-12 mybox' id='Question"+count+"'>"+
+				$('#AddMoreQuestion').append("<div class='col-md-12' id='test'>&nbsp;</div><div class='col-md-12 mybox' id='Question"+count+"'>"+
 					"<div class='col-md-12'>"+
 	                "<div class='form-group label-floating is-empty {{ $errors->has('question') ? ' has-error' : '' }}'>"+
 							"<label class='control-label'>Question</label>"+
@@ -476,8 +476,9 @@
 	                	"</div>"+
 	                	"</div>"+
 	                	"</div>"+
-	                	"</div>"+
-	             		"</fieldset>"+
+	                	"</fieldset>"+
+	                	"<a onclick='removeQuestion("+count+")' name='removeQuestionBtn' id='removeQuestionBtn' class='btn btn-danger pull-right btn-xs'>Remove Question</a>"+
+						"</div>"+
 	                	"</div>");
 				count1 = count1 + 1;
 			}
@@ -500,6 +501,7 @@
 			{
 				/*alert(count);*/
 				$("#Question"+count).remove();
+				$("#test").remove();
 			}
          </script>
          

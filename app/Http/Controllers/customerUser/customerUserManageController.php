@@ -48,7 +48,7 @@ class customerUserManageController extends Controller
             $user->role_id=$data['role_id'];
             $user->user_id=$insertedId;
             $user->save();
-            Session::flash('message', 'Customer User data Saved.');
+            Session::flash('message', 'Customer save successfully.');
             Session::flash('alert-class', 'alert-success');
             return redirect('createCustomerUser');
         }
@@ -65,7 +65,7 @@ class customerUserManageController extends Controller
              $post['email'] = $request->input('email');
              $post['mobile'] = $request->input('mobile');
              $pages = User::where('id',$request->input('id'))->update($post);
-             Session::flash('message', 'Customer User data Updated.');
+             Session::flash('message', 'Customer update successfully.');
              Session::flash('alert-class', 'alert-success');
              return redirect('createCustomerUser');
         }
@@ -75,7 +75,7 @@ class customerUserManageController extends Controller
              $post->delete();
              $role = roleManage::where('user_id',$id);    
              $role->delete();
-             Session::flash('message', 'Customer User data Deleted.');
+             Session::flash('message', 'Customer delete successfully.');
              Session::flash('alert-class', 'alert-success');
              return redirect('createCustomerUser');
         }

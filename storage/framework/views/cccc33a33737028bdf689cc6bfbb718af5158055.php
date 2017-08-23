@@ -1,6 +1,8 @@
 <?php $__env->startSection('css'); ?>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.0/material.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.material.min.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="<?php echo e(URL::to('public/admin/assets/js/bootstrap-notify.js')); ?>"></script>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('contents'); ?>
  <div class="content">
@@ -9,11 +11,7 @@
         <div class="card-header" data-background-color="orange">
             <h4 class="title">Admin</h4>
         </div>
-            <?php if(Session::has('message')): ?>
-                <div class="col-md-12">
-                <p class="alert <?php echo e(Session::get('alert-class', 'alert-info')); ?>"><?php echo e(Session::get('message')); ?></p>
-                </div>
-            <?php endif; ?>
+            
             <div style="padding-right: 15px;" class="text-right">
                 <a href="<?php echo e(URL::to('newAdmin')); ?>" class="btn btn-warning">Create New Admin</a>
             </div>
@@ -26,7 +24,9 @@
                         <th class="text-center">Email</th>
                         <th class="text-center">Mobile</th>
                         <th class="text-center">Action</th>
+                        <?php if(!auth()->user()->isAdmin()): ?>
                         <th class="text-center">Action</th>
+                        <?php endif; ?>
                     </tr>
                 </thead>
                 <tbody>
@@ -40,12 +40,13 @@
                             <i class="material-icons">edit</i>
                             <div class="ripple-container"></div></a>
                         </td>
+                        <?php if(!auth()->user()->isAdmin()): ?>
                         <td>
-                             <a href="deleteAdmin<?php echo e($posts->id); ?>" type="button" rel="tooltip" class="btn btn-danger btn-xs" data-original-title="" title="Delete">
+                             <a href="deleteAdmin<?php echo e($posts->id); ?>" type="button" rel="tooltip" class="btn btn-danger btn-xs" data-original-title="" title="Delete" onclick="return ConfirmDelete()">
                             <i class="material-icons">delete</i>
                             <div class="ripple-container"></div></a>
                         </td>
-                        
+                        <?php endif; ?>
                     </tr>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tbody>
@@ -56,6 +57,23 @@
     </div>
                 
 </div>
+<?php if(Session::has('message')): ?>
+    <script>
+        var msg = "<?php echo e(Session::get('message')); ?>";
+            type = ['','info','success','warning','danger'];
+                $.notify({
+                icon: "notifications",
+                message: msg
+                },{
+                    type: 'success',
+                    timer: 1000,
+                    placement: {
+                        from: 'bottom',
+                        align: 'right'
+                    }
+                });
+    </script>
+<?php endif; ?>
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('javascript'); ?>
@@ -71,6 +89,21 @@
             }]
             });
             });
+        </script>
+        <script>
+        function ConfirmDelete()
+        {
+            var x = confirm("Are you sure you want to delete Category?");
+            if (x)
+            return true;
+            else
+            return false;
+        }
+        </script>
+        <script type="text/javascript">
+          setTimeout(function() {
+          $('#successMessage').fadeOut('slow');
+          }, 2000);
         </script>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layouts.back', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

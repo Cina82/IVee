@@ -21,6 +21,7 @@
 					   <div class="form-group">
 							<label class="control-label">First Name</label>
 							<input class="form-control" type="text" name="firstName" id="first_name" value="{{$post->first_name}}"> 
+							<input type="hidden" name="id" value="{{$post->id}}">
 							<span class="material-input"></span>
 					   </div>
 	                   </div>

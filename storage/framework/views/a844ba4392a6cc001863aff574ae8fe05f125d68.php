@@ -4,7 +4,7 @@
                         <ul>
                             <li>
                                 <a href="#">
-                                    Company
+                                  <!--   Company -->
                                 </a>
                             </li>
                         </ul>
@@ -39,6 +39,8 @@
 
     <!-- Material Dashboard DEMO methods, don't include it in your project! -->
     <script src="<?php echo e(URL::to('public/admin/assets/js/demo.js')); ?>"></script>
+
+   
 
     <script type="text/javascript">
         $(document).ready(function(){

@@ -48,7 +48,7 @@ class profetionalManageController extends Controller
             $user->role_id=$data['role_id'];
             $user->user_id=$insertedId;
             $user->save();
-            Session::flash('message', 'Professional User data Saved.');
+            Session::flash('message', 'Professional save successfully.');
             Session::flash('alert-class', 'alert-success');
             return redirect('createProfessionalUser');
         }
@@ -66,7 +66,7 @@ class profetionalManageController extends Controller
              $post['email'] = $request->input('email');
              $post['mobile'] = $request->input('mobile');
              $pages = User::where('id',$request->input('id'))->update($post);
-             Session::flash('message', 'Professional User data Updated.');
+             Session::flash('message', 'Professional update successfully.');
              Session::flash('alert-class', 'alert-success');
              return redirect('createProfessionalUser');
         }
@@ -76,7 +76,7 @@ class profetionalManageController extends Controller
              $post->delete();
              $role = roleManage::where('user_id',$id);    
              $role->delete();
-             Session::flash('message', 'Professional User data Deleted.');
+             Session::flash('message', 'Professional delete successfully.');
              Session::flash('alert-class', 'alert-success');
              return redirect('createProfessionalUser');
         }
