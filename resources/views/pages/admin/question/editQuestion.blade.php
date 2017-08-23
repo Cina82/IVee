@@ -23,7 +23,10 @@
 			background-color: #ffffff;
 			float: center;
 	}
-	
+	.mybox{
+	height: 100%;
+	width: 100%;
+	border: 1px solid #000;
 </style>
 @endsection
 @section('contents')
@@ -76,22 +79,26 @@
 
 	                <!-- radio -->
 	              	@if($dd->questionType == '1')
-	              	<div class="col-md-12" id="Question{{$count}}">
+	              	<div class="col-md-12">&nbsp;</div>
+	              	<div class="col-md-12 mybox" id="Question{{$count}}">
 	               	<div class="col-md-12">
+	               	<div class="col-md-6">
 	                <div class="form-group {{ $errors->has('question') ? ' has-error' : '' }}">
 							<label class="control-label">Question</label>
 							<input class="form-control" type="text" name="question[]" id="question" value="{{$dd->question}}"> 
 							<span class="material-input"></span>
 					  	</div>
 					</div>
-	              	<div class="col-md-12">
-	              	<div class="col-md-6">
+					<div class="col-md-6">
 	               	    <div class="form-group  {{ $errors->has('questionHint') ? ' has-error' : '' }}">
 							<label class="control-label">Question Hint</label>
 							<input class="form-control" type="text" name="questionHint[]" id="questionHint" value="{{$dd->questionHint}}"> 
 							<span class="material-input"></span>
 					  	</div>
 	               	</div>
+					</div>
+	              	<div class="col-md-12">
+	              	<div class="col-md-4"><label style="padding-top: 50px !important;">Select Answer Type</label></div>
 	                <div class="col-md-6">
 	                   		<div class="form-group label-floating is-empty {{ $errors->has('QuestionType') ? ' has-error' : '' }}">
 	                		<select name="QuestionType[]" id="QuestionType{{$count}}" class="selectpicker" onchange="RadioChange({{$count}})" required>
@@ -114,7 +121,7 @@
 	                <fieldset id="Radio{{$count}}">
 	                <legend>Radio Answer Options
 					<a name="optionbtn" id="optionbtn{{$count}}" class="btn btn-success pull-right btn-xs" onclick="addRadio({{$count}})"><i class='material-icons'>add_box</i></a>
-	               	<a name="removeQuestionBtn" id="removeQuestionBtn" class="btn btn-danger pull-right btn-xs" onclick="removeQuestion({{$count}})">Remove Question</a>
+	               	
 	                </legend>
 					<div class="col-md-12" id="main-menu1">
 							@foreach($dd->options as $option)
@@ -124,8 +131,7 @@
 		                	</div>
 							@endforeach
 	               </fieldset>
-	               </div>
-	                <fieldset id="RadioWithImageSingle{{$count}}" style="display: none;">
+	              	<fieldset id="RadioWithImageSingle{{$count}}" style="display: none;">
 	                <legend>Radio With Image Answer Options
 	                	<a class="btn btn-success btn-xs pull-right" onclick="addRadioWithImageSingle({{$count}})"><i class='material-icons'>add_box</i></a>
 	                </legend>
@@ -152,15 +158,17 @@
 	                	</div>
 	                </div>
 	                </fieldset>
+	                <a name="removeQuestionBtn" id="removeQuestionBtn" class="btn btn-danger pull-right btn-xs" onclick="removeQuestion({{$count}})">Remove Question</a>
 	                </div>
 
 	               	@php $count = $count + 1; @endphp
 	               	@endif
 	               	<!-- radio with image single -->
 	               	@if($dd->questionType == '2')
-
-	              	<div class="col-md-12" id="Question{{$count}}">
+	               	<div class="col-md-12">&nbsp;</div>
+	              	<div class="col-md-12 mybox" id="Question{{$count}}">
 	               	<div class="col-md-12">
+	               	<div class="col-md-6">
 	                <div class="form-group {{ $errors->has('question') ? ' has-error' : '' }}">
 
 							<label class="control-label">Question</label>
@@ -168,8 +176,7 @@
 							<span class="material-input"></span>
 					  	</div>
 					</div>
-	              	<div class="col-md-12">
-	              	<div class="col-md-6">
+					<div class="col-md-6">
 	               	    <div class="form-group  {{ $errors->has('questionHint') ? ' has-error' : '' }}">
 
 							<label class="control-label">Question Hint</label>
@@ -177,6 +184,9 @@
 							<span class="material-input"></span>
 					  	</div>
 	               	</div>
+					</div>
+	              	<div class="col-md-12">
+	              	<div class="col-md-4"><label style="padding-top: 50px !important;">Select Answer Type</label></div>
 	                <div class="col-md-6">
 	                   		<div class="form-group label-floating is-empty {{ $errors->has('QuestionType') ? ' has-error' : '' }}">
 	                		<select name="QuestionType[]" id="QuestionType{{$count}}" class="selectpicker" onchange="RadioChange({{$count}})" required>
@@ -213,7 +223,6 @@
 	                <fieldset id="RadioWithImageSingle{{$count}}">
 	                <legend>Radio With Image Answer Options
 	                <a name="optionbtn" id="optionbtn{{$count}}" class="btn btn-success pull-right btn-xs" onclick="addRadioWithImageSingle({{$count}})"><i class='material-icons'>add_box</i></a>
-	                <a name="removeQuestionBtn" id="removeQuestionBtn" class="btn btn-danger pull-right btn-xs" onclick="removeQuestion({{$count}})">Remove Question</a>
 	                </legend>
 					<div class="col-md-12" id="main-menu2">
 	                		@for($i=0;$i<count($dd->options->imageText);$i++)
@@ -244,30 +253,33 @@
 	                	</div>
 	                </div>
 	                </fieldset>
-	               
-
-	                </div>
+	               <a name="removeQuestionBtn" id="removeQuestionBtn" class="btn btn-danger pull-right btn-xs" onclick="removeQuestion({{$count}})">Remove Question</a>
+	               </div>
 
 	               	@php $count = $count + 1; @endphp
 	               	@endif
 	               	<!-- checkbox -->
 	               	@if($dd->questionType == '4')
-	              	<div class="col-md-12" id="Question{{$count}}">
+	               	<div class="col-md-12">&nbsp;</div>
+	              	<div class="col-md-12 mybox" id="Question{{$count}}">
 	               	<div class="col-md-12">
+	               	<div class="col-md-6">
 	                <div class="form-group {{ $errors->has('question') ? ' has-error' : '' }}">
 							<label class="control-label">Question</label>
 							<input class="form-control" type="text" name="question[]" id="question" value="{{$dd->question}}"> 
 							<span class="material-input"></span>
 					  	</div>
 					</div>
-	              	<div class="col-md-12">
-	              	<div class="col-md-6">
+					<div class="col-md-6">
 	               	    <div class="form-group  {{ $errors->has('questionHint') ? ' has-error' : '' }}">
 							<label class="control-label">Question Hint</label>
 							<input class="form-control" type="text" name="questionHint[]" id="questionHint" value="{{$dd->questionHint}}"> 
 							<span class="material-input"></span>
 					  	</div>
 	               	</div>
+					</div>
+	              	<div class="col-md-12">
+	              	<div class="col-md-4"><label style="padding-top: 50px !important;">Select Answer Type</label></div>
 	                <div class="col-md-6">
 	                   		<div class="form-group label-floating is-empty {{ $errors->has('QuestionType') ? ' has-error' : '' }}">
 	                		<select name="QuestionType[]" id="QuestionType{{$count}}" class="selectpicker" onchange="RadioChange({{$count}})" required>
@@ -316,7 +328,6 @@
 	                <fieldset id="CheckBox{{$count}}">
 	                <legend>Checkbox Answer Options
 	                <a name="optionbtn" id="optionbtn{{$count}}" class="btn btn-success pull-right btn-xs" onclick="addCheckbox({{$count}})"><i class='material-icons'>add_box</i></a>
-	                <a name="removeQuestionBtn" id="removeQuestionBtn" class="btn btn-danger pull-right btn-xs" onclick="removeQuestion({{$count}})">Remove Question</a>
 	                </legend>
 					<div class="col-md-12" id="main-menu4">
 	           				@foreach($dd->options as $option)
@@ -328,6 +339,7 @@
 	                		@endforeach
 	                </div>
 	                </fieldset>
+	                 <a name="removeQuestionBtn" id="removeQuestionBtn" class="btn btn-danger pull-right btn-xs" onclick="removeQuestion({{$count}})">Remove Question</a>
 	                </div>
 
 	               	@php $count = $count + 1; @endphp
@@ -375,7 +387,7 @@
 				count = count + count1 ;
 				var randomnumber=Math.floor(Math.random()*150);
      			var i = randomnumber;
-				$('#AddMoreQuestion').append("<div class='col-md-12' id='Question"+count+"'>"+
+				$('#AddMoreQuestion').append("<div class='col-md-12'>&nbsp;</div><div class='col-md-12 mybox' id='Question"+count+"'>"+
 					"<div class='col-md-12'>"+
 	                "<div class='form-group label-floating is-empty {{ $errors->has('question') ? ' has-error' : '' }}'>"+
 							"<label class='control-label'>Question</label>"+
@@ -415,7 +427,6 @@
 	                "<fieldset id='Radio"+count+"'>"+
 	                "<legend>Radio Answer Options"+
 	                "<a onclick='addRadio("+count+")' name='optionbtn' id='optionbtn' class='btn btn-success pull-right btn-xs'><i class='material-icons'>add_box</i></a>"+
-	                	"<a onclick='removeQuestion("+count+")' name='removeQuestionBtn' id='removeQuestionBtn' class='btn btn-danger pull-right btn-xs'>Remove Question</a>"+
 	                "</legend>"+
 	                "<div class='col-md-12' id='main-menu1'>"+
 	                	"<div class='col-md-3 RadioText"+count+"' >"+
@@ -435,8 +446,7 @@
 						"<fieldset id='RadioWithImageSingle"+count+"'  style='display: none;'>"+
 						"<legend>Radio With Image Answer Options"+
 						"<a class='btn btn-success pull-right btn-xs' onclick='addradioWithImageSingleOptionDynamic("+i+","+count+")'><i class='material-icons'>add_box</i></a>"+
-	                	"<a onclick='removeQuestion("+count+")' name='removeQuestionBtn' id='removeQuestionBtn' class='btn btn-danger pull-right btn-xs'>Remove Question</a>"+
-						"</legend>"+
+	                	"</legend>"+
 						"<div class='col-md-12' id='main-menu2'>"+
 	                	"<div class='col-md-6'>"+
 	                	"<div class='form-group is-empty'>"+
@@ -453,8 +463,7 @@
 						"<fieldset id='CheckBox"+count+"'  style='display: none;'>"+
 						"<legend>Checkbox Answer Options"+
 						"<a class='btn btn-success pull-right btn-xs' onclick='addDynamicCheckboxOption("+count+")'><i class='material-icons'>add_box</i></a>"+
-	                	"<a onclick='removeQuestion("+count+")' name='removeQuestionBtn' id='removeQuestionBtn' class='btn btn-danger pull-right btn-xs'>Remove Question</a>"+
-						"</legend>"+
+	                	"</legend>"+
 						"<div class='col-md-12' id='main-menu4'>"+
 						"<div class='col-md-3 checkBox1'>"+
 	                	"<div class='form-group is-empty'>"+
@@ -468,8 +477,8 @@
 	                	"</div>"+
 	                	"</div>"+
 	                	"</div>"+
-	                	"</fieldset>"+
-						"</div>");
+	             		"</fieldset>"+
+	                	"</div>");
 				count1 = count1 + 1;
 			}
 			function RadioChange(count)

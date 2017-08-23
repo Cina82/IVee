@@ -22,7 +22,11 @@
 			background-color: #ffffff;
 			float: center;
 	}
-	
+	.mybox{
+	height: 100%;
+	width: 100%;
+	border: 1px solid #000;
+}
 </style>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('contents'); ?>
@@ -53,13 +57,10 @@
                             </div>
 	                </div>
 	                <div class="col-md-6">
-	               	    <div class="form-group label-floating is-empty <?php echo e($errors->has('questionHint') ? ' has-error' : ''); ?>">
-							<label class="control-label">Question Hint</label>
-							<input class="form-control" type="text" name="questionHint[]" id="questionHint"> 
-							<span class="material-input"></span>
-					  	</div>
-	               	</div>   
+	                </div>   
 	                </div>
+	                <div class="col-md-12">
+	                <div class="col-md-12 mybox">
 	                <div class="col-md-12">
 	                <div class="col-md-6">
 	                <div class="form-group label-floating is-empty <?php echo e($errors->has('question') ? ' has-error' : ''); ?>">
@@ -68,12 +69,18 @@
 							<span class="material-input"></span>
 					  	</div>
 					</div>
+					<div class="col-md-6">
+						<div class="form-group label-floating is-empty <?php echo e($errors->has('questionHint') ? ' has-error' : ''); ?>">
+							<label class="control-label">Question Hint</label>
+							<input class="form-control" type="text" name="questionHint[]" id="questionHint"> 
+							<span class="material-input"></span>
+					  	</div>
+					</div>
 					</div>
 	              	<div class="col-md-12">
+	              	<div class="col-md-4"><label style="padding-top: 50px !important;">Select Answer Type</label></div>
 	              	<div class="col-md-6">
-	              	</div>
-	                <div class="col-md-6">
-	                   		<div class="form-group label-floating is-empty <?php echo e($errors->has('QuestionType') ? ' has-error' : ''); ?>">
+	              			<div class="form-group label-floating is-empty <?php echo e($errors->has('QuestionType') ? ' has-error' : ''); ?>">
 	                		<select name="QuestionType[]" id="QuestionType" class="selectpicker" required>
                             <option >Question Type</option>
                         	<option value ="1" selected>Radio</option>
@@ -129,9 +136,10 @@
 	                	</div>
 	                </fieldset>
 	                </div>
-
+	                </div>
+	                </div>
 	                <div class="col-md-12 AddMoreQuestion" id="AddMoreQuestion"></div>
-
+	                <!-- Question Div -->
 	                <div class="col-md-12">
 	                <button type="submit" class="btn btn-success pull-right">
 	                <i class="material-icons">save</i>
@@ -187,21 +195,26 @@
 		
 		var randomnumber=Math.floor(Math.random()*150);
      	var i = randomnumber;
-		$('#AddMoreQuestion').append("<div class='col-md-12' id='Question"+i+"'>"+
+		$('#AddMoreQuestion').append("<div class='col-md-12'>&nbsp;</div><div class='col-md-12 mybox' id='Question"+i+"'>"+
 					"<div class='col-md-12'>"+
+					"<div class='col-md-6'>"+
 	                "<div class='form-group label-floating is-empty <?php echo e($errors->has('question') ? ' has-error' : ''); ?>'>"+
 							"<label class='control-label'>Question</label>"+
 							"<input class='form-control' type='text' name='question[]' id='question'>"+ 
 							"<span class='material-input'></span>"+
 					  	"</div>"+
 					"</div>"+
-	              	"<div class='col-md-12'>"+
 	              	"<div class='col-md-6'>"+
 	               	    "<div class='form-group label-floating is-empty <?php echo e($errors->has('questionHint') ? ' has-error' : ''); ?>'>"+
 							"<label class='control-label'>Question Hint</label>"+
 							"<input class='form-control' type='text' name='questionHint[]' id='questionHint'>"+ 
 							"<span class='material-input'></span>"+
 					  	"</div>"+
+	               	"</div>"+
+	               	"</div>"+
+	               	"<div class='col-md-12'>"+
+	               	"<div class='col-md-4'>"+
+	               	"<label style='padding-top: 30px !important;''>Select Answer Type</label>"+
 	               	"</div>"+
 	                "<div class='col-md-6'>"+
 	                   	"<div class='form-group label-floating is-empty <?php echo e($errors->has('QuestionType') ? ' has-error' : ''); ?>'>"+
@@ -227,7 +240,6 @@
 	                "<fieldset class='col-md-12' id='RadioOption"+i+"'>"+
 	                	"<legend>Radio Answer Options"+
 	                	"<a onclick='addRadio("+i+","+count+")' name='optionbtn' id='optionbtn' class='btn btn-success pull-right btn-xs'><i class='material-icons'>add_box</i></a>"+
-	                	"<a onclick='removeQuestion("+i+")' name='removeQuestionBtn' id='removeQuestionBtn' class='btn btn-danger pull-right btn-xs'>Remove Question</a>"+
 	                	"</legend>"+
 	                	"<div class='col-md-3 Radio"+i+"' >"+
 	                	"<div class='form-group is-empty'>"+
@@ -246,8 +258,7 @@
 						"<fieldset id='RadioWithImageSingle"+i+"' style='display:none;'>"+
 						"<legend>Radio With Image Answer Options"+
 						"<a class='btn btn-success pull-right btn-xs' onclick='addradioWithImageSingleOptionDynamic("+i+","+count+")'><i class='material-icons'>add_box</i></a>"+
-	                	"<a onclick='removeQuestion("+i+")' name='removeQuestionBtn' id='removeQuestionBtn' class='btn btn-danger pull-right btn-xs'>Remove Question</a>"+
-						"</legend>"+
+	                	"</legend>"+
 						"<div class='col-md-12' id='main-menu2' >"+
 	                	"<div class='col-md-6'>"+
 	                	"<div class='form-group is-empty'>"+
@@ -264,7 +275,6 @@
 						"<fieldset id='CheckBox"+i+"' style='display: none;'>"+
 						"<legend>Checkbox Answer Options"+
 						"<a class='btn btn-success pull-right btn-xs' onclick='addDynamicCheckboxOption("+i+","+count+")'><i class='material-icons'>add_box</i></a>"+
-	                	"<a onclick='removeQuestion("+i+")' name='removeQuestionBtn' id='removeQuestionBtn' class='btn btn-danger pull-right btn-xs'>Remove Question</a>"+
 	                	"</legend>"+
 	                	"<div class='col-md-12 mybox' id='main-menu"+i+"' >"+
 	                	"<div class='col-md-3 checkBox1'>"+
@@ -278,6 +288,7 @@
 	                	"</div>"+
 	                	"</div>"+
 	                	"</fieldset>"+
+	                	"<a onclick='removeQuestion("+i+")' name='removeQuestionBtn' id='removeQuestionBtn' class='btn btn-danger pull-right btn-xs'>Remove Question</a>"+
 	                	"</div>"+
 						"</div>");
 		count = count + 1;
@@ -293,7 +304,7 @@
 						"<input class='form-control' name='RadioText"+count+"[]' type='text' id='RadioText"+i+"' placeholder='Radio Option'>"+
 						"<span class='material-input'></span>"+
 						"<a onclick='removeRadio("+i+")' class='btn btn-danger btn-xs'"+
-						" style='float:right'>-</a>"+
+						" style='float:right'><i class='material-icons'>delete</i></a>"+
 						"</div>"+
 	                	"</div>");
 		 	optionRadioNo = optionRadioNo + 1;
