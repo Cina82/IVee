@@ -228,8 +228,9 @@
              <div class="tp-col tp-col--12 tp-col--lg-4 full-footer__logos">
             <div class="full-footer__logos__item">
                <a href="/" class="full-footer__logos__logo">
-                  <svg-icon type="thumbtack-logo_178x28" alt="Thumbtack">
-                  </svg-icon>
+                  <!-- <svg-icon type="thumbtack-logo_178x28" alt="Thumbtack">
+                  </svg-icon> -->
+                   <img class="GlobalHeader" src="<?php echo e(URL::to('public/assets/img/Logo/LogoOrange.png')); ?>" alt="Thumbtack" width="178" height="28">
                </a>
                <ul class="full-footer__logos__social">
             

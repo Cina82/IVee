@@ -4148,10 +4148,12 @@
       </div>
    </testimonial-videos>
    <homepage-sticky-header
-      fallback-logo="<?php echo e(URL::to('public/assets/img/logo.svg')); ?>"
+      fallback-logo="<?php echo e(URL::to('public/assets/img/Logo/LogoOrange.png')); ?>"
       corresponding-element="hero">
+
+
       <div class="SearchForm theme-default" dir="rtl">
-         <form search-form open-request-form-modal
+      <form search-form open-request-form-modal
             from-homepage=""
             hide-intro-screen=""
             ng-submit="submitSearch($event)"
@@ -4172,7 +4174,7 @@
                      ng-class="{'is-empty-state': isEmptyState}"
                      required
                      autocomplete="off"
-                     placeholder="?What service do you need"
+                     placeholder="?service do you need"
                      type="search"
                      event-track="home page/start service query"
                      event-track-on="keypress"

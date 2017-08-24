@@ -10,12 +10,13 @@
         <div class="row header-row">
             <div class="header-logo">
                 <a href="{{URL::to('home')}}">
-                    <svg-icon class="IconContainer ng-scope" style="min-width:178px;min-height:28px" twig-rendered="">
+                    <!-- <svg-icon class="IconContainer ng-scope" style="min-width:178px;min-height:28px" twig-rendered="">
                         <svg class="Icon" viewBox="0 0 178 28">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#thumbprinticon-thumbtack-logo_178x28"></use>
                         </svg>
-                    </svg-icon>
-                    <img class="GlobalHeader-fallbackLogo" src="https://static1.thumbtackstatic.com/media/logos/thumbtack_brand_152x24.svg" alt="Thumbtack" width="152" height="24">
+                    </svg-icon> -->
+                     <img class="GlobalHeader" src="{{URL::to('public/assets/img/Logo/LogoOrange.png')}}" alt="Ivee" width="178" height="">
+                    <img class="GlobalHeader-fallbackLogo" src="https://static1.thumbtackstatic.com/media/logos/thumbtack_brand_152x24.svg" alt="Ivee" width="152" height="24">
                 </a>
             </div>
             <div class="header-middle-container">

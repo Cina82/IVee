@@ -75,8 +75,13 @@ Route::group(['middleware'=> ['auth', 'activated', 'currentUser']], function () 
     Route::post('avatar/upload', ['as' => 'avatar.upload', 'uses' => 'ProfilesController@upload']);
 
 });
+//professional management
 Route::get('prosignup', 'pro\proManageController@prosignup');
 Route::get('prosubcate/{id}','pro\proManageController@prosubcat');
+Route::get('serviceProvide{id}','pro\proManageController@showServiceProvide');
+//End professional management
+
+
 Route::get('subCategoryOption{id}', 'Admin\subCategoryManageController@subCategoryOption');
 Route::get('reset', 'Auth\ForgotPasswordController@reset'); 
 Route::get('choose-account', 'Auth\LoginController@signUpCategory');
@@ -200,6 +205,14 @@ Route::group(['middleware'=> ['auth', 'activated', 'role:admin']], function () {
   Route::get('editService{id}', 'Admin\serviceManageController@showEditService');
   Route::post('editService', 'Admin\serviceManageController@EditService');
   Route::get('deleteService{id}', 'Admin\serviceManageController@deleteService');
+
+  //sub service Management 
+  Route::get('subService', 'Admin\subServiceManageController@subService');
+  Route::get('newSubService','Admin\subServiceManageController@newSubService');
+  Route::post('saveSubService','Admin\subServiceManageController@saveSubService');
+  Route::get('editSubService{id}', 'Admin\subServiceManageController@showSubEditService');
+  Route::post('editSubService', 'Admin\subServiceManageController@EditSubService');
+  Route::get('deleteSubService{id}', 'Admin\subServiceManageController@deleteSubService');
 
   //Question Management 
   Route::get('question', 'Admin\questionManageController@question');

@@ -5,10 +5,10 @@
     <div class="wrapper">
         <div class="row header-row">
             <div class="header-logo">
-                <a href="<?php echo e(URL::to('')); ?>"><img class="GlobalHeader-fallbackLogo" src="<?php echo e(URL::to('public/assets/img/logo.svg')); ?>" width="152" height="24" alt="Thumbtack"></a>
+                <a href="<?php echo e(URL::to('')); ?>"><img class="GlobalHeader-fallbackLogo" src="<?php echo e(URL::to('public/assets/img/Logo/LogoOrange.png')); ?>" width="172" height="40" alt="Thumbtack"></a>
             </div>
 
-            <div class="header-right-container">
+            <div class="header-right-container" style="padding-top: 25px !important;">
                 <div class="header-navigation "><a href="<?php echo e(URL::to('login')); ?>" rel="nofollow" event-track="home page/clicked log in" event-track-on="click" class="gray-link log-in-link">
                                 Log In
                             </a></div>

@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Database\Eloquent\Models\Model;
 use Illuminate\Validation\Rule;
 use App\Models\User;
+use App\Models\Admin\ServiceModel;
 use Session;
 use DB;
 
@@ -16,6 +17,7 @@ class proManageController extends Controller
     	$data = $this->pageDetails();
 		$category = DB::table('mainCategory')
             ->select('id','name')
+            ->orderBy('id','ASC')
             ->get();
 		$category1 = DB::table('mainCategory')
             ->select('id','name')
@@ -23,11 +25,12 @@ class proManageController extends Controller
 			->limit(1)
             ->get();
 		$catone = $category1['0']->id;
-		$subcategory = DB::table('mainCategory')
-            			->join('categoryServices', 'mainCategory.id', '=', 'categoryServices.categoryId')
-            			->select('categoryServices.id','categoryServices.name')
+        $subcategory = DB::table('mainCategory')
+            			->join('SubCategory', 'mainCategory.id', '=', 'SubCategory.mainCategoryId')
+            			->select('SubCategory.id','SubCategory.name')
 						->where('mainCategory.id',$catone)
 						->get();
+        
 		$alldata = DB::table('mainCategory')
             			->join('categoryServices', 'mainCategory.id', '=', 'categoryServices.categoryId')
             			->select('mainCategory.id as mid','mainCategory.name as mname','categoryServices.id as cid','categoryServices.name as cname')
@@ -53,7 +56,7 @@ class proManageController extends Controller
 			$name=$ss->name;	
 			print_r("<div class='BrowseSection-submetaBox ng-scope'>
 
-                    <a class='BrowseSection-submeta ng-binding' ng-href='' href=''>
+                    <a class='BrowseSection-submeta ng-binding' href='serviceProvide{$ss->id}'>
                       $name
                         <svg class='BrowseSection-submetaIcon'>
                             <use xlink:href='#thumbprinticon-right-caret_16'></use>
@@ -63,11 +66,15 @@ class proManageController extends Controller
                 </div>");
 			
 		}
-		
-		 
-    }
+	}
     public function prosignup(){
     	return view('auth.proffetionalHire');
+    }
+    public function showServiceProvide($id)
+    {
+        $services = ServiceModel::where('subCategoryId',$id)->get();
+        return view('pages.pro.services',compact('services'));
+        
     }
     
 }

@@ -6,8 +6,7 @@
                 <div class="column-3">
                     <div class="copyright">
                         <a href="{{URL::to('')}}" class="">
-                            <img src="{{URL::to('public/assets/img/logo.svg')}}"
-                                alt="Thumbtack">
+                             <img class="GlobalHeader" src="{{URL::to('public/assets/img/Logo/LogoOrange.png')}}" alt="Thumbtack" width="178" height="">
                             </a>
 
                             <!-- custome path for icon css in icons-350665ef file -->
