@@ -39,11 +39,15 @@
                                 $ser=$service->name;
 
                             }
+                            else{
+                            $ser='';
+                            }
                             
                     @endphp
                      
                     <tr>
                          <td>
+
                            {{$ser}}
                          </td>   
                         <td>
