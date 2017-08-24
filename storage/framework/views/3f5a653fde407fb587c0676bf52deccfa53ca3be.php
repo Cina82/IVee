@@ -57,7 +57,6 @@
  <?php if(Session::has('message')): ?>
     <script>
         var msg = "<?php echo e(Session::get('message')); ?>";
-        alert(msg);
             type = ['','info','success','warning','danger'];
                 $.notify({
                 icon: "notifications",
