@@ -39,9 +39,6 @@
                                 $ser=$service->name;
 
                             }
-                            else{
-                            $ser='';
-                            }
                             
                     @endphp
                      
