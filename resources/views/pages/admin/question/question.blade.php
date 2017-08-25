@@ -34,18 +34,23 @@
 
                         $question=json_decode($posts->question);
                         foreach($services as $service)
-                        if($service->id == $question['0']->categoryService)
-                            {
+                         
+                        if($service->name == $question['0']->categoryService)
+                        {
                                 $ser=$service->name;
 
-                            }
-                            
+                        }
+                        else
+                        {
+                            $ser=$question['0']->categoryService;
+                        }
+                             
                     @endphp
                      
                     <tr>
                          <td>
 
-                           {{$ser}}
+                           {{ $ser }}
                          </td>   
                         <td>
                              <a href="editQuestion{{$posts->id}}" type="button" rel="tooltip" class="btn btn-success btn-xs" data-original-title="" title="Edit">

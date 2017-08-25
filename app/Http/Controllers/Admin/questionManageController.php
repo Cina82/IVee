@@ -97,8 +97,8 @@ class questionManageController extends Controller
         }
         public function editQuestion(Request $request)
         {
-           dd($request);
-           exit();
+           //dd($request);
+           //exit();
 
             $questionId = $request->questionId;
             $categoryService = $request->CategoryService;

@@ -5,7 +5,7 @@
     <div class="wrapper">
         <div class="row header-row">
             <div class="header-logo">
-                <a href="{{URL::to('')}}"><img class="GlobalHeader-fallbackLogo" src="{{URL::to('public/assets/img/Logo/LogoOrange.png')}}" width="172" height="40" alt="Ivee"></a>
+                <a href="{{URL::to('')}}"><img class="GlobalHeader-fallbackLogo" src="{{URL::to('public/assets/img/Logo/LogoOrange.png')}}" width="" height="40" alt="Ivee"></a>
             </div>
 
             <div class="header-right-container" style="padding-top: 25px !important;">

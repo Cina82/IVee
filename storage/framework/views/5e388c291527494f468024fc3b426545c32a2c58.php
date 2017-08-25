@@ -85,7 +85,9 @@
 <div ng-controller="BrowseController" class="ng-scope">
     <div class="BrowseSection theme-desktop-only ">
         <div class="BrowseSection-meta_tabs">
+            <?php  $ic=0;  ?>
 			<?php $__currentLoopData = $category; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $cat): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+            <?php if($ic==0): ?>
             <!-- ngRepeat: meta in metaCategories --><div style="" id="avv<?php echo e($cat->id); ?>" class="BrowseSection-tab ng-binding ng-scope" ng-repeat="meta in metaCategories" ng-click="clickMeta(meta)" ng-class="{active:isSelectedMeta(meta)}" onclick="catall(<?php echo e($cat->id); ?>)";>
                 <svg class="BrowseSection-metaIcon" id="BrowseSection-metaIcon<?php echo e($cat->id); ?>">
                     <use xlink:href="#thumbprinticon-category-group--home-improvement_48" id="icon<?php echo e($cat->id); ?>"></use>
@@ -94,6 +96,17 @@
 
                 <div class="BrowseSection-metaSelectIndicator" ng-show="isSelectedMeta(meta)"></div>
             </div><!-- end ngRepeat: meta in metaCategories -->
+            <?php else: ?>
+            <!-- ngRepeat: meta in metaCategories --><div style="" id="avv<?php echo e($cat->id); ?>" class="BrowseSection-tab ng-binding ng-scope" ng-repeat="meta in metaCategories" ng-click="clickMeta(meta)" ng-class="{active:isSelectedMeta(meta)}" onclick="catall(<?php echo e($cat->id); ?>)";>
+                <svg class="BrowseSection-metaIcon" id="BrowseSection-metaIcon<?php echo e($cat->id); ?>">
+                    <use xlink:href="#thumbprinticon-category-group--home-improvement_48" id="icon<?php echo e($cat->id); ?>"></use>
+                </svg>
+                <?php echo e($cat->name); ?>
+
+                <div class="BrowseSection-metaSelectIndicator" ng-show="isSelectedMeta(meta)"></div>
+            </div><!-- end ngRepeat: meta in metaCategories -->
+            <?php endif; ?>
+            <?php  $ic++;  ?>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div>
        
@@ -104,7 +117,7 @@
         		'url':'prosubcate/'+id,
                 'success':function(data){
                 $("#subdatanew").html(data);
-               	$('.BrowseSection-tab').removeAttr('style');
+                $('.BrowseSection-tab').removeAttr('style');
 				$('.BrowseSection-metaIcon').removeAttr('style');
 				document.getElementById("avv"+id).style.color = "#4E4D4D";
 				document.getElementById("BrowseSection-metaIcon"+id).style.fill = "#4E4D4D";
@@ -118,7 +131,7 @@
             	<?php $__currentLoopData = $subcategory; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $scat): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <!-- ngRepeat: subMeta in selectedMeta.subMetas | orderBy: 'toString()' --><div class="BrowseSection-submetaBox ng-scope" ng-repeat="subMeta in selectedMeta.subMetas | orderBy: 'toString()'">
 
-                    <a class="BrowseSection-submeta ng-binding" href="<?php echo e(URL::to('prosignup')); ?>">
+                    <a class="BrowseSection-submeta ng-binding" href="<?php echo e(URL::to('serviceProvide')); ?><?php echo e($scat->id); ?>">
                        <?php echo e($scat->name); ?>
 
                         <svg class="BrowseSection-submetaIcon">

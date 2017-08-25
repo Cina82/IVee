@@ -87,7 +87,9 @@
 <div ng-controller="BrowseController" class="ng-scope">
     <div class="BrowseSection theme-desktop-only ">
         <div class="BrowseSection-meta_tabs">
+            @php $ic=0; @endphp
 			@foreach($category as $cat)
+            @if($ic==0)
             <!-- ngRepeat: meta in metaCategories --><div style="" id="avv{{ $cat->id }}" class="BrowseSection-tab ng-binding ng-scope" ng-repeat="meta in metaCategories" ng-click="clickMeta(meta)" ng-class="{active:isSelectedMeta(meta)}" onclick="catall({{ $cat->id }})";>
                 <svg class="BrowseSection-metaIcon" id="BrowseSection-metaIcon{{ $cat->id }}">
                     <use xlink:href="#thumbprinticon-category-group--home-improvement_48" id="icon{{ $cat->id }}"></use>
@@ -95,6 +97,16 @@
                 {{ $cat->name }}
                 <div class="BrowseSection-metaSelectIndicator" ng-show="isSelectedMeta(meta)"></div>
             </div><!-- end ngRepeat: meta in metaCategories -->
+            @else
+            <!-- ngRepeat: meta in metaCategories --><div style="" id="avv{{ $cat->id }}" class="BrowseSection-tab ng-binding ng-scope" ng-repeat="meta in metaCategories" ng-click="clickMeta(meta)" ng-class="{active:isSelectedMeta(meta)}" onclick="catall({{ $cat->id }})";>
+                <svg class="BrowseSection-metaIcon" id="BrowseSection-metaIcon{{ $cat->id }}">
+                    <use xlink:href="#thumbprinticon-category-group--home-improvement_48" id="icon{{ $cat->id }}"></use>
+                </svg>
+                {{ $cat->name }}
+                <div class="BrowseSection-metaSelectIndicator" ng-show="isSelectedMeta(meta)"></div>
+            </div><!-- end ngRepeat: meta in metaCategories -->
+            @endif
+            @php $ic++; @endphp
             @endforeach
         </div>
        
@@ -105,7 +117,7 @@
         		'url':'prosubcate/'+id,
                 'success':function(data){
                 $("#subdatanew").html(data);
-               	$('.BrowseSection-tab').removeAttr('style');
+                $('.BrowseSection-tab').removeAttr('style');
 				$('.BrowseSection-metaIcon').removeAttr('style');
 				document.getElementById("avv"+id).style.color = "#4E4D4D";
 				document.getElementById("BrowseSection-metaIcon"+id).style.fill = "#4E4D4D";
@@ -119,7 +131,7 @@
             	@foreach($subcategory as $scat)
                 <!-- ngRepeat: subMeta in selectedMeta.subMetas | orderBy: 'toString()' --><div class="BrowseSection-submetaBox ng-scope" ng-repeat="subMeta in selectedMeta.subMetas | orderBy: 'toString()'">
 
-                    <a class="BrowseSection-submeta ng-binding" href="{{ URL::to('prosignup') }}">
+                    <a class="BrowseSection-submeta ng-binding" href="{{ URL::to('serviceProvide') }}{{ $scat->id }}">
                        {{ $scat->name }}
                         <svg class="BrowseSection-submetaIcon">
                             <use xlink:href="#thumbprinticon-right-caret_16"></use>

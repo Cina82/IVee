@@ -32,14 +32,18 @@
                     <?php  
 
                         $question=json_decode($posts->question);
-                        if(!empty($question))
                         foreach($services as $service)
-                        if($service->id == $question['0']->categoryService)
-                            {
+                         
+                        if($service->name == $question['0']->categoryService)
+                        {
                                 $ser=$service->name;
 
-                            }
-                            
+                        }
+                        else
+                        {
+                            $ser=$question['0']->categoryService;
+                        }
+                             
                      ?>
                      
                     <tr>
@@ -61,7 +65,6 @@
                         
                     </tr>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                    <?php endif; ?>
                 </tbody>
                 </table>
 

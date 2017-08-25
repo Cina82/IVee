@@ -22,7 +22,7 @@
 	                   <div class="col-md-6">
 					   <div class="form-group label-floating is-empty <?php echo e($errors->has('email') ? ' has-error' : ''); ?>">
 							<label class="control-label">First Name</label>
-							<input class="form-control" type="text" name="firstName" id="firstName"> 
+							<input class="form-control" type="text" name="firstName" id="firstName" required="required"> 
 							<span class="material-input"></span>
 							<input type="hidden" name="role_id" value="3">
 					   </div>
@@ -30,7 +30,7 @@
 	                   <div class="col-md-6">
 					   <div class="form-group label-floating is-empty <?php echo e($errors->has('email') ? ' has-error' : ''); ?>">
 							<label class="control-label">Family Name</label>
-							<input class="form-control" type="text" name="familyName" id="familyName"> 
+							<input class="form-control" type="text" name="familyName" id="familyName" required="required"> 
 							<span class="material-input"></span>
 					   </div>
 	                   </div>
@@ -39,13 +39,13 @@
 	                	<div class="col-md-6">
 					    <div class="form-group label-floating is-empty <?php echo e($errors->has('email') ? ' has-error' : ''); ?>">
 						   <label class="control-label">Email</label>
-						   <input class="form-control" type="email" name="email" id="email">
+						   <input class="form-control" type="email" name="email" id="email" required="required">
 						   <span class="material-input"></span></div>
 	                   </div>
 	                   <div class="col-md-6">
 					    <div class="form-group label-floating is-empty <?php echo e($errors->has('email') ? ' has-error' : ''); ?>">
 						   <label class="control-label">Mobile No</label>
-						   <input class="form-control" type="text" name="mobile" id="mobile" onKeyUp="numericFilter(this);">
+						   <input class="form-control" type="text" name="mobile" id="mobile" onKeyUp="numericFilter(this);" required="required">
 						   <span class="material-input"></span></div>
 	                   </div>
 	                </div>
@@ -53,13 +53,13 @@
 	                	<div class="col-md-6">
 					    <div class="form-group label-floating is-empty <?php echo e($errors->has('email') ? ' has-error' : ''); ?>">
 						   <label class="control-label">Password</label>
-						   <input class="form-control" type="password" name="password" id="password">
+						   <input class="form-control" type="password" name="password" id="password" required="required">
 						   <span class="material-input"></span></div>
 	                   </div>
 	                   <div class="col-md-6"> 
 					    <div class="form-group label-floating is-empty <?php echo e($errors->has('email') ? ' has-error' : ''); ?>">
 						   <label class="control-label">Conform Password</label>
-						   <input class="form-control" type="password" name="conform_password" id="conform_password">
+						   <input class="form-control" type="password" name="conform_password" id="conform_password" required="required">
 						   <span class="material-input"></span></div>
 	                   </div>
 	                </div>

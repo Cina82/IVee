@@ -227,12 +227,15 @@
             </div>
              <div class="tp-col tp-col--12 tp-col--lg-4 full-footer__logos">
             <div class="full-footer__logos__item">
-               <a href="/" class="full-footer__logos__logo">
-                  <!-- <svg-icon type="thumbtack-logo_178x28" alt="Thumbtack">
-                  </svg-icon> -->
-                   <img class="GlobalHeader" src="<?php echo e(URL::to('public/assets/img/Logo/LogoOrange.png')); ?>" alt="Thumbtack" width="178" height="28">
-               </a>
-               <ul class="full-footer__logos__social">
+            	<div>
+	               <a href="/" class="full-footer__logos__logo">
+	                  <!-- <svg-icon type="thumbtack-logo_178x28" alt="Thumbtack">
+	                  </svg-icon> -->
+	                   <img class="GlobalHeader" src="<?php echo e(URL::to('public/assets/img/Logo/LogoOrange.png')); ?>" alt="Thumbtack" width="178" height="">
+	               </a>
+                </div>
+                
+               <ul class="full-footer__logos__social"  style="padding-top:40px;">
             
                    <li class="full-footer__logos__social__item">
                      <a href="https://www.facebook.com/Thumbtack" target="_blank">
@@ -264,6 +267,7 @@
                      </a>
                   </li>
                </ul>
+               
                <div class="full-footer__logos__guarantee">
                   <div class="TtGuaranteeText">
                      <a href="/guarantee/"

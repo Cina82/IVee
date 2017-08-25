@@ -22,14 +22,14 @@
 	                   <div class="col-md-6">
 					   <div class="form-group label-floating is-empty {{ $errors->has('Name') ? ' has-error' : '' }}">
 							<label class="control-label">Name</label>
-							<input class="form-control" type="text" name="name" id="name"> 
+							<input class="form-control" type="text" name="name" id="name" required="required"> 
 							<span class="material-input"></span>
 					  	</div>
 	                  	</div>
 	                   <div class="col-md-6">
 					   <div class="form-group label-floating is-empty {{ $errors->has('metaTitle') ? ' has-error' : '' }}">
 							<label class="control-label">Meta Title</label>
-							<input class="form-control" type="text" name="metaTitle" id="metaTitle"> 
+							<input class="form-control" type="text" name="metaTitle" id="metaTitle" required="required"> 
 							<span class="material-input"></span>
 					   </div>
 	                   </div>
@@ -38,13 +38,13 @@
 	                	<div class="col-md-6">
 					    <div class="form-group label-floating is-empty {{ $errors->has('metaDescription') ? ' has-error' : '' }}">
 						   <label class="control-label">Meta Description</label>
-						   <input class="form-control" type="text" name="metaDescription" id="metaDescription">
+						   <input class="form-control" type="text" name="metaDescription" id="metaDescription" required="required">
 						   <span class="material-input"></span></div>
 	                   </div>
 	                   <div class="col-md-6">
 					    <div class="form-group label-floating is-empty {{ $errors->has('metaValue') ? ' has-error' : '' }}">
 						   <label class="control-label">Meta Value</label>
-						   <input class="form-control" type="text" name="metaValue" id="metaValue">
+						   <input class="form-control" type="text" name="metaValue" id="metaValue" required="required">
 						   <span class="material-input"></span></div>
 	                   </div>
 	                </div>

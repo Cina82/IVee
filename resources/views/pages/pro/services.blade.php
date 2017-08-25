@@ -79,18 +79,25 @@
                     </div>
                     @endforeach
                     </div>
+                    <div class="column-lg-4 column-lg-offset-1 column-md-6 column-md-offset-0">&nbsp;</div>
+                    <div class="column-lg-2 column-lg-offset-1 column-md-12 column-md-offset-0" style="float: right;">
+                       <button type="submit" class="Button">Get started</button>
+                    </div>
                 </div>
+
+                
+                
                 </form>
                 </section>
                 
             </div>
-<script>
+<!--<script>
     $("#example-basic").steps({
         bodyTag: "section",
         transitionEffect: "slideLeft",
         autoFocus: true
     });
-</script>
+</script>-->
                
 
 @endsection

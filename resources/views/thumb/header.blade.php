@@ -1,6 +1,16 @@
 @if(collect(request()->segments())->last() != 'moreServices' and collect(request()->segments())->last() != 'explore' and collect(request()->segments())->last() != 'choose-account' and collect(request()->segments())->last() != 'login' and collect(request()->segments())->last() != 'serviceGuides' and collect(request()->segments())->last() != 'howTo' and collect(request()->segments())->last() != 'proCenter' and collect(request()->segments())->last() != 'proApp' and collect(request()->segments())->last() != 'prices' and collect(request()->segments())->last() != 'howThumbtackWorks' and collect(request()->segments())->last() != 'terms' and collect(request()->segments())->last() != 'privacy' and collect(request()->segments())->last() != 'reset')
             
-
+<style>
+.HomepageStickyHeader-container-logo-default.ng-scope.IconContainer
+{
+	display:none;
+}
+.HomepageStickyHeader-container-logo-fallback.ng-scope
+{
+	display:block;
+	height:auto;
+}
+</style>
 <div class="glorious-header theme-inverse-overlay GlobalHeader" data-section="header">
    <div class="wrapper">
       <div class="row header-row">
@@ -12,7 +22,7 @@
                   </svg>
                </svg-icon> -->
                <img class="GlobalHeader" src="{{URL::to('public/assets/img/Logo/LogoWhite.png')}}" alt="Ivee" width="178" height="">
-               <img class="GlobalHeader-fallbackLogo" src="{{URL::to('public/assets/img/Logo/LogoWhite.png')}}" alt="Ivee" width="152" height="24">
+               <img class="GlobalHeader-fallbackLogo" src="{{URL::to('public/assets/img/Logo/LogoWhite.png')}}" alt="Ivee" width="152" height="">
             </a>
          <!--    <div class="header-navigation ">
                <a href="{{URL::to('explore')}}" rel="nofollow" event-track="home page/clicked join as a pro" event-track-on="click class="gray-link">
@@ -106,7 +116,7 @@
                   </svg>
                </svg-icon> -->
                <img class="GlobalHeader" src="{{URL::to('public/assets/img/Logo/LogoOrange.png')}}" alt="Ivee" width="178" height="">
-               <img class="GlobalHeader-fallbackLogo" src="{{URL::to('public/assets/img/Logo/LogoOrange.png')}}" alt="Ivee" width="152" height="24">
+               <img class="GlobalHeader-fallbackLogo" src="{{URL::to('public/assets/img/Logo/LogoOrange.png')}}" alt="Ivee" width="152" height="">
             </a>
         </div>
           <div class="header-middle-container">

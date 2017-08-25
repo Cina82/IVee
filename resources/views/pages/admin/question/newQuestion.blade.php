@@ -50,7 +50,7 @@
 	            	<div class="col-md-6">
 	                		<div class="form-group label-floating is-empty {{ $errors->has('CategoryService') ? ' has-error' : '' }}">
 	                		<select name="CategoryService" id="CategoryService" class="selectpicker" required>
-                            <option selected>Select Service</option>
+                            <option value="">Select Service</option>
                             @foreach($ary as $rows)
                             <option value ="{{$rows->id}}">{{$rows->name}}</option>
                             @endforeach
@@ -66,14 +66,14 @@
 	                <div class="col-md-6">
 	                <div class="form-group label-floating is-empty {{ $errors->has('question') ? ' has-error' : '' }}">
 							<label class="control-label">Question</label>
-							<input class="form-control" type="text" name="question[]" id="question"> 
+							<input class="form-control" type="text" name="question[]" id="question" required="required"> 
 							<span class="material-input"></span>
 					  	</div>
 					</div>
 					<div class="col-md-6">
 						<div class="form-group label-floating is-empty {{ $errors->has('questionHint') ? ' has-error' : '' }}">
 							<label class="control-label">Question Hint</label>
-							<input class="form-control" type="text" name="questionHint[]" id="questionHint"> 
+							<input class="form-control" type="text" name="questionHint[]" id="questionHint" required="required"> 
 							<span class="material-input"></span>
 					  	</div>
 					</div>
@@ -82,8 +82,8 @@
 	              	<div class="col-md-4"><label style="padding-top: 50px !important;">Select Answer Type</label></div>
 	              	<div class="col-md-6">
 	              			<div class="form-group label-floating is-empty {{ $errors->has('QuestionType') ? ' has-error' : '' }}">
-	                		<select name="QuestionType[]" id="QuestionType" class="selectpicker" required>
-                            <option >Question Type</option>
+	                		<select name="QuestionType[]" id="QuestionType" class="selectpicker" required="required">
+                            <option value="">Question Type</option>
                         	<option value ="1" selected>Radio</option>
                         	<option value ="2">Radio With Image Single</option>
                         	<option value ="3">Radio With TextBox Single</option>
@@ -105,10 +105,10 @@
 	                	<a name="optionbtn" id="optionbtn" class="btn btn-success pull-right btn-xs"><i class="material-icons">add_box</i></a>
 	                	</legend>
 	                	<div class="col-md-3">
-	                	<input type="text" name="RadioText1[]" class="form-control" id="RadioText" placeholder="Radio Option">
+	                	<input type="text" name="RadioText1[]" class="form-control" id="RadioText" placeholder="Radio Option" required="required">
 	                	</div>
 	                	<div class="col-md-3">
-	                	<input type="text" name="RadioText1[]" class="form-control" id="RadioText1" placeholder="Radio Option">
+	                	<input type="text" name="RadioText1[]" class="form-control" id="RadioText1" placeholder="Radio Option" required="required">
 	                	</div>
 	                	</fieldset>
 	              	</div>
@@ -174,7 +174,7 @@
 	$("#optionbtn").click(function(){
 		$('#main-menu1').append("<div class='col-md-3' id='optionDivNo"+OptionNo+"'>"+
 	                	"<div class='form-group is-empty'>"+
-						"<input class='form-control' name='RadioText1[]' type='text' placeholder='Radio Option'>"+
+						"<input class='form-control' name='RadioText1[]' required='required' type='text' placeholder='Radio Option'>"+
 						"<span class='material-input'></span>"+
 						"<a class='btn btn-danger btn-xs' onclick='removeRadioOption("+OptionNo+")' class='removeRadioOption'"+
 						" style='float:right'><i class='material-icons'>delete</i></a>"+
