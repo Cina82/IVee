@@ -10,7 +10,9 @@ and collect(request()->segments())->last() != 'prices'
 and collect(request()->segments())->last() != 'howThumbtackWorks'
 and collect(request()->segments())->last() != 'terms'
 and collect(request()->segments())->last() != 'privacy'
-and collect(request()->segments())->last() != 'reset'): ?>
+and collect(request()->segments())->last() != 'reset'
+and collect(request()->segments())->last() != 'blog'
+): ?>
             
 <style>
 .HomepageStickyHeader-container-logo-default.ng-scope.IconContainer
