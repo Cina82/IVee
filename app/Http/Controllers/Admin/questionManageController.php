@@ -9,21 +9,22 @@ use Illuminate\Validation\Rule;
 use App\Models\Admin\QuestionModel;
 use App\Models\Admin\ServiceModel;
 use Session;
+use DB;
+$alldata = DB::table('mainCategory')
+                  ->join('categoryServices', 'mainCategory.id', '=', 'categoryServices.categoryId')
+                  ->select('mainCategory.id as mid','mainCategory.name as mname','categoryServices.id as cid','categoryServices.name as cname')
+            ->get();
 class questionManageController extends Controller
 {
     	
     	public function question()
     	{  
+           $alldata = DB::table('serviceQuestion')
+                  ->join('categoryServices', 'serviceQuestion.categoryServiceId', '=', 'categoryServices.id')
+                  ->select('categoryServices.id as cid','serviceQuestion.id as mid','categoryServices.name as name')
+            ->get();
             
-            $services = ServiceModel::select('id','name')->get();
-            $data = QuestionModel::all();
-
-            $mainData = json_decode($data);
-            $categoryService = array();
-            foreach ($mainData as $posts) {
-                $categoryService[] = json_decode($posts->question);
-            }
-          return view('pages.admin.question.question',compact('mainData','services'));
+            return view('pages.admin.question.question',compact('alldata'));
     	}
 
   	    public function newQuestion()
@@ -87,9 +88,9 @@ class questionManageController extends Controller
         }
         public function showEditQuestion($id)
         {
-             $ary = ServiceModel::all();
-             $post = QuestionModel::find($id);
              
+             $post = QuestionModel::find($id);
+             $ary = ServiceModel::all();
              $mainData = json_decode($post);
              return view('pages.admin.question.editQuestion',compact('mainData','ary'));
         }
@@ -147,9 +148,10 @@ class questionManageController extends Controller
                 $data[] = array('questionType' => $QuestionType[$j],'question' => $question,'questionHint' => $questionHint,'options'=>$option);
              }
 
-             $mainArray[] = array('categoryService' => $categoryService,'question'=>$data);
+             $mainArray[] = array('question'=>$data);
              $post = array();
              $post['question'] = json_encode($mainArray);
+             $post['categoryServiceId'] = $categoryService;
              $pages = QuestionModel::where('id',$questionId)->update($post);
              Session::flash('message', 'question update successfully.');
              Session::flash('alert-class', 'alert-success');

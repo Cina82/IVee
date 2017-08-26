@@ -100,11 +100,8 @@
     <link rel='shortlink' href='https://www.thumbtack.com/pro-center/?p=14984' />
     <link rel="alternate" type="application/json+oembed" href="https://www.thumbtack.com/pro-center/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thumbtack.com%2Fpro-center%2Fget-hired-guide%2F" />
     <link rel="alternate" type="text/xml+oembed" href="https://www.thumbtack.com/pro-center/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thumbtack.com%2Fpro-center%2Fget-hired-guide%2F&#038;format=xml" />
-    <!-- Stream WordPress user activity plugin v3.2.0 -->
-    <link rel="icon" href="https://www.thumbtack.com/pro-center/wp-content/uploads/2017/05/cropped-favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" href="https://www.thumbtack.com/pro-center/wp-content/uploads/2017/05/cropped-favicon-192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon-precomposed" href="https://www.thumbtack.com/pro-center/wp-content/uploads/2017/05/cropped-favicon-180x180.png" />
-    <meta name="msapplication-TileImage" content="https://www.thumbtack.com/pro-center/wp-content/uploads/2017/05/cropped-favicon-270x270.png" />
+    
+    
 </head>
 
 <body data-rsssl=1 class="page-template page-template-get-hired-guide_parent page-template-get-hired-guide_parent-php page page-id-14984 page-parent header-full-width full-width-content" itemscope itemtype="https://schema.org/WebPage">

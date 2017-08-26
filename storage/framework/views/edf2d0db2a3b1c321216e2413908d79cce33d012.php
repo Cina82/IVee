@@ -27,38 +27,19 @@
                 </thead>
                 <tbody>
                   
-                    <?php $__currentLoopData = $mainData; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $posts): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-
-                    <?php  
-
-                        $question=json_decode($posts->question);
-                        foreach($services as $service)
-                         
-                        if($service->name == $question['0']->categoryService)
-                        {
-                                $ser=$service->name;
-
-                        }
-                        else
-                        {
-                            $ser=$question['0']->categoryService;
-                        }
-                             
-                     ?>
-                     
+                    <?php $__currentLoopData = $alldata; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $posts): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <tr>
-                         <td>
-
-                           <?php echo e($ser); ?>
-
-                         </td>   
                         <td>
-                             <a href="editQuestion<?php echo e($posts->id); ?>" type="button" rel="tooltip" class="btn btn-success btn-xs" data-original-title="" title="Edit">
+                        <?php echo e($posts->name); ?>
+
+                        </td>   
+                        <td>
+                             <a href="editQuestion<?php echo e($posts->mid); ?>" type="button" rel="tooltip" class="btn btn-success btn-xs" data-original-title="" title="Edit">
                             <i class="material-icons">edit</i>
                             <div class="ripple-container"></div></a>
                         </td>
                         <td>
-                             <a href="deleteQuestion<?php echo e($posts->id); ?>" type="button" rel="tooltip" class="btn btn-danger btn-xs" data-original-title="" title="Delete" onclick="return ConfirmDelete()">
+                             <a href="deleteQuestion<?php echo e($posts->mid); ?>" type="button" rel="tooltip" class="btn btn-danger btn-xs" data-original-title="" title="Delete" onclick="return ConfirmDelete()">
                             <i class="material-icons">delete</i>
                             <div class="ripple-container"></div></a>
                         </td>
