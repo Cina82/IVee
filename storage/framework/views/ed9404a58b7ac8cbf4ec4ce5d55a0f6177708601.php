@@ -91,7 +91,7 @@
         <script>
         function ConfirmDelete()
         {
-            var x = confirm("Are you sure you want to delete Category?");
+            var x = confirm("Are you sure you want to delete Customer User?");
             if (x)
             return true;
             else

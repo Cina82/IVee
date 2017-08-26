@@ -1,4 +1,16 @@
-@if(collect(request()->segments())->last() != 'moreServices' and collect(request()->segments())->last() != 'explore' and collect(request()->segments())->last() != 'choose-account' and collect(request()->segments())->last() != 'login' and collect(request()->segments())->last() != 'serviceGuides' and collect(request()->segments())->last() != 'howTo' and collect(request()->segments())->last() != 'proCenter' and collect(request()->segments())->last() != 'proApp' and collect(request()->segments())->last() != 'prices' and collect(request()->segments())->last() != 'howThumbtackWorks' and collect(request()->segments())->last() != 'terms' and collect(request()->segments())->last() != 'privacy' and collect(request()->segments())->last() != 'reset')
+@if(collect(request()->segments())->last() != 'moreServices' 
+and collect(request()->segments())->last() != 'explore'
+and collect(request()->segments())->last() != 'choose-account'
+and collect(request()->segments())->last() != 'login'
+and collect(request()->segments())->last() != 'serviceGuides'
+and collect(request()->segments())->last() != 'howTo'
+and collect(request()->segments())->last() != 'proCenter'
+and collect(request()->segments())->last() != 'proApp'
+and collect(request()->segments())->last() != 'prices'
+and collect(request()->segments())->last() != 'howThumbtackWorks'
+and collect(request()->segments())->last() != 'terms'
+and collect(request()->segments())->last() != 'privacy'
+and collect(request()->segments())->last() != 'reset')
             
 <style>
 .HomepageStickyHeader-container-logo-default.ng-scope.IconContainer

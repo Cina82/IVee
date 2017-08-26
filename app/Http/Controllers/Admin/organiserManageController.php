@@ -29,12 +29,12 @@ class adminManageController extends Controller
     	{
             
 			$post = User::where('role_data','2')->get();
-			return view('pages.superadmin.pages.organiser',compact('post'));
+			return view('pages.admin.pages.admin',compact('post'));
     	}
 
     	public function newAdmin()
     	{
-    		return view('pages.superadmin.pages.newOrganiser');
+    		return view('pages.admin.pages.newAdmin');
     	}
 
         //save new Organiser Controller
@@ -64,7 +64,7 @@ class adminManageController extends Controller
         public function showAdmin($id)
         {
              $post = User::find($id);
-             return view('pages.superadmin.pages.editOrganiser',compact('post'));
+             return view('pages.admin.pages.editAdmin',compact('post'));
         }
         public function editAdmin(Request $request)
         {

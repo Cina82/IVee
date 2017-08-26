@@ -3,7 +3,7 @@
                 <input type="checkbox" id="navtoggle" class="static-header__navtoggle">
                 <div class="tp-col tp-col--2 tp-col--md-4 static-header__logo">
                     <a href="<?php echo e(URL::to('')); ?>" class=" static-header__brand" target="_blank" rel="noopener noreferrer">
-                        <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/thumbtack_brand_152x24.svg">
+                       <img class="GlobalHeader" src="<?php echo e(URL::to('public/assets/img/Logo/LogoOrange.png')); ?>" alt="Ivee" width="178" height="">
                     </a>
                     <label for="navtoggle" class="static-header__trigger static-header__trigger--down">
                         <svg class="" viewBox="0 0 24 24">

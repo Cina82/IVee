@@ -3,7 +3,7 @@
                 <div class="tp-grid">
                     <div class="tp-col tp-col--12 tp-col--lg-3 tp-col--md-12 footer__logo">
                         <a href="#">
-                            <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/thumbtack_brand_152x24.svg">
+                            <img class="GlobalHeader" src="<?php echo e(URL::to('public/assets/img/Logo/LogoOrange.png')); ?>" alt="Ivee" width="178" height="">
                         </a>
                     </div>
                     <div class="tp-col tp-col--12 tp-col--lg-6 tp-col--md-12 footer__links">

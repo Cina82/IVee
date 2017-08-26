@@ -24,7 +24,7 @@
                     <!-- sidebar for only super admin -->
                     <?php if(Auth::user()->role_data == 1): ?>
                     <li>
-                        <a href="createAdmin">
+                        <a href="createAdminBySuperAdmin">
                             <i class="material-icons">group</i>
                             <p>Admin Management</p>
                         </a>

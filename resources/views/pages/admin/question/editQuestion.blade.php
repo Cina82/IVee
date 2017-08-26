@@ -46,7 +46,7 @@
 	            @php
 	            $id = $mainData->id;
 	            $question = json_decode($mainData->question);
-	            $categoryService = $question['0']->categoryService;
+	            $categoryService = $mainData->categoryServiceId;
 
 	            $questionArray[] = $question[0]->question;
 	            $questionType = $questionArray['0']['0']->questionType;

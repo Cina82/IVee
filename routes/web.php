@@ -133,12 +133,12 @@ Route::get('getHiredGuideHired', 'getHiredGuide\getHiredGuideManageController@ge
 // Registered, activated, and is admin routes.
 Route::group(['middleware'=> ['auth', 'activated', 'role:superadmin']], function () {
   //controller for Admin
-  Route::get('createAdmin', 'Admin\adminManageController@index');
-  Route::get('newAdmin', 'Admin\adminManageController@newAdmin');
-  Route::post('saveAdmin', 'Admin\adminManageController@saveAdmin');
-  Route::get('editAdmin{id}', 'Admin\adminManageController@showAdmin');
-  Route::post('editAdmin', 'Admin\adminManageController@EditAdmin');
-  Route::get('deleteAdmin{id}', 'Admin\adminManageController@deleteAdmin');
+  Route::get('createAdminBySuperAdmin', 'superAdmin\adminManageController@index');
+  Route::get('newAdminBySuperAdmin', 'superAdmin\adminManageController@newAdmin');
+  Route::post('saveAdminBySuperAdmin', 'superAdmin\adminManageController@saveAdmin');
+  Route::get('editAdminBySuperAdmin{id}', 'superAdmin\adminManageController@showAdmin');
+  Route::post('editAdminBySuperAdmin', 'superAdmin\adminManageController@EditAdmin');
+  Route::get('deleteAdminBySuperAdmin{id}', 'superAdmin\adminManageController@deleteAdmin');
 });
 
 // Registered, activated, and is Owner routes.

@@ -76,23 +76,21 @@ class questionManageController extends Controller
                 $data[] = array('questionType' => $QuestionType[$j],'question' => $question,'questionHint' => $questionHint,'options'=>$option);
             }
             
-            $mainArray[] = array('categoryService' => $categoryService,'question'=>$data);
-            
-            
+            $mainArray[] = array('question'=>$data);
             $post = new QuestionModel;
             $post->question = json_encode($mainArray);
+            $post->categoryServiceId = $categoryService;
             $post->save();
             Session::flash('message', 'Question save successfully.');
-             Session::flash('alert-class', 'alert-success');
+            Session::flash('alert-class', 'alert-success');
             return redirect('question');
         }
         public function showEditQuestion($id)
         {
              $ary = ServiceModel::all();
              $post = QuestionModel::find($id);
-
+             
              $mainData = json_decode($post);
-
              return view('pages.admin.question.editQuestion',compact('mainData','ary'));
         }
         public function editQuestion(Request $request)

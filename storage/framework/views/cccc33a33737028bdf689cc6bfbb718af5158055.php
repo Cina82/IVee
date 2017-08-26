@@ -13,7 +13,7 @@
         </div>
             
             <div style="padding-right: 15px;" class="text-right">
-                <a href="<?php echo e(URL::to('newAdmin')); ?>" class="btn btn-warning">Create New Admin</a>
+                <a href="<?php echo e(URL::to('newAdminBySuperAdmin')); ?>" class="btn btn-warning">Create New Admin</a>
             </div>
 
             <div class="card-content table-responsive">
