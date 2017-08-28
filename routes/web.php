@@ -78,7 +78,11 @@ Route::group(['middleware'=> ['auth', 'activated', 'currentUser']], function () 
 //professional management
 Route::get('prosignup', 'pro\proManageController@prosignup');
 Route::get('prosubcate/{id}','pro\proManageController@prosubcat');
+Route::get('prosubService','pro\proManageController@prosubService');
 Route::get('serviceProvide{id}','pro\proManageController@showServiceProvide');
+Route::get('saveServiceProvide','pro\proManageController@saveServiceProvide');
+
+
 //End professional management
 
 
@@ -229,11 +233,6 @@ Route::get('proffetionalDash/Requests', 'proffetionalDash\proffetionalDashContro
 Route::get('proffetionalDash/Hired', 'proffetionalDash\proffetionalDashController@Hired');
 Route::get('proffetionalDash/Sent', 'proffetionalDash\proffetionalDashController@Sent');
 Route::get('proffetionalDash/Archived', 'proffetionalDash\proffetionalDashController@Archived');
-
-
-
-
-
 
 
 

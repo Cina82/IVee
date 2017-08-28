@@ -1442,3 +1442,23 @@ Log Entry Details:
 Log Entry Details:
 ["[object] (App\\Models\\User: {\"id\":2,\"name\":\"admin\",\"first_name\":\"admin\",\"last_name\":null,\"email\":\"admin@gmail.com\",\"driverLicense\":\"0\",\"zipCode\":0,\"userName\":\"\",\"image\":\"\",\"mobile\":\"7875859677\",\"role_data\":2,\"user_role_id\":1,\"signup_ip_address\":null,\"signup_confirmation_ip_address\":null,\"signup_sm_ip_address\":null,\"admin_ip_address\":null,\"created_at\":\"2017-07-13 07:02:13\",\"updated_at\":\"2017-08-23 13:16:34\"})"]
 []
+[2017-08-26 09:04:07] production.INFO: User Logged Out.  
+Log Entry Details:
+["[object] (App\\Models\\User: {\"id\":2,\"name\":\"admin\",\"first_name\":\"admin\",\"last_name\":null,\"email\":\"admin@gmail.com\",\"driverLicense\":\"0\",\"zipCode\":0,\"userName\":\"\",\"image\":\"\",\"mobile\":\"7875859677\",\"role_data\":2,\"user_role_id\":1,\"signup_ip_address\":null,\"signup_confirmation_ip_address\":null,\"signup_sm_ip_address\":null,\"admin_ip_address\":null,\"created_at\":\"2017-07-13 07:02:13\",\"updated_at\":\"2017-08-23 13:16:34\"})"]
+[]
+[2017-08-28 04:59:22] production.INFO: User Logged Out.  
+Log Entry Details:
+["[object] (App\\Models\\User: {\"id\":2,\"name\":\"admin\",\"first_name\":\"admin\",\"last_name\":null,\"email\":\"admin@gmail.com\",\"driverLicense\":\"0\",\"zipCode\":0,\"userName\":\"\",\"image\":\"\",\"mobile\":\"7875859677\",\"role_data\":2,\"user_role_id\":1,\"signup_ip_address\":null,\"signup_confirmation_ip_address\":null,\"signup_sm_ip_address\":null,\"admin_ip_address\":null,\"created_at\":\"2017-07-13 07:02:13\",\"updated_at\":\"2017-08-23 13:16:34\"})"]
+[]
+[2017-08-28 08:53:23] production.INFO: User Logged Out.  
+Log Entry Details:
+["[object] (App\\Models\\User: {\"id\":2,\"name\":\"admin\",\"first_name\":\"admin\",\"last_name\":null,\"email\":\"admin@gmail.com\",\"driverLicense\":\"0\",\"zipCode\":0,\"userName\":\"\",\"image\":\"\",\"mobile\":\"7875859677\",\"role_data\":2,\"user_role_id\":1,\"signup_ip_address\":null,\"signup_confirmation_ip_address\":null,\"signup_sm_ip_address\":null,\"admin_ip_address\":null,\"created_at\":\"2017-07-13 07:02:13\",\"updated_at\":\"2017-08-23 13:16:34\"})"]
+[]
+[2017-08-28 09:20:03] production.INFO: User Logged Out.  
+Log Entry Details:
+["[object] (App\\Models\\User: {\"id\":2,\"name\":\"admin\",\"first_name\":\"admin\",\"last_name\":null,\"email\":\"admin@gmail.com\",\"driverLicense\":\"0\",\"zipCode\":0,\"userName\":\"\",\"image\":\"\",\"mobile\":\"7875859677\",\"role_data\":2,\"user_role_id\":1,\"signup_ip_address\":null,\"signup_confirmation_ip_address\":null,\"signup_sm_ip_address\":null,\"admin_ip_address\":null,\"created_at\":\"2017-07-13 07:02:13\",\"updated_at\":\"2017-08-23 13:16:34\"})"]
+[]
+[2017-08-28 13:35:24] production.INFO: Activated user attempted to visit activate.  
+Log Entry Details:
+["[object] (App\\Models\\User: {\"id\":26,\"name\":\"girdhar\",\"first_name\":\"girdhar\",\"last_name\":\"patel\",\"email\":\"girdhar@gmail.com\",\"driverLicense\":\"45859571644\",\"zipCode\":124578,\"userName\":\"girdharPatel\",\"image\":\"Screenshot from 2017-07-13 18-14-59.png\",\"mobile\":\"9898989985\",\"role_data\":null,\"user_role_id\":null,\"signup_ip_address\":\"127.0.0.1\",\"signup_confirmation_ip_address\":null,\"signup_sm_ip_address\":null,\"admin_ip_address\":null,\"created_at\":\"2017-08-28 13:35:23\",\"updated_at\":\"2017-08-28 13:35:23\"})"]
+[]

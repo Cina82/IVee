@@ -23,7 +23,6 @@ class questionManageController extends Controller
                   ->join('categoryServices', 'serviceQuestion.categoryServiceId', '=', 'categoryServices.id')
                   ->select('categoryServices.id as cid','serviceQuestion.id as mid','categoryServices.name as name')
             ->get();
-            
             return view('pages.admin.question.question',compact('alldata'));
     	}
 

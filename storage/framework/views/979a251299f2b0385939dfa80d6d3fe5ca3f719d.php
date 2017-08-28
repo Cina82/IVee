@@ -15,8 +15,8 @@
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#thumbprinticon-thumbtack-logo_178x28"></use>
                         </svg>
                     </svg-icon> -->
-                     <img class="GlobalHeader" src="<?php echo e(URL::to('public/assets/img/Logo/LogoOrange.png')); ?>" alt="Thumbtack" width="178" height="">
-                    <img class="GlobalHeader-fallbackLogo" src="https://static1.thumbtackstatic.com/media/logos/thumbtack_brand_152x24.svg" alt="Thumbtack" width="152" height="24">
+                     <img class="GlobalHeader" src="<?php echo e(URL::to('public/assets/img/Logo/LogoOrange.png')); ?>" alt="Ivee" width="178" height="">
+                    <img class="GlobalHeader-fallbackLogo" src="https://static1.thumbtackstatic.com/media/logos/thumbtack_brand_152x24.svg" alt="Ivee" width="152" height="24">
                 </a>
             </div>
             <div class="header-middle-container">

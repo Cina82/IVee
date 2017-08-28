@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Models\Model;
 use Illuminate\Validation\Rule;
 use App\Models\User;
 use App\Models\Admin\ServiceModel;
+use App\Models\Admin\subServiceModel;
+use App\Models\pro\ProfessionalServiceProvide;
 use Session;
 use DB;
 
@@ -67,6 +69,45 @@ class proManageController extends Controller
 			
 		}
 	}
+    public function prosubService()
+    {   
+        $val[] = $_GET['val'];
+        $i = count($val);
+        $items = subServiceModel::select('id','name')->where('serviceId',$val)->get();
+
+        foreach($items as $service)
+        {
+                  print_r("<div class='InputContainer ng-scope' ng-repeat='service in services'>
+                        <div class='page-grid'>
+                            <div class='column-lg-6'>
+                                <div class='InputContainer-inner'>
+                                    <input-checkbox input-checkbox-label='Guitar Lessons' class='ng-isolate-scope'>
+                                        <div class='InputCheckbox'>
+                                            <input ng-model='service.selected' class='ng-scope ng-pristine ng-valid u-visuallyHidden' id='inputCheckbox1{{$service['id']}}' type='checkbox' value ='".$service['id']."' name='additionalService[]'>
+                                            <label class='InputCheckbox-label' for='inputCheckbox1{{$service['id']}}'>
+                                                <div class='InputCheckbox-label-inner'>". $service['name']."</div>
+                                            </label>
+                                        </div>
+                                    </input-checkbox>
+                                </div>
+                            </div>
+                        </div>
+                    </div>");
+        }
+
+        
+    }
+    public function saveServiceProvide(Request $request)
+    {
+        $proData = array();
+        $proData['provideservice']=$request->input('provideservice');
+        $proData['additionalService']=$request->input('additionalService');
+        $proData['travelCustomer']=$request->input('travelCustomer');
+        $proData['zip']=$request->input('zip');
+        $encodeData = json_encode($proData);
+        $request->session()->put('servicePrivideJson', $encodeData);
+        return redirect('prosignup');
+    }
     public function prosignup(){
     	return view('auth.proffetionalHire');
     }

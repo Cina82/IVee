@@ -1,5 +1,4 @@
 @extends('layouts.pro')
-
 @section('content')
 
 <div class="sticky-cta" sticky-header sticky-partner-attr="data-sticky-partner"

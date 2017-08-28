@@ -12,7 +12,8 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use jeremykenedy\LaravelRoles\Models\Permission;
 use jeremykenedy\LaravelRoles\Models\Role;
-
+use App\Models\pro\ProfessionalServiceProvide;
+use Session;
 class RegisterController extends Controller
 {
     /*
@@ -155,14 +156,18 @@ class RegisterController extends Controller
             'signup_ip_address' => $ipAddress->getClientIp(),
             'activated'         => !config('settings.activation')
         ]);
-
+            $servicePrivideJson = session('servicePrivideJson');
+             $servicePrivide = ProfessionalServiceProvide::create([
+                'userId'              => $user->id,
+                'services'            =>$servicePrivideJson  
+             ]);
             $user->attachRole($role);
             $this->initiateEmailActivation($user);
-
             return $user;
         }
         if($data['id'] == 4)
         {
+
             $role= Role::where('name', '=', 'Customer')->first();
             $user =  User::create([
             'name'              => $data['name'],
