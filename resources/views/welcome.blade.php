@@ -117,12 +117,8 @@
    <div class="Moments  ">
       <div class="Moments-container">
          <div class="Moments-moment">
-            <div class="page-grid">
-               <div class="column-lg-6">
-                  <h4 class="tp-heading-4 Moments-moment-title">Popular in your area</h4>
-               </div>
-            </div>
-            <div class="page-grid theme-full-bleed-at-xs">
+          
+            <!-- <div class="page-grid theme-full-bleed-at-xs">
                <div class="column-lg-6">
                   <category-carousel
                      count="25"
@@ -151,13 +147,7 @@
                                        open-request-form-modal
                                        ng-click="openModalWithCategoryId('1axLKc3DdQ6g5w', '')"
                                        >
-                                       <!--         <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static7.thumbtackstatic.com/production/hero-images/2992_small"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
+                                      
                                        <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
@@ -181,13 +171,7 @@
                                        open-request-form-modal
                                        ng-click="openModalWithCategoryId('Ef:ZOOYOXFaD2A', '')"
                                        >
-                                       <!-- <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static5.thumbtackstatic.com/production/hero-images/2833_small"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
+                                     
                                        <img src="{{URL::to('public/assets/img/2833_thumbnail.jpeg')}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
@@ -211,13 +195,7 @@
                                        open-request-form-modal
                                        ng-click="openModalWithCategoryId('DlKFbmZEwCYQyA', '')"
                                        >
-                                       <!--  <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static2.thumbtackstatic.com/production/hero-images/1310_small"
-                                               refresh-on-document-scroll             >
-                                          
-                                          </div> -->
+                                     
                                        <img src="{{URL::to('public/assets/img/1310_small.jpeg')}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
@@ -402,13 +380,7 @@
                                        open-request-form-modal
                                        ng-click="openModalWithCategoryId('Q9sYIW2IZP5AkA', '')"
                                        >
-                                       <!-- <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static5.thumbtackstatic.com/production/hero-images/3009_small"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
+                                      
                                        <img src="{{URL::to('public/assets/img/3009_small.jpeg')}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
@@ -754,13 +726,7 @@
                                        open-request-form-modal
                                        ng-click="openModalWithCategoryId('1axLKc3DdQ6g5w', '')"
                                        >
-                                       <!-- <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static7.thumbtackstatic.com/production/hero-images/2992_small"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
+                                      
                                        <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
@@ -784,13 +750,7 @@
                                        open-request-form-modal
                                        ng-click="openModalWithCategoryId('Ef:ZOOYOXFaD2A', '')"
                                        >
-                                       <!--  <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static5.thumbtackstatic.com/production/hero-images/2833_small"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
+                                       
                                        <img src="{{URL::to('public/assets/img/2833_thumbnail.jpeg')}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
@@ -814,13 +774,7 @@
                                        open-request-form-modal
                                        ng-click="openModalWithCategoryId('DlKFbmZEwCYQyA', '')"
                                        >
-                                       <!--     <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static2.thumbtackstatic.com/production/hero-images/1310_small"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
+                                      
                                        <img src="{{URL::to('public/assets/img/1310_small.jpeg')}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
@@ -913,8 +867,8 @@
                   </category-carousel>
                </div>
             </div>
-         </div>
-         <div class="Moments-moment">
+         </div> -->
+<!--          <div class="Moments-moment">
             <div class="page-grid">
                <div class="column-lg-6">
                   <h4 class="tp-heading-4 Moments-moment-title">Trending now</h4>
@@ -950,13 +904,7 @@
                                        open-request-form-modal
                                        ng-click="openModalWithCategoryId('6nlpb86x4sELeQ', '')"
                                        >
-                                       <!-- <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static2.thumbtackstatic.com/production/hero-images/2250_small"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
+                                      
                                        <img src="{{URL::to('public/assets/img/2250_small.jpeg')}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
@@ -980,13 +928,7 @@
                                        open-request-form-modal
                                        ng-click="openModalWithCategoryId('oBbEKZglfn$eJQ', '')"
                                        >
-                                       <!-- <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static5.thumbtackstatic.com/production/hero-images/2240_small"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
+                                     
                                        <img src="{{URL::to('public/assets/img/2240_small.jpeg')}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
@@ -1102,13 +1044,7 @@
                                        open-request-form-modal
                                        ng-click="openModalWithCategoryId('6nlpb86x4sELeQ', '')"
                                        >
-                                       <!-- <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static2.thumbtackstatic.com/production/hero-images/2250_small"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
+                                    
                                        <img src="{{URL::to('public/assets/img/2250_small.jpeg')}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
@@ -1132,13 +1068,7 @@
                                        open-request-form-modal
                                        ng-click="openModalWithCategoryId('oBbEKZglfn$eJQ', '')"
                                        >
-                                       <!-- <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static5.thumbtackstatic.com/production/hero-images/2240_small"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
+                                   
                                        <img src="{{URL::to('public/assets/img/2240_small.jpeg')}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
@@ -1254,7 +1184,7 @@
                   </category-carousel>
                </div>
             </div>
-         </div>
+         </div> -->
          <div
             class="Moments-moment"
             waypoint-track="moments"
@@ -1280,395 +1210,33 @@
                         </div>
                         <div class="CategoryCarousel-container">
                            <div class="CategoryCarousel-list">
-                              <div class="CategoryCarousel-item">
+                            
+                              @foreach($homeImprovement as $hmp)
+                                 <div class="CategoryCarousel-item">
                                  <div
                                     class="
                                     ServiceBox-container
                                     theme-smaller          theme-carousel     "
                                     event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;dZvApXl02R95eA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:0}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;dZvApXl02R95eA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:0}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('dZvApXl02R95eA', 'moments')"
-                                       >
-                                       <!-- 
-                                          <div
-                                              class="ServiceBox-item-image"
-                                                              lazy-image
-                                                  lazy-image-src="https://static1.thumbtackstatic.com/production/hero-images/2216_small"
-                                                   refresh-on-document-scroll             >
-                                          
-                                                      </div> -->
-                                       <img src="{{URL::to('public/assets/img/2216_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Furniture assembly 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;dGELR947mm7esA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:1}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;dGELR947mm7esA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:1}">
+                                    event-track-on="click" 
+                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}"
+                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}">
                                     <a class="ServiceBox-item"
                                        open-request-form-modal
                                        ng-click="openModalWithCategoryId('dGELR947mm7esA', 'moments')"
                                        >
-                                    <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
+                                    <img src="{{URL::to('public/uploads')}}/{{$hmp['image']}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
-                                          Interior design 
+                                          {{$hmp['name']}} 
                                           </span>
                                        </div>
                                     </a>
                                  </div>
                               </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;4V0Dr$GdjC7zbg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:2}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;4V0Dr$GdjC7zbg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:2}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('4V0Dr$GdjC7zbg', 'moments')"
-                                       >
-                                     <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Carpet installation 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;FgkDqgZUb6Ws8g&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:3}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;FgkDqgZUb6Ws8g&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:3}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('FgkDqgZUb6Ws8g', 'moments')"
-                                       >
-                                     <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          TV mounting 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;XyyEps5FZMepLQ&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:4}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;XyyEps5FZMepLQ&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:4}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('XyyEps5FZMepLQ', 'moments')"
-                                       >
-                                   <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Interior painting 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;r4auLL7JI2I9Og&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:5}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;r4auLL7JI2I9Og&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:5}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('r4auLL7JI2I9Og', 'moments')"
-                                       >
-                                      <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Home security and alarms install 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;Bg9:OPqOradztw&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:6}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;Bg9:OPqOradztw&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:6}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('Bg9:OPqOradztw', 'moments')"
-                                       >
-                                       <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Outdoor landscaping 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;9J5P8q6rNlEGlQ&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:7}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;9J5P8q6rNlEGlQ&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:7}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('9J5P8q6rNlEGlQ', 'moments')"
-                                       >
-                                      <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Fence and Gate Installation 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;BhkJ:4VSZgitbg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:8}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;BhkJ:4VSZgitbg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:8}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('BhkJ:4VSZgitbg', 'moments')"
-                                       >
-                                     <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Packing and unpacking 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;CGoqNwAGYYU2qA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:9}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;CGoqNwAGYYU2qA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:9}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('CGoqNwAGYYU2qA', 'moments')"
-                                       >
-                                       <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Carpet cleaning 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;MO18xmpaxkHcSw&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:10}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;MO18xmpaxkHcSw&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:10}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('MO18xmpaxkHcSw', 'moments')"
-                                       >
-                                      <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Pressure washing 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;dZvApXl02R95eA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:0}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;dZvApXl02R95eA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:0}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('dZvApXl02R95eA', 'moments')"
-                                       >
-                                       <!-- <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static1.thumbtackstatic.com/production/hero-images/2216_small"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
-                                       <img src="{{URL::to('public/assets/img/2216_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Furniture assembly 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;dGELR947mm7esA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:1}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;dGELR947mm7esA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:1}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('dGELR947mm7esA', 'moments')"
-                                       >
-                                     <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Interior design 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;4V0Dr$GdjC7zbg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:2}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;4V0Dr$GdjC7zbg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:2}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('4V0Dr$GdjC7zbg', 'moments')"
-                                       >
-                                    <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Carpet installation 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;FgkDqgZUb6Ws8g&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:3}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;FgkDqgZUb6Ws8g&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:3}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('FgkDqgZUb6Ws8g', 'moments')"
-                                       >
-                                     <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          TV mounting 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;XyyEps5FZMepLQ&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:4}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;XyyEps5FZMepLQ&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:4}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('XyyEps5FZMepLQ', 'moments')"
-                                       >
-                                      <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Interior painting 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;r4auLL7JI2I9Og&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:5}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;r4auLL7JI2I9Og&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:0,&quot;category_index&quot;:5}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('r4auLL7JI2I9Og', 'moments')"
-                                       >
-                                      <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Home security and alarms install 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
+                           @endforeach
+                           
+               
                            </div>
                         </div>
                         <div
@@ -1709,351 +1277,31 @@
                         </div>
                         <div class="CategoryCarousel-container">
                            <div class="CategoryCarousel-list">
-                              <div class="CategoryCarousel-item">
+                              @foreach($event as $evt)
+                                 <div class="CategoryCarousel-item">
                                  <div
                                     class="
                                     ServiceBox-container
                                     theme-smaller          theme-carousel     "
                                     event-track="moments/click"
-                                    event-track-on="click"
+                                    event-track-on="click" 
                                     event-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}"
                                     waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}">
                                     <a class="ServiceBox-item"
                                        open-request-form-modal
-                                       ng-click="openModalWithCategoryId('Q9sYIW2IZP5AkA', 'moments')"
+                                       ng-click="openModalWithCategoryId('dGELR947mm7esA', 'moments')"
                                        >
-                                       <!--   <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static1.thumbtackstatic.com/production/hero-images/1973_small"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
-                                       <img src="{{URL::to('public/assets/img/3009_small.jpeg')}}" class="ServiceBox-item-image">
+                                    <img src="{{URL::to('public/uploads')}}/{{$evt['image']}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
-                                          Wedding and Event Makeup 
+                                          {{$evt['name']}} 
                                           </span>
                                        </div>
                                     </a>
                                  </div>
                               </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;iJlabHh2QF9ylg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:1}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;iJlabHh2QF9ylg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:1}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('iJlabHh2QF9ylg', 'moments')"
-                                       >
-                                    <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          DJ 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;N3RO9AsfLUgQUA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:2}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;N3RO9AsfLUgQUA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:2}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('N3RO9AsfLUgQUA', 'moments')"
-                                       >
-                                     <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Photo Booth Rental 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;856A3475nmblEA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:3}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;856A3475nmblEA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:3}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('856A3475nmblEA', 'moments')"
-                                       >
-                                    <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Event Photography 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;8HROc4dEjopfYA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:4}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;8HROc4dEjopfYA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:4}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('8HROc4dEjopfYA', 'moments')"
-                                       >
-                                      <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Bartending 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;UyomZzHyHN433g&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:5}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;UyomZzHyHN433g&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:5}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('UyomZzHyHN433g', 'moments')"
-                                       >
-                                    <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Wedding Planning 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;b7cSvw5Y7PhRlA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:6}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;b7cSvw5Y7PhRlA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:6}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('b7cSvw5Y7PhRlA', 'moments')"
-                                       >
-                                     <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Wedding Officiant 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;CCTDl7L5T97CDQ&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:7}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;CCTDl7L5T97CDQ&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:7}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('CCTDl7L5T97CDQ', 'moments')"
-                                       >
-                                       <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Event Videography 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;4cSkMRhLRZuHPg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:8}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;4cSkMRhLRZuHPg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:8}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('4cSkMRhLRZuHPg', 'moments')"
-                                       >
-                                     <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Event Catering (Buffet) 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('Q9sYIW2IZP5AkA', 'moments')"
-                                       >
-                                       <!--  <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static1.thumbtackstatic.com/production/hero-images/1973_small"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
-                                       <img src="{{URL::to('public/assets/img/3009_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Wedding and Event Makeup 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;iJlabHh2QF9ylg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:1}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;iJlabHh2QF9ylg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:1}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('iJlabHh2QF9ylg', 'moments')"
-                                       >
-                                     <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          DJ 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;N3RO9AsfLUgQUA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:2}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;N3RO9AsfLUgQUA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:2}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('N3RO9AsfLUgQUA', 'moments')"
-                                       >
-                                    <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Photo Booth Rental 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;856A3475nmblEA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:3}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;856A3475nmblEA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:3}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('856A3475nmblEA', 'moments')"
-                                       >
-                                       <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Event Photography 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;8HROc4dEjopfYA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:4}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;8HROc4dEjopfYA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:4}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('8HROc4dEjopfYA', 'moments')"
-                                       >
-                                        <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Bartending 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;UyomZzHyHN433g&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:5}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;UyomZzHyHN433g&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:5}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('UyomZzHyHN433g', 'moments')"
-                                       >
-                                    <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Wedding Planning 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
+                           @endforeach
+                         </div>
                         </div>
                         <div
                            class="CategoryCarousel-paddle paddle-right"
@@ -2093,328 +1341,30 @@
                         </div>
                         <div class="CategoryCarousel-container">
                            <div class="CategoryCarousel-list">
-                              <div class="CategoryCarousel-item">
+                              @foreach($wellness as $wls)
+                                 <div class="CategoryCarousel-item">
                                  <div
                                     class="
                                     ServiceBox-container
                                     theme-smaller          theme-carousel     "
                                     event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;1axLKc3DdQ6g5w&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:0}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;1axLKc3DdQ6g5w&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:0}">
+                                    event-track-on="click" 
+                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}"
+                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}">
                                     <a class="ServiceBox-item"
                                        open-request-form-modal
-                                       ng-click="openModalWithCategoryId('1axLKc3DdQ6g5w', 'moments')"
+                                       ng-click="openModalWithCategoryId('dGELR947mm7esA', 'moments')"
                                        >
-                                       <!-- <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static1.thumbtackstatic.com/production/hero-images/1941_small"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
-                                       <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
+                                    <img src="{{URL::to('public/uploads')}}/{{$wls['image']}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
-                                          Personal Training 
+                                          {{$wls['name']}} 
                                           </span>
                                        </div>
                                     </a>
                                  </div>
                               </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;yZUmyVje7z70Mw&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:1}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;yZUmyVje7z70Mw&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:1}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('yZUmyVje7z70Mw', 'moments')"
-                                       >
-                                     <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Nutritionist 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;kMI95pqKXLU9vQ&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:2}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;kMI95pqKXLU9vQ&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:2}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('kMI95pqKXLU9vQ', 'moments')"
-                                       >
-                                       <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Massage Therapy 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;giwGb4fVT5SXwg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:4}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;giwGb4fVT5SXwg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:4}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('giwGb4fVT5SXwg', 'moments')"
-                                       >
-                                    <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Life Coaching 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;GmauKy9DW8jlXw&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:5}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;GmauKy9DW8jlXw&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:5}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('GmauKy9DW8jlXw', 'moments')"
-                                       >
-                                       <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Marriage and Relationship Counseling 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;KSNmubPXvxL2Lg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:6}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;KSNmubPXvxL2Lg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:6}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('KSNmubPXvxL2Lg', 'moments')"
-                                       >
-                                   <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Health and Wellness Coaching 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;y6HwE0mUynjRbA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:7}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;y6HwE0mUynjRbA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:7}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('y6HwE0mUynjRbA', 'moments')"
-                                       >
-                                      <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Private Yoga Instruction 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;nGRG2KjdLvVA:g&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:8}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;nGRG2KjdLvVA:g&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:8}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('nGRG2KjdLvVA:g', 'moments')"
-                                       >
-                                      <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Reiki Healing 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;1axLKc3DdQ6g5w&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:0}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;1axLKc3DdQ6g5w&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:0}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('1axLKc3DdQ6g5w', 'moments')"
-                                       >
-                                       <!--      <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static1.thumbtackstatic.com/production/hero-images/1941_small"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
-                                       <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Personal Training 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;yZUmyVje7z70Mw&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:1}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;yZUmyVje7z70Mw&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:1}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('yZUmyVje7z70Mw', 'moments')"
-                                       >
-                                      <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Nutritionist 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;kMI95pqKXLU9vQ&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:2}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;kMI95pqKXLU9vQ&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:2}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('kMI95pqKXLU9vQ', 'moments')"
-                                       >
-                                       <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Massage Therapy 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;giwGb4fVT5SXwg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:4}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;giwGb4fVT5SXwg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:4}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('giwGb4fVT5SXwg', 'moments')"
-                                       >
-                                    <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Life Coaching 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;GmauKy9DW8jlXw&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:5}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;GmauKy9DW8jlXw&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:5}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('GmauKy9DW8jlXw', 'moments')"
-                                       >
-                                       <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Marriage and Relationship Counseling 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-smaller          theme-carousel     "
-                                    event-track="moments/click"
-                                    event-track-on="click"
-                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;KSNmubPXvxL2Lg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:6}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;KSNmubPXvxL2Lg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:2,&quot;category_index&quot;:6}">
-                                    <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('KSNmubPXvxL2Lg', 'moments')"
-                                       >
-                                    <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Health and Wellness Coaching 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
+                           @endforeach
                            </div>
                         </div>
                         <div
@@ -2454,393 +1404,32 @@
                         </div>
                         <div class="CategoryCarousel-container">
                            <div class="CategoryCarousel-list">
-                              <div class="CategoryCarousel-item">
+
+                           @foreach($moreService as $msc)
+                                 <div class="CategoryCarousel-item">
                                  <div
                                     class="
                                     ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
+                                    theme-smaller          theme-carousel     "
+                                    event-track="moments/click"
+                                    event-track-on="click" 
+                                    event-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}"
+                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}">
                                     <a class="ServiceBox-item"
-                                       href="/k/affordable-moving/near-me"
+                                       open-request-form-modal
+                                       ng-click="openModalWithCategoryId('dGELR947mm7esA', 'moments')"
                                        >
-                                       <!-- <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static7.thumbtackstatic.com/production/hero-images/1434_small"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
-                                       <img src="{{URL::to('public/assets/img/1434_small.jpeg')}}" class="ServiceBox-item-image">
+                                    <img src="{{URL::to('public/uploads')}}/{{$msc['image']}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
-                                          Affordable Movers Near You 
+                                          {{$msc['name']}} 
                                           </span>
                                        </div>
                                     </a>
                                  </div>
                               </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/concrete-contractors/near-me"
-                                       >
-                                      <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Concrete Contractors 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/residential-electrical-services/near-me"
-                                       >
-                                      <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Residential Electrical Services 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/marriage-counselors/near-me"
-                                       >
-                                     <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Marriage Counselors Near You 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/lawyers/near-me"
-                                       >
-                                     <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Lawyers Near You 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/modeling-photographers/near-me"
-                                       >
-                                      <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Modeling Photographers 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/tarot-readers/near-me"
-                                       >
-                                    <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Tarot Readers Near You 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/affordable-plumbing-services/near-me"
-                                       >
-                                    <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Affordable Plumbing Services 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/pest-control/near-me"
-                                       >
-                                      <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Pest Control Companies 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/junk-removal/near-me"
-                                       >
-                                       <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Junk Removal Services 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/commercial-roofing/near-me"
-                                       >
-                                         <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Roofing Near You 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/window-restoration-companies/near-me"
-                                       >
-                                        <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Window Restoration Near You 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/vinyl-siding-install/near-me"
-                                       >
-                                        <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Vinyl Siding Installers 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/affordable-divorce-lawyers/near-me"
-                                       >
-                                        <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Affordable Divorce Lawyers 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/affordable-moving/near-me"
-                                       >
-                                        <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Affordable Movers Near You 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/concrete-contractors/near-me"
-                                       >
-                                    <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Concrete Contractors 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/residential-electrical-services/near-me"
-                                       >
-                                     <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Residential Electrical Services 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/marriage-counselors/near-me"
-                                       >
-                                       <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Marriage Counselors Near You 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/lawyers/near-me"
-                                       >
-                                     <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Lawyers Near You 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="CategoryCarousel-item item-cloned">
-                                 <div
-                                    class="
-                                    ServiceBox-container
-                                    theme-carousel     "
-                                    event-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-                                    waypoint-track-data="{&quot;encodedCategoryId&quot;:null,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-                                    <a class="ServiceBox-item"
-                                       href="/k/modeling-photographers/near-me"
-                                       >
-                                       <img src="{{URL::to('public/assets/img/2992_small.jpeg')}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
-                                          <span class=" tp-heading-6 ">
-                                          Modeling Photographers 
-                                          </span>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
+                           @endforeach
+
                            </div>
                         </div>
                         <div
@@ -2856,7 +1445,7 @@
                </div>
             </div>
          </div>
-         <div
+         <!-- <div
             class="Moments-moment"
             waypoint-track="costpages carousel">
             <div class="page-grid">
@@ -2890,13 +1479,7 @@
                                     <a class="ServiceBox-item"
                                        href="/p/wedding-cake-prices"
                                        >
-                                       <!--   <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static3.thumbtackstatic.com/production/hero-images/1813_thumbnail"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
+                                       
                                        <img src="{{URL::to('public/assets/img/1813_thumbnail.jpeg')}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
@@ -2954,13 +1537,7 @@
                                     <a class="ServiceBox-item"
                                        href="/p/house-cleaning-prices"
                                        >
-                                       <!--  <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static8.thumbtackstatic.com/production/hero-images/2833_thumbnail"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
+                                       
                                        <img src="{{URL::to('public/assets/img/2833_thumbnail.jpeg')}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
@@ -3094,14 +1671,7 @@
                                     <a class="ServiceBox-item"
                                        href="/p/cost-to-rewire-a-house"
                                        >
-                                       <!-- 
-                                          <div
-                                              class="ServiceBox-item-image"
-                                                              lazy-image
-                                                  lazy-image-src="https://static8.thumbtackstatic.com/production/hero-images/2204_thumbnail"
-                                                   refresh-on-document-scroll             >
-                                          
-                                                      </div> -->
+                                      
                                        <img src="{{URL::to('public/assets/img/2833_thumbnail.jpeg')}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
@@ -3197,13 +1767,7 @@
                                     <a class="ServiceBox-item"
                                        href="/p/wedding-cake-prices"
                                        >
-                                       <!--  <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static3.thumbtackstatic.com/production/hero-images/1813_thumbnail"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
+                                     
                                        <img src="{{URL::to('public/assets/img/1813_thumbnail.jpeg')}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
@@ -3261,13 +1825,7 @@
                                     <a class="ServiceBox-item"
                                        href="/p/house-cleaning-prices"
                                        >
-                                       <!--  <div
-                                          class="ServiceBox-item-image"
-                                                          lazy-image
-                                              lazy-image-src="https://static8.thumbtackstatic.com/production/hero-images/2833_thumbnail"
-                                               refresh-on-document-scroll             >
-                                          
-                                                  </div> -->
+                                       
                                        <img src="{{URL::to('public/assets/img/2833_thumbnail.jpeg')}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
@@ -3329,7 +1887,7 @@
                   </category-carousel>
                </div>
             </div>
-         </div>
+         </div> -->
       </div>
    </div>
    <about-thumbtack>

@@ -75,7 +75,7 @@ class serviceManageController extends Controller
             {
                 $imagename = time().'.'.$photo->getClientOriginalExtension(); 
                 $destinationPath = public_path('/thumbtack_image');
-                $thumb_img = Image::make($photo->getRealPath())->resize(480, 380);
+                $thumb_img = Image::make($photo->getRealPath())->resize(480,380);
                 $thumb_img->save($destinationPath.'/'.$imagename,80);
                 $destinationPath = public_path('/uploads');
                 $photo->move($destinationPath, $imagename);

@@ -2,8 +2,7 @@
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.0/material.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.material.min.css">
          <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        
-         <script src="<?php echo e(URL::to('public/admin/assets/js/bootstrap-notify.js')); ?>"></script>
+        <script src="<?php echo e(URL::to('public/admin/assets/js/bootstrap-notify.js')); ?>"></script>
        
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('contents'); ?>
@@ -67,7 +66,7 @@
                 message: msg
                 },{
                     type: 'success',
-                    timer: 2000,
+                    timer: 1000,
                     placement: {
                         from: 'bottom',
                         align: 'right'

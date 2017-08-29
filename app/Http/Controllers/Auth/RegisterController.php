@@ -156,11 +156,14 @@ class RegisterController extends Controller
             'signup_ip_address' => $ipAddress->getClientIp(),
             'activated'         => !config('settings.activation')
         ]);
+       
+       
             $servicePrivideJson = session('servicePrivideJson');
-             $servicePrivide = ProfessionalServiceProvide::create([
-                'userId'              => $user->id,
-                'services'            =>$servicePrivideJson  
-             ]);
+            $servicePrivide = ProfessionalServiceProvide::create([
+            'userId'              => $user->id,
+            'services'            =>$servicePrivideJson  
+            ]);
+       
             $user->attachRole($role);
             $this->initiateEmailActivation($user);
             return $user;

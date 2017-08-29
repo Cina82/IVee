@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Models\Model;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use App\Models\Admin\CategoryModel;
+use App\Models\Admin\ServiceModel;
+use App\Models\Admin\SubCategoryModel;
 use Session;
 class categoryManageController extends Controller
 {
@@ -59,6 +61,8 @@ class categoryManageController extends Controller
         public function deleteCategory($id)
         {
              $post = CategoryModel::find($id);
+             $service = ServiceModel::where('categoryId',$id)->delete();
+             $SubCategoryModel = SubCategoryModel::where('mainCategoryId',$id)->delete();
              $post->delete();
              Session::flash('message', 'Category Delete Successfully.');
              Session::flash('alert-class', 'alert-success');

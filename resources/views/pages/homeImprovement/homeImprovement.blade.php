@@ -131,22 +131,26 @@
       </div>
    </div>
    <div class="page-grid theme-flex-columns">
-      <div class="column-lg-2">
+
+
+       @foreach($homeImprovement as $hmt)
+      <div class="column-lg-2" >
          <div
             class="
             ServiceBox-container
             "
-            event-track-data="{&quot;encodedCategoryId&quot;:&quot;Ef:ZOOYOXFaD2A&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-            waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;Ef:ZOOYOXFaD2A&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
+            event-track-data="{&quot;encodedCategoryId&quot;:&quot;iJlabHh2QF9ylg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
+            waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;iJlabHh2QF9ylg&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
             <a class="ServiceBox-item"
                open-request-form-modal
-               ng-click="openModalWithCategoryId('Ef:ZOOYOXFaD2A', '')"
+               ng-click="openModalWithCategoryId('iJlabHh2QF9ylg', '')"
                >
                <div
                   class="ServiceBox-item-image"
                   lazy-image
-                  lazy-image-src="{{URL::to('public/assets/img/2992_small.jpeg')}}"
+                  lazy-image-src="{{URL::to('public/uploads')}}/{{$hmt['image']}}" class="ServiceBox-item-image"
                   >
+
                   <div class="ServiceBox-item-overlay">
                      <span class="ServiceBox-item-cta Button theme-secondary theme-medium">
                      Request
@@ -155,342 +159,15 @@
                </div>
                <div class="ServiceBox-item-label">
                   <span class=" tp-text-2--static ">
-                  House Cleaning (Recurring) 
+                  {{$hmt['name']}}
                   </span>
                </div>
             </a>
          </div>
-      </div>
-      <div class="column-lg-2">
-         <div
-            class="
-            ServiceBox-container
-            "
-            event-track-data="{&quot;encodedCategoryId&quot;:&quot;DlKFbmZEwCYQyA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-            waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;DlKFbmZEwCYQyA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-            <a class="ServiceBox-item"
-               open-request-form-modal
-               ng-click="openModalWithCategoryId('DlKFbmZEwCYQyA', '')"
-               >
-               <div
-                  class="ServiceBox-item-image"
-                  lazy-image
-                  lazy-image-src="{{URL::to('public/assets/img/2992_small.jpeg')}}"
-                  >
-                  <div class="ServiceBox-item-overlay">
-                     <span class="ServiceBox-item-cta Button theme-secondary theme-medium">
-                     Request
-                     </span>
-                  </div>
-               </div>
-               <div class="ServiceBox-item-label">
-                  <span class=" tp-text-2--static ">
-                  Lawn Mowing and Lawncare 
-                  </span>
-               </div>
-            </a>
-         </div>
-      </div>
-      <div class="column-lg-2">
-         <div
-            class="
-            ServiceBox-container
-            "
-            event-track-data="{&quot;encodedCategoryId&quot;:&quot;dGELR947mm7esA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-            waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;dGELR947mm7esA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-            <a class="ServiceBox-item"
-               open-request-form-modal
-               ng-click="openModalWithCategoryId('dGELR947mm7esA', '')"
-               >
-               <div
-                  class="ServiceBox-item-image"
-                  lazy-image
-                  lazy-image-src="{{URL::to('public/assets/img/2992_small.jpeg')}}"
-                  >
-                  <div class="ServiceBox-item-overlay">
-                     <span class="ServiceBox-item-cta Button theme-secondary theme-medium">
-                     Request
-                     </span>
-                  </div>
-               </div>
-               <div class="ServiceBox-item-label">
-                  <span class=" tp-text-2--static ">
-                  Interior Design 
-                  </span>
-               </div>
-            </a>
-         </div>
-      </div>
-      <div class="column-lg-2">
-         <div
-            class="
-            ServiceBox-container
-            "
-            event-track-data="{&quot;encodedCategoryId&quot;:&quot;M:HwIR8qa:MQww&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-            waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;M:HwIR8qa:MQww&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-            <a class="ServiceBox-item"
-               open-request-form-modal
-               ng-click="openModalWithCategoryId('M:HwIR8qa:MQww', '')"
-               >
-               <div
-                  class="ServiceBox-item-image"
-                  lazy-image
-                  lazy-image-src="{{URL::to('public/assets/img/2992_small.jpeg')}}"
-                  >
-                  <div class="ServiceBox-item-overlay">
-                     <span class="ServiceBox-item-cta Button theme-secondary theme-medium">
-                     Request
-                     </span>
-                  </div>
-               </div>
-               <div class="ServiceBox-item-label">
-                  <span class=" tp-text-2--static ">
-                  Handyman 
-                  </span>
-               </div>
-            </a>
-         </div>
-      </div>
-      <div class="column-lg-2">
-         <div
-            class="
-            ServiceBox-container
-            "
-            event-track-data="{&quot;encodedCategoryId&quot;:&quot;tpwpsBjP9FeIOA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-            waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;tpwpsBjP9FeIOA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-            <a class="ServiceBox-item"
-               open-request-form-modal
-               ng-click="openModalWithCategoryId('tpwpsBjP9FeIOA', '')"
-               >
-               <div
-                  class="ServiceBox-item-image"
-                  lazy-image
-                  lazy-image-src="{{URL::to('public/assets/img/2992_small.jpeg')}}"
-                  >
-                  <div class="ServiceBox-item-overlay">
-                     <span class="ServiceBox-item-cta Button theme-secondary theme-medium">
-                     Request
-                     </span>
-                  </div>
-               </div>
-               <div class="ServiceBox-item-label">
-                  <span class=" tp-text-2--static ">
-                  Roof Repair or Maintenance 
-                  </span>
-               </div>
-            </a>
-         </div>
-      </div>
-      <div class="column-lg-2">
-         <div
-            class="
-            ServiceBox-container
-            "
-            event-track-data="{&quot;encodedCategoryId&quot;:&quot;Rh9d8VjIA$GYsA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-            waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;Rh9d8VjIA$GYsA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-            <a class="ServiceBox-item"
-               open-request-form-modal
-               ng-click="openModalWithCategoryId('Rh9d8VjIA$GYsA', '')"
-               >
-               <div
-                  class="ServiceBox-item-image"
-                  lazy-image
-                  lazy-image-src="{{URL::to('public/assets/img/2992_small.jpeg')}}"
-                  >
-                  <div class="ServiceBox-item-overlay">
-                     <span class="ServiceBox-item-cta Button theme-secondary theme-medium">
-                     Request
-                     </span>
-                  </div>
-               </div>
-               <div class="ServiceBox-item-label">
-                  <span class=" tp-text-2--static ">
-                  General Contracting 
-                  </span>
-               </div>
-            </a>
-         </div>
-      </div>
-      <div class="column-lg-2">
-         <div
-            class="
-            ServiceBox-container
-            "
-            event-track-data="{&quot;encodedCategoryId&quot;:&quot;Bg9:OPqOradztw&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-            waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;Bg9:OPqOradztw&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-            <a class="ServiceBox-item"
-               open-request-form-modal
-               ng-click="openModalWithCategoryId('Bg9:OPqOradztw', '')"
-               >
-               <div
-                  class="ServiceBox-item-image"
-                  lazy-image
-                  lazy-image-src="{{URL::to('public/assets/img/2992_small.jpeg')}}"
-                  >
-                  <div class="ServiceBox-item-overlay">
-                     <span class="ServiceBox-item-cta Button theme-secondary theme-medium">
-                     Request
-                     </span>
-                  </div>
-               </div>
-               <div class="ServiceBox-item-label">
-                  <span class=" tp-text-2--static ">
-                  Landscaping 
-                  </span>
-               </div>
-            </a>
-         </div>
-      </div>
-      <div class="column-lg-2">
-         <div
-            class="
-            ServiceBox-container
-            "
-            event-track-data="{&quot;encodedCategoryId&quot;:&quot;XyyEps5FZMepLQ&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-            waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;XyyEps5FZMepLQ&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-            <a class="ServiceBox-item"
-               open-request-form-modal
-               ng-click="openModalWithCategoryId('XyyEps5FZMepLQ', '')"
-               >
-               <div
-                  class="ServiceBox-item-image"
-                  lazy-image
-                  lazy-image-src="{{URL::to('public/assets/img/2992_small.jpeg')}}"
-                  >
-                  <div class="ServiceBox-item-overlay">
-                     <span class="ServiceBox-item-cta Button theme-secondary theme-medium">
-                     Request
-                     </span>
-                  </div>
-               </div>
-               <div class="ServiceBox-item-label">
-                  <span class=" tp-text-2--static ">
-                  Interior Painting 
-                  </span>
-               </div>
-            </a>
-         </div>
-      </div>
-      <div class="column-lg-2">
-         <div
-            class="
-            ServiceBox-container
-            "
-            event-track-data="{&quot;encodedCategoryId&quot;:&quot;CGoqNwAGYYU2qA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-            waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;CGoqNwAGYYU2qA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-            <a class="ServiceBox-item"
-               open-request-form-modal
-               ng-click="openModalWithCategoryId('CGoqNwAGYYU2qA', '')"
-               >
-               <div
-                  class="ServiceBox-item-image"
-                  lazy-image
-                  lazy-image-src="{{URL::to('public/assets/img/2992_small.jpeg')}}"
-                  >
-                  <div class="ServiceBox-item-overlay">
-                     <span class="ServiceBox-item-cta Button theme-secondary theme-medium">
-                     Request
-                     </span>
-                  </div>
-               </div>
-               <div class="ServiceBox-item-label">
-                  <span class=" tp-text-2--static ">
-                  Carpet Cleaning 
-                  </span>
-               </div>
-            </a>
-         </div>
-      </div>
-      <div class="column-lg-2">
-         <div
-            class="
-            ServiceBox-container
-            "
-            event-track-data="{&quot;encodedCategoryId&quot;:&quot;MO18xmpaxkHcSw&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-            waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;MO18xmpaxkHcSw&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-            <a class="ServiceBox-item"
-               open-request-form-modal
-               ng-click="openModalWithCategoryId('MO18xmpaxkHcSw', '')"
-               >
-               <div
-                  class="ServiceBox-item-image"
-                  lazy-image
-                  lazy-image-src="{{URL::to('public/assets/img/2992_small.jpeg')}}"
-                  >
-                  <div class="ServiceBox-item-overlay">
-                     <span class="ServiceBox-item-cta Button theme-secondary theme-medium">
-                     Request
-                     </span>
-                  </div>
-               </div>
-               <div class="ServiceBox-item-label">
-                  <span class=" tp-text-2--static ">
-                  Pressure Washing 
-                  </span>
-               </div>
-            </a>
-         </div>
-      </div>
-      <div class="column-lg-2">
-         <div
-            class="
-            ServiceBox-container
-            "
-            event-track-data="{&quot;encodedCategoryId&quot;:&quot;BsZRjG9vqYu:KQ&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-            waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;BsZRjG9vqYu:KQ&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-            <a class="ServiceBox-item"
-               open-request-form-modal
-               ng-click="openModalWithCategoryId('BsZRjG9vqYu:KQ', '')"
-               >
-               <div
-                  class="ServiceBox-item-image"
-                  lazy-image
-                  lazy-image-src="{{URL::to('public/assets/img/2992_small.jpeg')}}"
-                  >
-                  <div class="ServiceBox-item-overlay">
-                     <span class="ServiceBox-item-cta Button theme-secondary theme-medium">
-                     Request
-                     </span>
-                  </div>
-               </div>
-               <div class="ServiceBox-item-label">
-                  <span class=" tp-text-2--static ">
-                  Electrical 
-                  </span>
-               </div>
-            </a>
-         </div>
-      </div>
-      <div class="column-lg-2">
-         <div
-            class="
-            ServiceBox-container
-            "
-            event-track-data="{&quot;encodedCategoryId&quot;:&quot;FgkDqgZUb6Ws8g&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}"
-            waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;FgkDqgZUb6Ws8g&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:null}">
-            <a class="ServiceBox-item"
-               open-request-form-modal
-               ng-click="openModalWithCategoryId('FgkDqgZUb6Ws8g', '')"
-               >
-               <div
-                  class="ServiceBox-item-image"
-                  lazy-image
-                  lazy-image-src="{{URL::to('public/assets/img/2992_small.jpeg')}}"
-                  >
-                  <div class="ServiceBox-item-overlay">
-                     <span class="ServiceBox-item-cta Button theme-secondary theme-medium">
-                     Request
-                     </span>
-                  </div>
-               </div>
-               <div class="ServiceBox-item-label">
-                  <span class=" tp-text-2--static ">
-                  TV Mounting 
-                  </span>
-               </div>
-            </a>
-         </div>
-      </div>
+      </div> 
+      @endforeach
+
+    
    </div>
 </popular-services>
 <more-services class="MoreServices">
