@@ -178,7 +178,7 @@
                                  $count = count($question);
 
                                ?>
-                                 <div class="wizard" id="wizard<?php echo e($hmt->id); ?>">
+                                 <div class="wizard" id="wizard<?php echo e($hmt->id); ?>" dir="rtl">
                                  
                               <?php 
                                  for($i=0;$i<$count;$i++)
@@ -197,7 +197,7 @@
                                        <?php if($questionType == 1): ?>
                                        <input type="hidden" name="questionType[]" value="<?php echo e($questionType); ?>">
                                        <?php $__currentLoopData = $options; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $opt): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                       <?php  $random = rand(10,1000);  ?>
+                                       <?php  $random = rand(1,9999999);  ?>
                                        <div class="InputRadio">
                                        <input name="options<?php echo e($i); ?>[]"  value="<?php echo e($opt); ?>" class="ng-scope ng-pristine ng-valid u-visuallyHidden" id="<?php echo e($random); ?>" type="radio"><label class="InputRadio-label" for="<?php echo e($random); ?>"><div class="InputRadio-label-inner ng-scope"><?php echo e($opt); ?></div></label>
                                        </div>
@@ -207,7 +207,7 @@
                                        <?php if($questionType == 4): ?>
                                        <input type="hidden" name="questionType[]" value="<?php echo e($questionType); ?>">
                                        <?php $__currentLoopData = $options; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $opt): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                       <?php  $random = rand(10,1000);  ?>
+                                       <?php  $random = rand(1,9999999);  ?>
                                           <div class="InputCheckbox">
                                             <input class="ng-scope ng-valid u-visuallyHidden ng-dirty" id="<?php echo e($random); ?>" type="checkbox" name="options<?php echo e($i); ?>[]" value="<?php echo e($opt); ?>">
                                             <label class="InputCheckbox-label" for="<?php echo e($random); ?>">
@@ -240,8 +240,9 @@
             <h3 class="H4-R MoreServices-service-header"></h3>
             <ul>
                 <?php $__currentLoopData = $homeImprovement; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $hmt): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                <?php  $i = rand(1,9999999);  ?>
                   <li>
-                     <a class="B2-S theme-secondary MoreServices-service-link" onclick="customerQuestion(<?php echo e($hmt->id); ?>)" style="text-decoration: none;">
+                     <a class="B2-S theme-secondary MoreServices-service-link" onclick="customerQuestion(<?php echo e($i); ?>)" style="text-decoration: none;">
                                  <?php echo e($hmt->name); ?> 
                      </a>
                   </li>
@@ -250,7 +251,7 @@
                   $question = $questionDecode[0]->question;
                   $count = count($question);
                 ?>
-                  <div class="wizard" id="wizard<?php echo e($hmt->id); ?>">
+                  <div class="wizard" id="wizard<?php echo e($i); ?>" dir="rtl">
                <?php 
                      for($i=0;$i<$count;$i++)
                      {
@@ -268,7 +269,7 @@
                            <?php if($questionType == 1): ?>
                               <input type="hidden" name="questionType[]" value="<?php echo e($questionType); ?>">
                                        <?php $__currentLoopData = $options; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $opt): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                       <?php  $random = rand(10,1000);  ?>
+                                       <?php  $random = rand(1,9999999);  ?>
                                        <div class="InputRadio">
                                        <input name="options<?php echo e($i); ?>[]"  value="<?php echo e($opt); ?>" class="ng-scope ng-pristine ng-valid u-visuallyHidden" id="<?php echo e($random); ?>" type="radio"><label class="InputRadio-label" for="<?php echo e($random); ?>"><div class="InputRadio-label-inner ng-scope"><?php echo e($opt); ?></div></label>
                                        </div>
@@ -278,7 +279,7 @@
                                        <?php if($questionType == 4): ?>
                                        <input type="hidden" name="questionType[]" value="<?php echo e($questionType); ?>">
                                        <?php $__currentLoopData = $options; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $opt): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                       <?php  $random = rand(10,1000);  ?>
+                                       <?php  $random = rand(1,9999999);  ?>
                                           <div class="InputCheckbox">
                                             <input class="ng-scope ng-valid u-visuallyHidden ng-dirty" id="<?php echo e($random); ?>" type="checkbox" name="options<?php echo e($i); ?>[]" value="<?php echo e($opt); ?>">
                                             <label class="InputCheckbox-label" for="<?php echo e($random); ?>">
@@ -332,7 +333,12 @@
                     $('<div>onClose called</div>').appendTo('#EventLog');
                 },
                 onOpen: function () {
-                  
+                  var count = $("#wizard"+id+" .modal-dialog").length;
+                   if(count > 1)
+                    { 
+                   
+                    $("#wizard"+id+" .modal-dialog:last").remove();
+                    }
                     $('<div>onOpen called</div>').appendTo('#EventLog');
                 },
                 previousText: 'Back',

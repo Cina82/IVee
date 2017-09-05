@@ -11,9 +11,14 @@
 }
 
 .wizard .modal-header {
-    background-color:#f8f8f8;
-}
+    background-color:#ffffff;
+    border-bottom: 0px solid #e5e5e5 !important;
+    /*f8f8f8*/
+}	
 
 .wizard-body {
     overflow:hidden;
+}
+.progress {
+	height: 10px !important;
 }

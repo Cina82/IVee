@@ -172,7 +172,7 @@
                                  $count = count($question);
 
                               @endphp
-                                 <div class="wizard" id="wizard{{$wls->id}}">
+                                 <div class="wizard" id="wizard{{$wls->id}}" dir="rtl">
                                  
                               @php
                                  for($i=0;$i<$count;$i++)
@@ -233,8 +233,9 @@
             <h3 class="H4-R MoreServices-service-header"></h3>
             <ul>
                    @foreach($wellness as $wls)
+                   @php $i = rand(1,9999999); @endphp
                   <li>
-                     <a class="B2-S theme-secondary MoreServices-service-link" onclick="customerQuestion({{$wls->id}})" style="text-decoration: none;">
+                     <a class="B2-S theme-secondary MoreServices-service-link" onclick="customerQuestion({{$i}})" style="text-decoration: none;">
                                  {{$wls->name}} 
                      </a>
                   </li>
@@ -242,15 +243,16 @@
                   $questionDecode = json_decode($wls->question);
                   $question = $questionDecode[0]->question;
                   $count = count($question);
+                   
                @endphp
-                  <div class="wizard" id="wizard{{$wls->id}}">
+                  <div class="wizard" id="wizard{{$i}}" dir="rtl">
                @php
                      for($i=0;$i<$count;$i++)
                      {
                         $singleQuestion = $question[$i]->question;
                         $questionType = $question[$i]->questionType;
                         $options = $question[$i]->options;
-                        
+                         
                @endphp
                         <div class='wizard-step' data-title='{{$wls->name}}'>
                         {{csrf_field()}}
@@ -292,8 +294,7 @@
    function customerQuestion(id)
    {  
          
-
-       $('#wizard'+id).wizard({
+      $('#wizard'+id).wizard({
                 title: '',
                 validators: [{
                     step: 1,
@@ -313,19 +314,27 @@
                     });
                 },
                 onReset: function () {
+
                     $('<div>onReset called</div>').appendTo('#EventLog');
                     $('#TextBox1').val('');
                     $('#TextBox2').val('');
                 },
                 onCancel: function () {
-                  
-                    $('<div>onCancel called</div>').appendTo('#EventLog');
+                   
+                   $('<div>onCancel called</div>').appendTo('#EventLog');
                 },
                 onClose: function () {
+                    //$("#wizard"+id+" .modal-dialog:last").remove();
+                    /*$("#wizard"+id+" div").remove();*/
                     $('<div>onClose called</div>').appendTo('#EventLog');
                 },
                 onOpen: function () {
-                  
+                    var count = $("#wizard"+id+" .modal-dialog").length; 
+                    if(count > 1)
+                    { 
+                   
+                    $("#wizard"+id+" .modal-dialog:last").remove();
+                    }    
                     $('<div>onOpen called</div>').appendTo('#EventLog');
                 },
                 previousText: 'Back',

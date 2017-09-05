@@ -182,7 +182,7 @@
                                  $count = count($question);
 
                                ?>
-                                 <div class="wizard" id="wizard<?php echo e($lsn->id); ?>">
+                                 <div class="wizard" id="wizard<?php echo e($lsn->id); ?>" dir="rtl">
                                  
                               <?php 
                                  for($i=0;$i<$count;$i++)
@@ -242,8 +242,9 @@
             <h3 class="H4-R MoreServices-service-header"></h3>
             <ul>
                <?php $__currentLoopData = $lessons; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $lsn): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                  <?php  $i = rand(1,9999999);  ?>
                   <li>
-                     <a class="B2-S theme-secondary MoreServices-service-link" onclick="customerQuestion(<?php echo e($lsn->id); ?>)" style="text-decoration: none;">
+                     <a class="B2-S theme-secondary MoreServices-service-link" onclick="customerQuestion(<?php echo e($i); ?>)" style="text-decoration: none;">
                                  <?php echo e($lsn->name); ?> 
                      </a>
                   </li>
@@ -252,7 +253,7 @@
                   $question = $questionDecode[0]->question;
                   $count = count($question);
                 ?>
-                  <div class="wizard" id="wizard<?php echo e($lsn->id); ?>">
+                  <div class="wizard" id="wizard<?php echo e($i); ?>" dir="rtl">
                <?php 
                      for($i=0;$i<$count;$i++)
                      {
@@ -350,7 +351,13 @@
                     $('<div>onClose called</div>').appendTo('#EventLog');
                 },
                 onOpen: function () {
-                  
+                  var count = $("#wizard"+id+" .modal-dialog").length; 
+
+                    if(count > 1)
+                    { 
+                   
+                    $("#wizard"+id+" .modal-dialog:last").remove();
+                    }
                     $('<div>onOpen called</div>').appendTo('#EventLog');
                 },
                 previousText: 'Back',

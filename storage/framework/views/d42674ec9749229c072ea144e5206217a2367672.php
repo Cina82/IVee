@@ -1,3 +1,12 @@
+<?php $__env->startSection('css'); ?>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="<?php echo e(URL::to('public/wizardDemo/wizard.css')); ?>" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="<?php echo e(URL::to('public/wizardDemo/javascripts/jquery.validate.min.js')); ?>"></script>
+    <script src="<?php echo e(URL::to('public/wizardDemo/javascripts/jquery.validate.unobtrusive.js')); ?>"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?php echo e(URL::to('public/wizardDemo/wizard.js')); ?>"></script>
+<?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
 <div class="Homepage">
    <div viewport-element="hero">
@@ -1227,21 +1236,69 @@
                                     event-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}"
                                     waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}">
                                     <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('dGELR947mm7esA', 'moments')"
+                                       onclick="customerQuestion(<?php echo e($hmp->id); ?>)" style="text-decoration: none;"
                                        >
-                                    <img src="<?php echo e(URL::to('public/uploads')); ?>/<?php echo e($hmp['image']); ?>" class="ServiceBox-item-image">
+                                    <img src="<?php echo e(URL::to('public/uploads')); ?>/<?php echo e($hmp->image); ?>" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
-                                          <?php echo e($hmp['name']); ?> 
+                                          <?php echo e($hmp->name); ?>
+
                                           </span>
                                        </div>
                                     </a>
                                  </div>
                               </div>
+                               <?php  
+
+                                 $questionDecode = json_decode($hmp->question);
+                                 $question = $questionDecode[0]->question;
+                                 $count = count($question);
+
+                               ?>
+                                 <div class="wizard" id="wizard<?php echo e($hmp->id); ?>" dir="rtl">
+                                 
+                              <?php 
+                                 for($i=0;$i<$count;$i++)
+                                 {
+                                    $singleQuestion = $question[$i]->question;
+                                    $questionType = $question[$i]->questionType;
+                                    $options = $question[$i]->options;
+                                    
+                               ?>
+                                    <div class='wizard-step' data-title='<?php echo e($hmp->name); ?>'>
+                                      <?php echo e(csrf_field()); ?>
+
+                                       <input type="hidden" name="serviceId" value="<?php echo e($hmp->id); ?>">
+                                       <center><h3><?php echo e($singleQuestion); ?></h3></center>
+                                       <input type="hidden" name="question[]" value="<?php echo e($singleQuestion); ?>">
+                                       <?php if($questionType == 1): ?>
+                                       <input type="hidden" name="questionType[]" value="<?php echo e($questionType); ?>">
+                                       <?php $__currentLoopData = $options; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $opt): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                       <?php  $random = rand(1,9999999);  ?>
+                                       <div class="InputRadio">
+                                       <input name="options<?php echo e($i); ?>[]"  value="<?php echo e($opt); ?>" class="ng-scope ng-pristine ng-valid u-visuallyHidden" id="<?php echo e($random); ?>" type="radio"><label class="InputRadio-label" for="<?php echo e($random); ?>"><div class="InputRadio-label-inner ng-scope"><?php echo e($opt); ?></div></label>
+                                       </div>
+                                       
+                                       <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                       <?php endif; ?> 
+                                       <?php if($questionType == 4): ?>
+                                       <input type="hidden" name="questionType[]" value="<?php echo e($questionType); ?>">
+                                       <?php $__currentLoopData = $options; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $opt): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                       <?php  $random = rand(1,9999999);  ?>
+                                          <div class="InputCheckbox">
+                                            <input class="ng-scope ng-valid u-visuallyHidden ng-dirty" id="<?php echo e($random); ?>" type="checkbox" name="options<?php echo e($i); ?>[]" value="<?php echo e($opt); ?>">
+                                            <label class="InputCheckbox-label" for="<?php echo e($random); ?>">
+                                                <div class="InputCheckbox-label-inner"><?php echo e($opt); ?></div>
+                                            </label>
+                                        </div>
+                                       <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                       <?php endif; ?>   
+                                    </div>
+                                   
+                                 <?php  }  ?>
+                                 </div>
+                                 
                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                           
-               
                            </div>
                         </div>
                         <div
@@ -1293,18 +1350,67 @@
                                     event-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}"
                                     waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}">
                                     <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('dGELR947mm7esA', 'moments')"
-                                       >
-                                    <img src="<?php echo e(URL::to('public/uploads')); ?>/<?php echo e($evt['image']); ?>" class="ServiceBox-item-image">
+                                      onclick="customerQuestion(<?php echo e($evt->id); ?>)" style="text-decoration: none;">
+                                    <img src="<?php echo e(URL::to('public/uploads')); ?>/<?php echo e($evt->image); ?>" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
-                                          <?php echo e($evt['name']); ?> 
+                                          <?php echo e($evt->name); ?>
+
                                           </span>
                                        </div>
                                     </a>
                                  </div>
                               </div>
+                               <?php  
+
+                                 $questionDecode = json_decode($evt->question);
+                                 $question = $questionDecode[0]->question;
+                                 $count = count($question);
+
+                               ?>
+                                 <div class="wizard" id="wizard<?php echo e($evt->id); ?>" dir="rtl">
+                                 
+                              <?php 
+                                 for($i=0;$i<$count;$i++)
+                                 {
+                                    $singleQuestion = $question[$i]->question;
+                                    $questionType = $question[$i]->questionType;
+                                    $options = $question[$i]->options;
+                                    
+                               ?>
+                                    <div class='wizard-step' data-title='<?php echo e($evt->name); ?>'>
+                                      <?php echo e(csrf_field()); ?>
+
+                                       <input type="hidden" name="serviceId" value="<?php echo e($evt->id); ?>">
+                                       <center><h3><?php echo e($singleQuestion); ?></h3></center>
+                                       <input type="hidden" name="question[]" value="<?php echo e($singleQuestion); ?>">
+                                       <?php if($questionType == 1): ?>
+                                       <input type="hidden" name="questionType[]" value="<?php echo e($questionType); ?>">
+                                       <?php $__currentLoopData = $options; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $opt): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                       <?php  $random = rand(1,9999999);  ?>
+                                       <div class="InputRadio">
+                                       <input name="options<?php echo e($i); ?>[]"  value="<?php echo e($opt); ?>" class="ng-scope ng-pristine ng-valid u-visuallyHidden" id="<?php echo e($random); ?>" type="radio"><label class="InputRadio-label" for="<?php echo e($random); ?>"><div class="InputRadio-label-inner ng-scope"><?php echo e($opt); ?></div></label>
+                                       </div>
+                                       
+                                       <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                       <?php endif; ?> 
+                                       <?php if($questionType == 4): ?>
+                                       <input type="hidden" name="questionType[]" value="<?php echo e($questionType); ?>">
+                                       <?php $__currentLoopData = $options; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $opt): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                       <?php  $random = rand(1,9999999);  ?>
+                                          <div class="InputCheckbox">
+                                            <input class="ng-scope ng-valid u-visuallyHidden ng-dirty" id="<?php echo e($random); ?>" type="checkbox" name="options<?php echo e($i); ?>[]" value="<?php echo e($opt); ?>">
+                                            <label class="InputCheckbox-label" for="<?php echo e($random); ?>">
+                                                <div class="InputCheckbox-label-inner"><?php echo e($opt); ?></div>
+                                            </label>
+                                        </div>
+                                       <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                       <?php endif; ?>   
+                                    </div>
+                                   
+                                 <?php  }  ?>
+                                 </div>
+                                 
                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                          </div>
                         </div>
@@ -1357,19 +1463,70 @@
                                     event-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}"
                                     waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}">
                                     <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('dGELR947mm7esA', 'moments')"
+                                       onclick="customerQuestion(<?php echo e($wls->id); ?>)" style="text-decoration: none;"
                                        >
-                                    <img src="<?php echo e(URL::to('public/uploads')); ?>/<?php echo e($wls['image']); ?>" class="ServiceBox-item-image">
+                                    <img src="<?php echo e(URL::to('public/uploads')); ?>/<?php echo e($wls->image); ?>" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
-                                          <?php echo e($wls['name']); ?> 
+                                             <?php echo e($wls->name); ?>
+
                                           </span>
                                        </div>
                                     </a>
                                  </div>
                               </div>
+                               <?php  
+
+                                 $questionDecode = json_decode($wls->question);
+                                 $question = $questionDecode[0]->question;
+                                 $count = count($question);
+
+                               ?>
+                                 <div class="wizard" id="wizard<?php echo e($wls->id); ?>">
+                                 
+                              <?php 
+                                 for($i=0;$i<$count;$i++)
+                                 {
+                                    $singleQuestion = $question[$i]->question;
+                                    $questionType = $question[$i]->questionType;
+                                    $options = $question[$i]->options;
+                                    
+                               ?>
+                                    <div class='wizard-step' data-title='<?php echo e($wls->name); ?>'>
+                                      <?php echo e(csrf_field()); ?>
+
+                                       <input type="hidden" name="serviceId" value="<?php echo e($wls->id); ?>">
+                                       <center><h3><?php echo e($singleQuestion); ?></h3></center>
+                                       <input type="hidden" name="question[]" value="<?php echo e($singleQuestion); ?>">
+                                       <?php if($questionType == 1): ?>
+                                       <input type="hidden" name="questionType[]" value="<?php echo e($questionType); ?>">
+                                       <?php $__currentLoopData = $options; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $opt): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                       <?php  $random = rand(1,9999999);  ?>
+                                       <div class="InputRadio">
+                                       <input name="options<?php echo e($i); ?>[]"  value="<?php echo e($opt); ?>" class="ng-scope ng-pristine ng-valid u-visuallyHidden" id="<?php echo e($random); ?>" type="radio"><label class="InputRadio-label" for="<?php echo e($random); ?>"><div class="InputRadio-label-inner ng-scope"><?php echo e($opt); ?></div></label>
+                                       </div>
+                                       
+                                       <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                       <?php endif; ?> 
+                                       <?php if($questionType == 4): ?>
+                                       <input type="hidden" name="questionType[]" value="<?php echo e($questionType); ?>">
+                                       <?php $__currentLoopData = $options; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $opt): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                       <?php  $random = rand(1,9999999);  ?>
+                                          <div class="InputCheckbox">
+                                            <input class="ng-scope ng-valid u-visuallyHidden ng-dirty" id="<?php echo e($random); ?>" type="checkbox" name="options<?php echo e($i); ?>[]" value="<?php echo e($opt); ?>">
+                                            <label class="InputCheckbox-label" for="<?php echo e($random); ?>">
+                                                <div class="InputCheckbox-label-inner"><?php echo e($opt); ?></div>
+                                            </label>
+                                        </div>
+                                       <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                       <?php endif; ?>   
+                                    </div>
+                                   
+                                 <?php  }  ?>
+                                 </div>
+                                 
                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                           
                            </div>
                         </div>
                         <div
@@ -1450,6 +1607,67 @@
                </div>
             </div>
          </div>
+
+         <script>
+   function customerQuestion(id)
+   {  
+         
+
+       $('#wizard'+id).wizard({
+                title: '',
+                validators: [{
+                    step: 1,
+                    validate: function () {
+                        
+                    }
+                }],
+                onSubmit: function () {
+                  
+                    $('<div>onSubmit called</div>').appendTo('#EventLog');
+                    $('#wizard'+id).wizard('end', {
+                        info: 'this is an info message',
+                        warning: 'this is a warning message',
+                        success: 'this is a success message',
+                        error: 'this is an error message',
+                        autoClose: false // close after 5 seconds
+                    });
+                },
+                onReset: function () {
+                    $('<div>onReset called</div>').appendTo('#EventLog');
+                    $('#TextBox1').val('');
+                    $('#TextBox2').val('');
+                },
+                onCancel: function () {
+                  
+                    $('<div>onCancel called</div>').appendTo('#EventLog');
+                },
+                onClose: function () {
+                    $('<div>onClose called</div>').appendTo('#EventLog');
+                },
+                onOpen: function () {
+                   var count = $("#wizard"+id+" .modal-dialog").length; 
+
+                    if(count > 1)
+                    { 
+                   
+                    $("#wizard"+id+" .modal-dialog:last").remove();
+                    }
+                    $('<div>onOpen called</div>').appendTo('#EventLog');
+                },
+                previousText: 'Back',
+                nextText: 'Next',
+                submitText: 'Submit',
+                showCancel: true,
+                showPrevious: true,
+                showProgress: true,
+                isModal: true,
+                autoOpen: false
+            });
+
+      $('#wizard'+id).wizard('open');
+   }
+   </script>
+       
          <!-- <div
             class="Moments-moment"
             waypoint-track="costpages carousel">

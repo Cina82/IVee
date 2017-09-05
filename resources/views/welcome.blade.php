@@ -1,4 +1,13 @@
 @extends('layouts.thumb')
+@section('css')
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="{{URL::to('public/wizardDemo/wizard.css')}}" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="{{URL::to('public/wizardDemo/javascripts/jquery.validate.min.js')}}"></script>
+    <script src="{{URL::to('public/wizardDemo/javascripts/jquery.validate.unobtrusive.js')}}"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{URL::to('public/wizardDemo/wizard.js')}}"></script>
+@endsection
 @section('content')
 <div class="Homepage">
    <div viewport-element="hero">
@@ -1222,21 +1231,67 @@
                                     event-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}"
                                     waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}">
                                     <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('dGELR947mm7esA', 'moments')"
+                                       onclick="customerQuestion({{$hmp->id}})" style="text-decoration: none;"
                                        >
-                                    <img src="{{URL::to('public/uploads')}}/{{$hmp['image']}}" class="ServiceBox-item-image">
+                                    <img src="{{URL::to('public/uploads')}}/{{$hmp->image}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
-                                          {{$hmp['name']}} 
+                                          {{$hmp->name}}
                                           </span>
                                        </div>
                                     </a>
                                  </div>
                               </div>
+                               @php 
+
+                                 $questionDecode = json_decode($hmp->question);
+                                 $question = $questionDecode[0]->question;
+                                 $count = count($question);
+
+                              @endphp
+                                 <div class="wizard" id="wizard{{$hmp->id}}" dir="rtl">
+                                 
+                              @php
+                                 for($i=0;$i<$count;$i++)
+                                 {
+                                    $singleQuestion = $question[$i]->question;
+                                    $questionType = $question[$i]->questionType;
+                                    $options = $question[$i]->options;
+                                    
+                              @endphp
+                                    <div class='wizard-step' data-title='{{$hmp->name}}'>
+                                      {{csrf_field()}}
+                                       <input type="hidden" name="serviceId" value="{{$hmp->id}}">
+                                       <center><h3>{{$singleQuestion}}</h3></center>
+                                       <input type="hidden" name="question[]" value="{{$singleQuestion}}">
+                                       @if($questionType == 1)
+                                       <input type="hidden" name="questionType[]" value="{{$questionType}}">
+                                       @foreach($options as $opt)
+                                       @php $random = rand(1,9999999); @endphp
+                                       <div class="InputRadio">
+                                       <input name="options{{$i}}[]"  value="{{$opt}}" class="ng-scope ng-pristine ng-valid u-visuallyHidden" id="{{$random}}" type="radio"><label class="InputRadio-label" for="{{$random}}"><div class="InputRadio-label-inner ng-scope">{{$opt}}</div></label>
+                                       </div>
+                                       
+                                       @endforeach
+                                       @endif 
+                                       @if($questionType == 4)
+                                       <input type="hidden" name="questionType[]" value="{{$questionType}}">
+                                       @foreach($options as $opt)
+                                       @php $random = rand(1,9999999); @endphp
+                                          <div class="InputCheckbox">
+                                            <input class="ng-scope ng-valid u-visuallyHidden ng-dirty" id="{{$random}}" type="checkbox" name="options{{$i}}[]" value="{{$opt}}">
+                                            <label class="InputCheckbox-label" for="{{$random}}">
+                                                <div class="InputCheckbox-label-inner">{{$opt}}</div>
+                                            </label>
+                                        </div>
+                                       @endforeach
+                                       @endif   
+                                    </div>
+                                   
+                                 @php } @endphp
+                                 </div>
+                                 
                            @endforeach
-                           
-               
                            </div>
                         </div>
                         <div
@@ -1288,18 +1343,65 @@
                                     event-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}"
                                     waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}">
                                     <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('dGELR947mm7esA', 'moments')"
-                                       >
-                                    <img src="{{URL::to('public/uploads')}}/{{$evt['image']}}" class="ServiceBox-item-image">
+                                      onclick="customerQuestion({{$evt->id}})" style="text-decoration: none;">
+                                    <img src="{{URL::to('public/uploads')}}/{{$evt->image}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
-                                          {{$evt['name']}} 
+                                          {{$evt->name}}
                                           </span>
                                        </div>
                                     </a>
                                  </div>
                               </div>
+                               @php 
+
+                                 $questionDecode = json_decode($evt->question);
+                                 $question = $questionDecode[0]->question;
+                                 $count = count($question);
+
+                              @endphp
+                                 <div class="wizard" id="wizard{{$evt->id}}" dir="rtl">
+                                 
+                              @php
+                                 for($i=0;$i<$count;$i++)
+                                 {
+                                    $singleQuestion = $question[$i]->question;
+                                    $questionType = $question[$i]->questionType;
+                                    $options = $question[$i]->options;
+                                    
+                              @endphp
+                                    <div class='wizard-step' data-title='{{$evt->name}}'>
+                                      {{csrf_field()}}
+                                       <input type="hidden" name="serviceId" value="{{$evt->id}}">
+                                       <center><h3>{{$singleQuestion}}</h3></center>
+                                       <input type="hidden" name="question[]" value="{{$singleQuestion}}">
+                                       @if($questionType == 1)
+                                       <input type="hidden" name="questionType[]" value="{{$questionType}}">
+                                       @foreach($options as $opt)
+                                       @php $random = rand(1,9999999); @endphp
+                                       <div class="InputRadio">
+                                       <input name="options{{$i}}[]"  value="{{$opt}}" class="ng-scope ng-pristine ng-valid u-visuallyHidden" id="{{$random}}" type="radio"><label class="InputRadio-label" for="{{$random}}"><div class="InputRadio-label-inner ng-scope">{{$opt}}</div></label>
+                                       </div>
+                                       
+                                       @endforeach
+                                       @endif 
+                                       @if($questionType == 4)
+                                       <input type="hidden" name="questionType[]" value="{{$questionType}}">
+                                       @foreach($options as $opt)
+                                       @php $random = rand(1,9999999); @endphp
+                                          <div class="InputCheckbox">
+                                            <input class="ng-scope ng-valid u-visuallyHidden ng-dirty" id="{{$random}}" type="checkbox" name="options{{$i}}[]" value="{{$opt}}">
+                                            <label class="InputCheckbox-label" for="{{$random}}">
+                                                <div class="InputCheckbox-label-inner">{{$opt}}</div>
+                                            </label>
+                                        </div>
+                                       @endforeach
+                                       @endif   
+                                    </div>
+                                   
+                                 @php } @endphp
+                                 </div>
+                                 
                            @endforeach
                          </div>
                         </div>
@@ -1352,19 +1454,68 @@
                                     event-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}"
                                     waypoint-track-data="{&quot;encodedCategoryId&quot;:&quot;Q9sYIW2IZP5AkA&quot;,&quot;categoryName&quot;:0,&quot;origin&quot;:&quot;moments&quot;,&quot;moment_index&quot;:1,&quot;category_index&quot;:0}">
                                     <a class="ServiceBox-item"
-                                       open-request-form-modal
-                                       ng-click="openModalWithCategoryId('dGELR947mm7esA', 'moments')"
+                                       onclick="customerQuestion({{$wls->id}})" style="text-decoration: none;"
                                        >
-                                    <img src="{{URL::to('public/uploads')}}/{{$wls['image']}}" class="ServiceBox-item-image">
+                                    <img src="{{URL::to('public/uploads')}}/{{$wls->image}}" class="ServiceBox-item-image">
                                        <div class="ServiceBox-item-label">
                                           <span class=" tp-heading-6 ">
-                                          {{$wls['name']}} 
+                                             {{$wls->name}}
                                           </span>
                                        </div>
                                     </a>
                                  </div>
                               </div>
+                               @php 
+
+                                 $questionDecode = json_decode($wls->question);
+                                 $question = $questionDecode[0]->question;
+                                 $count = count($question);
+
+                              @endphp
+                                 <div class="wizard" id="wizard{{$wls->id}}">
+                                 
+                              @php
+                                 for($i=0;$i<$count;$i++)
+                                 {
+                                    $singleQuestion = $question[$i]->question;
+                                    $questionType = $question[$i]->questionType;
+                                    $options = $question[$i]->options;
+                                    
+                              @endphp
+                                    <div class='wizard-step' data-title='{{$wls->name}}'>
+                                      {{csrf_field()}}
+                                       <input type="hidden" name="serviceId" value="{{$wls->id}}">
+                                       <center><h3>{{$singleQuestion}}</h3></center>
+                                       <input type="hidden" name="question[]" value="{{$singleQuestion}}">
+                                       @if($questionType == 1)
+                                       <input type="hidden" name="questionType[]" value="{{$questionType}}">
+                                       @foreach($options as $opt)
+                                       @php $random = rand(1,9999999); @endphp
+                                       <div class="InputRadio">
+                                       <input name="options{{$i}}[]"  value="{{$opt}}" class="ng-scope ng-pristine ng-valid u-visuallyHidden" id="{{$random}}" type="radio"><label class="InputRadio-label" for="{{$random}}"><div class="InputRadio-label-inner ng-scope">{{$opt}}</div></label>
+                                       </div>
+                                       
+                                       @endforeach
+                                       @endif 
+                                       @if($questionType == 4)
+                                       <input type="hidden" name="questionType[]" value="{{$questionType}}">
+                                       @foreach($options as $opt)
+                                       @php $random = rand(1,9999999); @endphp
+                                          <div class="InputCheckbox">
+                                            <input class="ng-scope ng-valid u-visuallyHidden ng-dirty" id="{{$random}}" type="checkbox" name="options{{$i}}[]" value="{{$opt}}">
+                                            <label class="InputCheckbox-label" for="{{$random}}">
+                                                <div class="InputCheckbox-label-inner">{{$opt}}</div>
+                                            </label>
+                                        </div>
+                                       @endforeach
+                                       @endif   
+                                    </div>
+                                   
+                                 @php } @endphp
+                                 </div>
+                                 
                            @endforeach
+                           
                            </div>
                         </div>
                         <div
@@ -1445,6 +1596,67 @@
                </div>
             </div>
          </div>
+
+         <script>
+   function customerQuestion(id)
+   {  
+         
+
+       $('#wizard'+id).wizard({
+                title: '',
+                validators: [{
+                    step: 1,
+                    validate: function () {
+                        
+                    }
+                }],
+                onSubmit: function () {
+                  
+                    $('<div>onSubmit called</div>').appendTo('#EventLog');
+                    $('#wizard'+id).wizard('end', {
+                        info: 'this is an info message',
+                        warning: 'this is a warning message',
+                        success: 'this is a success message',
+                        error: 'this is an error message',
+                        autoClose: false // close after 5 seconds
+                    });
+                },
+                onReset: function () {
+                    $('<div>onReset called</div>').appendTo('#EventLog');
+                    $('#TextBox1').val('');
+                    $('#TextBox2').val('');
+                },
+                onCancel: function () {
+                  
+                    $('<div>onCancel called</div>').appendTo('#EventLog');
+                },
+                onClose: function () {
+                    $('<div>onClose called</div>').appendTo('#EventLog');
+                },
+                onOpen: function () {
+                   var count = $("#wizard"+id+" .modal-dialog").length; 
+
+                    if(count > 1)
+                    { 
+                   
+                    $("#wizard"+id+" .modal-dialog:last").remove();
+                    }
+                    $('<div>onOpen called</div>').appendTo('#EventLog');
+                },
+                previousText: 'Back',
+                nextText: 'Next',
+                submitText: 'Submit',
+                showCancel: true,
+                showPrevious: true,
+                showProgress: true,
+                isModal: true,
+                autoOpen: false
+            });
+
+      $('#wizard'+id).wizard('open');
+   }
+   </script>
+       
          <!-- <div
             class="Moments-moment"
             waypoint-track="costpages carousel">

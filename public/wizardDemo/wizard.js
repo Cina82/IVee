@@ -210,7 +210,7 @@
         html.push(' <div class="modal-content', settings.isModal ? '' : ' wizard-nomodal', '">');
         html.push('     <div class="modal-header">');
         if (settings.isModal && settings.showCancel === true) {
-            html.push('     <button type="button" class="close wizard-cancel-header">');
+            html.push('     <button type="button" class="close wizard-cancel-header" style="float:left !important;">');
             html.push('         <span aria-hidden="true">&times;</span>');
             html.push('         <span class="sr-only">Close</span>');
             html.push('     </button>');
@@ -244,13 +244,13 @@
         var html = [];
 
         if (settings.showPrevious === true) {
-            html.push('<button type="button" class="btn btn-default wizard-prev">', settings.previousText, '</button>');
+            html.push('<button type="button" class="btn btn-default wizard-prev" style="float:left !important;">', settings.previousText, '</button>');
         }
-        html.push('<button type="button" class="btn btn-primary wizard-next">', settings.nextText, '</button>');
+        html.push('<button type="button" class="btn btn-primary wizard-next" style="float:left !important;">', settings.nextText, '</button>');
         if (settings.showCancel === true) {
-            html.push('<button type="button" class="btn btn-default wizard-cancel">' + settings.cancelText + '</button>');
+            html.push('<button type="button" class="btn btn-default wizard-cancel" style="float:left !important;">' + settings.cancelText + '</button>');
         }
-        html.push('<button type="Submit" class="btn btn-primary wizard-ok">Add Customer Service</button>');
+        html.push('<button type="Submit" class="btn btn-primary wizard-ok" style="float:left !important;">Add Customer Service</button>');
         
         return html.join('');
     }

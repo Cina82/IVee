@@ -178,7 +178,7 @@
                                  $count = count($question);
 
                               @endphp
-                                 <div class="wizard" id="wizard{{$lsn->id}}">
+                                 <div class="wizard" id="wizard{{$lsn->id}}" dir="rtl">
                                  
                               @php
                                  for($i=0;$i<$count;$i++)
@@ -237,8 +237,9 @@
             <h3 class="H4-R MoreServices-service-header"></h3>
             <ul>
                @foreach($lessons as $lsn)
+                  @php $i = rand(1,9999999); @endphp
                   <li>
-                     <a class="B2-S theme-secondary MoreServices-service-link" onclick="customerQuestion({{$lsn->id}})" style="text-decoration: none;">
+                     <a class="B2-S theme-secondary MoreServices-service-link" onclick="customerQuestion({{$i}})" style="text-decoration: none;">
                                  {{$lsn->name}} 
                      </a>
                   </li>
@@ -247,7 +248,7 @@
                   $question = $questionDecode[0]->question;
                   $count = count($question);
                @endphp
-                  <div class="wizard" id="wizard{{$lsn->id}}">
+                  <div class="wizard" id="wizard{{$i}}" dir="rtl">
                @php
                      for($i=0;$i<$count;$i++)
                      {
@@ -344,7 +345,13 @@
                     $('<div>onClose called</div>').appendTo('#EventLog');
                 },
                 onOpen: function () {
-                  
+                  var count = $("#wizard"+id+" .modal-dialog").length; 
+
+                    if(count > 1)
+                    { 
+                   
+                    $("#wizard"+id+" .modal-dialog:last").remove();
+                    }
                     $('<div>onOpen called</div>').appendTo('#EventLog');
                 },
                 previousText: 'Back',
