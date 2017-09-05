@@ -1,4 +1,10 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><script src="{{URL::to('public/assets/jquery.browser-c000434a.js')}}">
+
+@if(collect(request()->segments())->last() == 'login')
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+@endif
+
+<script src="{{URL::to('public/assets/jquery.browser-c000434a.js')}}">
     
 </script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script><script>
     _.contains = _.includes;

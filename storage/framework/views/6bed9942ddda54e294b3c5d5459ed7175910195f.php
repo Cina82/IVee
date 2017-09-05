@@ -59,7 +59,7 @@
             
                         
 
-<projects>
+<!-- <projects>
     <div class="Projects">
         <div class="page-grid">
             <div class="column-lg-6">
@@ -80,11 +80,92 @@
                 </div>
                                 </div>
     </div>
+</projects> -->
+
+<projects>
+   <div class="Projects">
+      <div class="page-grid">
+         <div class="column-lg-6">
+            <div class="Projects-headerWrapper">
+               <div class="Projects-title H4-R">Projects</div>
+               <a href="<?php echo e(URL::to('')); ?>" class="Button theme-secondary theme-medium" event-track="dashboard/start new project" event-track-on="click">
+               Start New Project
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <div class="page-grid theme-flex-columns">
+        <?php  $count = 0;  ?>
+        <?php $__currentLoopData = $serviceName; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $Servicename): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+          
+          <div class="column-xs-6 column-sm-6 column-md-3 column-lg-2 Projects-projectCard">
+            <div class="Projects-projectCard-innerWrapper">
+               <div class="Projects-projectCard-top">
+                  <h3 class="Projects-projectCard-top-title T1-R">
+                      
+                     <?php echo e($Servicename[0]->name); ?>
+
+                  </h3>
+                  <h4 class="Projects-projectCard-top-subtitle B2-S theme-secondary">
+
+                    <?php echo e($Servicename[0]->created_at); ?>
+
+
+                  </h4>
+                  <span class="Projects-projectCard-top-cta B3-S">
+                  <a href="<?php echo e(URL::to('')); ?>">
+                  Update
+                  </a>
+                  </span>
+               </div>
+               <div class="Projects-projectCard-middle">
+                  <ul class="Projects-projectCard-pros">
+                    <?php $__currentLoopData = $users[$count]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $us): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                    
+                    <li class="Projects-projectCard-pros-item">
+                        <a href="<?php echo e(URL::to('userProfile')); ?>/<?php echo e($us[0]->id); ?>" data-trigger="1">
+                           <avatar class="Avatar Avatar--md">
+                              <div class="Avatar__circle">
+                                <img src="<?php echo e(URL::to('public/thumbtack_image')); ?>/<?php echo e($us[0]->image); ?>" class="Avatar__image">
+                              </div>
+                           </avatar>
+                        </a>
+                     </li>
+                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> 
+                     <?php  $count = $count + 1;  ?>
+                  </ul>
+                  <div>
+                     <p class="T2-S theme-secondary Projects-projectCard-middle-header">
+                     </p>
+                     <p class="B2-S theme-secondary">
+                        You closed this project on July 12, 2017.
+                     </p>
+                  </div>
+               </div>
+               <div class="Projects-projectCard-bottom">
+                  <a href="<?php echo e(URL::to('')); ?>" class="Button theme-medium">
+                  View Quotes
+                  </a>
+                  <p class="Projects-projectCard-actionLink">
+                     <span class="Link ng-scope" event-track="dashboard/click request again" event-track-on="click" open-request-form-modal="" ng-click="openModalWithCategoryId(
+                        'Q9sYIW2IZP5AkA',
+                        'dashboard-renew')">
+                     Request again
+                     </span>
+                  </p>
+               </div>
+            </div>
+         </div>
+         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+      </div>
+   </div>
 </projects>
 
 
-                                                <div class="ConsumerDashboard-recommendationsWrapper">
-                                                    
+
+
+<div class="ConsumerDashboard-recommendationsWrapper">
 <div class="Moments  ">
       <div class="Moments-container">
          <div class="Moments-moment">

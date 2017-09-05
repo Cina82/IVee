@@ -99,6 +99,9 @@ class proManageController extends Controller
     }
     public function saveServiceProvide(Request $request)
     {
+        $proService = implode(",",$request->input('provideservice'));
+        $proTravel = implode(",",$request->input('travelCustomer'));
+        
         $proData = array();
         $proData['provideservice']=$request->input('provideservice');
         $proData['additionalService']=$request->input('additionalService');
@@ -106,7 +109,23 @@ class proManageController extends Controller
         $proData['zip']=$request->input('zip');
         $encodeData = json_encode($proData);
         $request->session()->put('servicePrivideJson', $encodeData);
-        return redirect('prosignup');
+        $request->session()->put('proServiceId', $proService);
+        $request->session()->put('proTravel', $proTravel);
+        if (Auth::check())
+        {
+            $savePro = new ProfessionalServiceProvide();
+            $savePro['userId'] = Auth::id();
+            $savePro['serviceId'] =$proService;
+            $savePro['proTravel'] =$proTravel;
+            $savePro['services'] =$encodeData;
+            $savePro->save();
+            return redirect('login');
+        }
+        else
+        {
+           return redirect('prosignup');
+        }
+        
     }
     public function prosignup(){
     	return view('auth.proffetionalHire');

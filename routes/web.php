@@ -81,9 +81,12 @@ Route::get('prosubcate/{id}','pro\proManageController@prosubcat');
 Route::get('prosubService','pro\proManageController@prosubService');
 Route::get('serviceProvide{id}','pro\proManageController@showServiceProvide');
 Route::get('saveServiceProvide','pro\proManageController@saveServiceProvide');
-
-
 //End professional management
+
+
+Route::get('customerQuestion', 'customerQuestion\customerQuestionManageController@customerQuestion');
+Route::post('popupQuestionAdd', 'customerQuestion\customerQuestionManageController@popupQuestionAdd');
+
 
 
 Route::get('subCategoryOption{id}', 'Admin\subCategoryManageController@subCategoryOption');
@@ -95,6 +98,7 @@ Route::get('pro', 'pro\proManageController@pro');
 Route::get('events', 'events\eventsManageController@events');
 Route::get('events', 'events\eventsManageController@events');
 Route::get('lessons', 'lessons\lessonsManageController@lessons');
+
 Route::get('wellness', 'wellness\wellnessManageController@wellness');
 Route::get('moreServices','moreServices\moreServicesManageController@moreServices');
 Route::get('homeImprovement','homeImprovement\homeImprovementManageController@homeImprovement');

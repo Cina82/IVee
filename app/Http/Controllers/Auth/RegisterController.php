@@ -13,7 +13,9 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use jeremykenedy\LaravelRoles\Models\Permission;
 use jeremykenedy\LaravelRoles\Models\Role;
 use App\Models\pro\ProfessionalServiceProvide;
+use App\Models\customer\CustomerServiceQuestion;
 use Session;
+use Image;
 class RegisterController extends Controller
 {
     /*
@@ -139,6 +141,15 @@ class RegisterController extends Controller
         if($data['id'] == 3)
         {
 
+            $photo = $data['image'];
+
+            $imagename = time().'.'.$photo->getClientOriginalExtension(); 
+            $destinationPath = public_path('/thumbtack_image');
+            $thumb_img = Image::make($photo->getRealPath())->resize(100, 100);
+            $thumb_img->save($destinationPath.'/'.$imagename,80);
+            $destinationPath = public_path('/uploads');
+            $photo->move($destinationPath, $imagename);
+            
             $role= Role::where('name', '=', 'Profetional')->first();
             $user =  User::create([
             'name'              => $data['name'],
@@ -151,7 +162,7 @@ class RegisterController extends Controller
             'zipCode'           => $data['zipCode'],
             'userName'          => $data['userName'],
             'password'          => bcrypt($data['password']),
-            'image'             => $data['image'],
+            'image'             => $imagename,
             'token'             => str_random(64),
             'signup_ip_address' => $ipAddress->getClientIp(),
             'activated'         => !config('settings.activation')
@@ -159,8 +170,13 @@ class RegisterController extends Controller
        
        
             $servicePrivideJson = session('servicePrivideJson');
-            $servicePrivide = ProfessionalServiceProvide::create([
+            $proServiceId = session('proServiceId');
+            $proTravel = session('proTravel');
+            
+            $pro = ProfessionalServiceProvide::create([
             'userId'              => $user->id,
+            'serviceId'           =>$proServiceId,
+            'proTravel'      =>$proTravel,
             'services'            =>$servicePrivideJson  
             ]);
        
@@ -184,6 +200,13 @@ class RegisterController extends Controller
             'signup_ip_address' => $ipAddress->getClientIp(),
             'activated'         => !config('settings.activation')
         ]);
+            $questionAndOptions = session('questionAndOptions');
+            $serviceId = session('serviceId');
+            $customerService = CustomerServiceQuestion::create([
+            'serviceId'              => $serviceId,
+            'customerId'             => $user->id,
+            'questionAndOption'      =>$questionAndOptions  
+            ]);
 
             $user->attachRole($role);
             $this->initiateEmailActivation($user);

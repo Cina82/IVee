@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{URL::to('register')}}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{URL::to('register')}}" enctype="multipart/form-data">
                         {{ csrf_field() }}
                          <div class="form-group">
                         <div class="col-md-6">

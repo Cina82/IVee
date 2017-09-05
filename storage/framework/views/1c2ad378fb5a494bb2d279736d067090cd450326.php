@@ -5,7 +5,7 @@
             <div class="panel panel-default">
                 
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="<?php echo e(URL::to('register')); ?>">
+                    <form class="form-horizontal" role="form" method="POST" action="<?php echo e(URL::to('register')); ?>" enctype="multipart/form-data">
                         <?php echo e(csrf_field()); ?>
 
                          <div class="form-group">

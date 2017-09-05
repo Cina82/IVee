@@ -6,6 +6,9 @@ use Auth;
 use Illuminate\Http\Request;
 use App\User;
 use App\Models\Admin\ServiceModel;
+use App\Models\customer\CustomerServiceQuestion;
+use App\Models\pro\ProfessionalServiceProvide;
+use DB;
 
 class UserController extends Controller
 {
@@ -45,7 +48,29 @@ class UserController extends Controller
         }
         if ($user->isCustomer()) {
 
-            return view('pages.customerUser.home');
+            $service = CustomerServiceQuestion::where('customerId',Auth::id())->get();
+            
+            $serviceName = array();
+            $users =array();
+            foreach ($service as $services) {
+                $decodeService = json_decode($services);
+                $serviceId = $decodeService->serviceId;
+                $serviceName[] = ServiceModel::select('id','name','created_at')->where('id',$serviceId)->get();
+                $post = ProfessionalServiceProvide::all();
+                $user = array();     
+                foreach ($post as $posts) {
+                    $explodService = explode(',',$posts->serviceId);
+                    if(in_array($serviceId, $explodService))
+                    {
+                        $userId = $posts->userId;
+                        $userDetails = User::where('id',$userId)->get();
+                        $user[] = $userDetails;
+                    }   
+                }
+                $users[] = $user;
+            }
+            
+            return view('pages.customerUser.home',compact('users','serviceName'));
 
         }
         if ($user->isProfetional()) {

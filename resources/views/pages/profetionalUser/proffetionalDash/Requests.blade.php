@@ -82,17 +82,22 @@
             </div>
             <div class="WorkInbox">
                 <ul class="ContentList">
+                @foreach($customerData as $cust)
 
-                    <a href="/request/34ar977h?sav=W:h85DrJcpp4SA&amp;bid_source=dashboard_request&amp;request_row_index=0" declinable-invite="{request_id: '34ar977h', service_id: 'W:h85DrJcpp4SA'}" class="WorkItem Request is-unread ContentList-item ContentList-item-rightColumn ng-isolate-scope">
+                @php 
+                     $decodeQuestion = json_decode($cust['questionAndOption']);
+                     $options = json_decode($decodeQuestion->options);
+                     
+                 @endphp
+                    <a href="" class="WorkItem Request is-unread ContentList-item ContentList-item-rightColumn ng-isolate-scope">
                         <span class="Indicator"></span>
                         <div class="ContentList-item-column">
                             <h3 class="WorkItem-title T2-R">
-                    Sergio F.
+                    {{$cust['name']}}
                 </h3>
 
-                            <span class="WorkItem-categoryAndLocation">
-                        Band Entertainment
-                        –
+                            <span class="WorkItem-categoryAndLocation">{{$cust['serviceName']}}
+                        
                         Los Angeles, CA 90011
                     </span>
 
@@ -100,8 +105,15 @@
                             </p>
 
                             <p class="WorkItem-messagePreview theme-secondary">
-
-                                Needed Sep 23rd, Birthday party, 51 - 75 guests, 18 - 30 years old, 31 - 50 years old, Friend or relative of bride or groom, No preference, Variety, (Intentionally left blank), (Intentionally left blank), Instrumentals and singing, No, Home, Outdoors, No, professional will need to provide their own sound equipment, $ (basic): No, $$ (standard): Yes, $$$ (premium): No, $$$$ (high-end): No, Ready to hire the right pro now: No, Need some more information before hiring: Yes, Conducting initial research: No.
+                            
+                            @php $count = count($options);
+                            @endphp
+                            @for($i=0;$i<$count;$i++)
+                                @foreach($options[$i] as $opt)
+                                {{$opt.","}}
+                                @endforeach
+                            @endfor
+                                
                             </p>
                         </div>
 
@@ -116,140 +128,7 @@
                         </div>
                     </a>
 
-                    <a dismissable="" dismissable-id="protip_1" class="page-grid WorkItem Protip get-reviews ContentList-item ContentList-item-rightColumn ng-isolate-scope" href="/profile/reviews?autoShowModal=true&amp;s=3204747" target="_blank" data-selector="get-reviews" event-track="work leads/click protip" event-track-on="click" event-track-data="{
-                    protip_id: 1,
-                    encoded_user_id: '186v8t4s',
-                    position: 0,
-                    num_invites: 10,
-                    page_number: 1
-                }" style="display: none;">
-                        <span class="Indicator"></span>
-                        <div class="icon closeIcon" dismiss="">
-                            <svg-icon type="close" size="sm" class="ng-scope theme-small IconContainer">
-                                <svg class="Icon" viewBox="0 0 16 16">
-                                    <use xlink:href="#thumbprinticon-close_16"></use>
-                                </svg>
-                            </svg-icon>
-                        </div>
-                        <div class="ContentList-item-column">
-                            <div class="Flex Protip-flex">
-                                <h3 class="WorkItem-title Protip-title T2-R">Tip for Success</h3>
-                                <div class="Protip-importantLabel">important</div>
-                            </div>
-
-                            <p class="WorkItem-categoryAndLocation Protip-categoryAndLocation">
-                                Pros with no reviews rarely get hired
-                            </p>
-
-                            <p class="WorkItem-messagePreview Protip-messagePreview theme-secondary">
-                                Customers look at reviews on your Thumbtack profile to evaluate your past work experience. Get at least 1 review to boost their confidence in your work.
-                            </p>
-                        </div>
-
-                        <div class="ContentList-item-column ContentList-itemButton">
-                            <button class="Button theme-small">Ask for Reviews</button>
-                        </div>
-                    </a>
-
-                    <a href="/request/2un4jlpf?sav=W:h85DrJcpp4SA&amp;bid_source=dashboard_request&amp;request_row_index=1" declinable-invite="{request_id: '2un4jlpf', service_id: 'W:h85DrJcpp4SA'}" class="WorkItem Request is-unread ContentList-item ContentList-item-rightColumn ng-isolate-scope">
-                        <span class="Indicator"></span>
-                        <div class="ContentList-item-column">
-                            <h3 class="WorkItem-title T2-R">
-                    Candelaria V.
-                </h3>
-
-                            <span class="WorkItem-categoryAndLocation">
-                        Band Entertainment
-                        –
-                        San Juan Capistrano, CA 92675
-                    </span>
-
-                            <p class="WorkItem-details">
-                            </p>
-
-                            <p class="WorkItem-messagePreview theme-secondary">
-
-                                Needed Aug 26th, Birthday party, 26 - 50 guests, 12 years old or younger, 13 - 17 years old, 18 - 30 years old, 31 - 50 years old, Party host, 4, Mariachi, (Intentionally left blank), (Intentionally left blank), Instrumentals and singing, No, Home, Outdoors, No, professional will need to provide their own sound equipment, $ (basic): Yes, $$ (standard): No, $$$ (premium): No, $$$$ (high-end): No, Ready to hire the right pro now: No, Need some more information before hiring: Yes, Conducting initial research: No.
-                            </p>
-                        </div>
-
-                        <div class="ContentList-item-column">
-                            <div class="WorkItem-time Request-time">
-                                <span aura-time-ago="" aura-time-ago-bind="1503084796000" class="ng-isolate-scope">Aug 18 at 7:33 pm</span>
-                            </div>
-
-                            <div class="WorkItem-actionDecline Request-actionDecline ">
-                                <span class="pseudo-link">Pass</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="/request/71klk0ki?sav=W:h85DrJcpp4SA&amp;bid_source=dashboard_request&amp;request_row_index=2" declinable-invite="{request_id: '71klk0ki', service_id: 'W:h85DrJcpp4SA'}" class="WorkItem Request is-unread ContentList-item ContentList-item-rightColumn ng-isolate-scope">
-                        <span class="Indicator"></span>
-                        <div class="ContentList-item-column">
-                            <h3 class="WorkItem-title T2-R">
-                    Marissa M.
-                </h3>
-
-                            <span class="WorkItem-categoryAndLocation">
-                        Band Entertainment
-                        –
-                        Inglewood, CA 90303
-                    </span>
-
-                            <p class="WorkItem-details">
-                            </p>
-
-                            <p class="WorkItem-messagePreview theme-secondary">
-
-                                Needed Sep 9th, General event / party, 51 - 75 guests, 18 - 30 years old, 31 - 50 years old, Bride or groom, No preference, Dance, Latin, Jesus ojeda, Zapatiado, Instrumentals and singing, No, Home, Outdoors, No, professional will need to provide their own sound equipment, $ (basic): No, $$ (standard): Yes, $$$ (premium): No, $$$$ (high-end): No, Ready to hire the right pro now: No, Need some more information before hiring: Yes, Conducting initial research: No. Spanish
-                            </p>
-                        </div>
-
-                        <div class="ContentList-item-column">
-                            <div class="WorkItem-time Request-time">
-                                <span aura-time-ago="" aura-time-ago-bind="1503229832000" class="ng-isolate-scope">Yesterday at 11:50 am</span>
-                            </div>
-
-                            <div class="WorkItem-actionDecline Request-actionDecline ">
-                                <span class="pseudo-link">Pass</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="/request/q7qhs070?sav=W:h85DrJcpp4SA&amp;bid_source=dashboard_request&amp;request_row_index=9" declinable-invite="{request_id: 'q7qhs070', service_id: 'W:h85DrJcpp4SA'}" class="WorkItem Request is-unread ContentList-item ContentList-item-rightColumn ng-isolate-scope">
-                        <span class="Indicator"></span>
-                        <div class="ContentList-item-column">
-                            <h3 class="WorkItem-title T2-R">
-                    Tamara L.
-                </h3>
-
-                            <span class="WorkItem-categoryAndLocation">
-                        DJ
-                        –
-                        San Juan Capistrano, CA 92675
-                    </span>
-
-                            <p class="WorkItem-details">
-                            </p>
-
-                            <p class="WorkItem-messagePreview theme-secondary">
-
-                                Needed Sep 9th, Wedding, 51 - 100 guests, 18 - 30 years old, 31 - 50 years old, 51 or older, Pop, Hip-hop / Rap, EDM (electronic dance music) / House / Club, Top 40, Outdoors, Outdoor venue, DJ must provide sound equipment, MC Services, Microphones, Lighting, Fog machine, Bride or groom, $ (basic): No, $$ (standard): Yes, $$$ (premium): No, $$$$ (high-end): No.
-                            </p>
-                        </div>
-
-                        <div class="ContentList-item-column">
-                            <div class="WorkItem-time Request-time">
-                                <span aura-time-ago="" aura-time-ago-bind="1503209227000" class="ng-isolate-scope">Yesterday at 6:07 am</span>
-                            </div>
-
-                            <div class="WorkItem-actionDecline Request-actionDecline ">
-                                <span class="pseudo-link">Pass</span>
-                            </div>
-                        </div>
-                    </a>
-
+                    @endforeach
                 </ul>
 
                 <div class="paginator">
