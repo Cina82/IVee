@@ -1,122 +1,164 @@
+<?php $__env->startSection('css'); ?>
+<link rel="stylesheet" type="text/css" href="<?php echo e(URL::to('public/assets/quotes-7b07e381.css')); ?>">
+<?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
- <div class="background">
-    
-    
-    <div class="page-grid theme-full-bleed-at-xs">
-        <div class="column-lg-6">
-
-            
-            <div class="inbox-options" quote-list-search="">
-                <div responsive-if="above-xs" responsive-grid="page" class="ng-scope"><!-- ngIf: responsiveIfVisible --><div ng-if="responsiveIfVisible" class="ng-scope">
-    <div ng-transclude="">
-                    <div class="HeaderDesktop ng-scope">
+<div class="background">
+   <div class="page-grid theme-full-bleed-at-xs">
+      <div class="column-lg-6">
+         <div class="inbox-options" quote-list-search="">
+            <div responsive-if="above-xs" responsive-grid="page" class="ng-scope">
+               <!-- ngIf: responsiveIfVisible -->
+               <div ng-if="responsiveIfVisible" class="ng-scope">
+                  <div ng-transclude="">
+                     <div class="HeaderDesktop ng-scope">
                         <h1 class="WorkHeader">Sent</h1>
-                        <search-field-desktop on-search="performSearch(query)" class="ng-isolate-scope"><div class="SearchFieldDesktop">
-    <div class="InputText">
-        <input class="search" name="search" placeholder="Search by name" type="search">
+                        <search-field-desktop on-search="performSearch(query)" class="ng-isolate-scope">
+                           <div class="SearchFieldDesktop">
+                              <div class="InputText">
+                                 <input class="search" name="search" placeholder="Search by name" type="search">
+                                 <button class="Button theme-medium">
+                                    <svg-icon type="search" size="sm" class="ng-scope theme-small IconContainer">
+                                       <svg class="Icon" viewBox="0 0 16 16">
+                                          <use xlink:href="#thumbprinticon-search_16"></use>
+                                       </svg>
+                                    </svg-icon>
+                                 </button>
+                              </div>
+                              <div class="icon">
+                                 <svg-icon type="search" size="sm" class="ng-scope theme-small IconContainer">
+                                    <svg class="Icon" viewBox="0 0 16 16">
+                                       <use xlink:href="#thumbprinticon-search_16"></use>
+                                    </svg>
+                                 </svg-icon>
+                              </div>
+                           </div>
+                        </search-field-desktop>
+                     </div>
+                  </div>
+               </div>
+                 <div class="WorkInbox">
+                   <ul class="ContentList">
+                       <?php $__currentLoopData = $sentQuotesData; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $data): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?> 
+                      <a href="" class="WorkItem Request is-unread ContentList-item ContentList-item-rightColumn ng-isolate-scope" type="submit">
+                         <span class="Indicator"></span>
+                         <div class="ContentList-item-column">
+                            <h3 class="WorkItem-title T2-R">
+                              <?php echo e($data->name); ?>
 
-        <button class="Button theme-medium">
-            <svg-icon type="search" size="sm" class="ng-scope theme-small IconContainer"><svg class="Icon" viewBox="0 0 16 16">
-    <use xlink:href="#thumbprinticon-search_16"></use>
-</svg>
-</svg-icon>
-        </button>
-    </div>
+                            </h3>
+                            <span class="WorkItem-categoryAndLocation">  <?php echo e($data->serviceName); ?>
 
-    <div class="icon">
-        <svg-icon type="search" size="sm" class="ng-scope theme-small IconContainer"><svg class="Icon" viewBox="0 0 16 16">
-    <use xlink:href="#thumbprinticon-search_16"></use>
-</svg>
-</svg-icon>
-    </div>
-</div>
-</search-field-desktop>
-                    </div>
+                            </span>
+                            <p class="WorkItem-details">
+                            </p>
+                            <p class="WorkItem-messagePreview theme-secondary">
+                               <?php echo e($data->quotesMessage); ?>
+
+                            </p>
+                         </div>
+                         <div class="ContentList-item-column">
+                            <div class="WorkItem-time Request-time">
+                               <span aura-time-ago="" aura-time-ago-bind="1503124522000" class="ng-isolate-scope">  <!-- date --></span>
+                            </div>
+                            <div class="WorkItem-actionDecline1 Request-actionDecline1 ">
+                               <span class="pseudo-link"><h2>$<?php echo e($data->quotesPrice); ?></h2></span>
+                            </div>
+                         </div>
+                      </a>
+                      <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                   </ul>
+                   <div class="paginator">
+                      <h4>3 pages <span>29 records</span></h4>
+                      <div class="pages"><span class="paginator-item reverse arrow"><a class="paginator-bttn" target="_self" href="/profile/work/leads/?start=0&amp;n=10">← back</a></span> <span class="paginator-item number"><a class="paginator-bttn" target="_self" href="/profile/work/leads/?start=0&amp;n=10">1</a></span> <span class="paginator-item number"><strong class="paginator-active">2</strong></span> <span class="paginator-item number"><a class="paginator-bttn" target="_self" href="/profile/work/leads/?start=20&amp;n=10">3</a></span> <span class="paginator-item forward arrow"><a class="paginator-bttn" target="_self" href="/profile/work/leads/?start=20&amp;n=10">ahead →</a></span> </div>
+                   </div>
                 </div>
-</div><!-- end ngIf: responsiveIfVisible -->
-</div>
-
-                <div responsive-if="below-xs" responsive-grid="page" class="ng-scope"><!-- ngIf: responsiveIfVisible -->
-</div>
+               <!-- end ngIf: responsiveIfVisible -->
             </div>
-
-            <quote-list class="WorkInbox ng-isolate-scope">
-                                    <div class="EmptyState">
-                                                    <div class="EmptyState-icon">
-                                <svg-icon type="work--empty_states_icons--empty_quote_icon" size="lg" class="ng-scope theme-large IconContainer"><svg class="Icon" viewBox="0 0 48 48">
-    <use xlink:href="#thumbprinticon-work--empty_states_icons--empty_quote_icon_48"></use>
-</svg>
-</svg-icon>
-                            </div>
-
-                            <div class="EmptyState-message">
-                                All your sent quotes will show up here.
-                            </div>
-                                            </div>
-                            </quote-list>
-        </div>
-    </div>
-
-    <alert alert-id="quote-archive-error" theme="caution" class="ng-scope"><div class="alert T2-S alert--caution" ng-class="{
-        'alert--visible': alert.isVisible,
-        'alert--caution': alert.theme === 'caution',
-        'alert--success': alert.theme === 'success',
-    }">
-
-    <div class="alert__content">
-        <div ng-transclude=""><span class="ng-scope">
-        Could not archive this quote because it is already archived. Please reload the page.
-    </span></div>
-        <div class="alert__message ng-binding" ng-bind="alert.message"></div>
-        <svg-icon class="alert__close ng-scope theme-small IconContainer" type="close" size="sm" ng-click="alert.hide()"><svg class="Icon" viewBox="0 0 16 16">
-    <use xlink:href="#thumbprinticon-close_16"></use>
-</svg>
-</svg-icon>
-    </div>
-</div>
-</alert>
-
-    <pa-retention-offer-status check-mark-img-url="https://static.thumbtackstatic.com/_assets/images/release/modules/pa-retention-offer-status/images/green_check_mark-8e4b4a26.svg" sorry-mark-img-url="https://static.thumbtackstatic.com/_assets/images/release/modules/pa-retention-offer-status/images/sorry_mark-0c8b0480.svg" class="ng-isolate-scope"><modal-standard modal-id="pa-retention-offer-status-modal" class="ng-isolate-scope" style="display: block;"><div class="ModalStandard" ng-class="{
-        'is-visible': modalStandard.isVisible,
-        'theme-opaque': modalStandard.options.themeOpaque,
-        'theme-white-background': modalStandard.options.themeWhiteBackground,
-    }" backdrop="">
-
-    <button ng-hide="hideClose" class="ModalStandard-close Link" closes-modal-on-click="">
-
-        <svg-icon type="close" size="sm" class="ng-scope theme-small IconContainer"><svg class="Icon" viewBox="0 0 16 16">
-    <use xlink:href="#thumbprinticon-close_16"></use>
-</svg>
-</svg-icon>
-    </button>
-    <div class="page-grid" backdrop="">
-        <div class="column-lg-4 column-lg-offset-1" backdrop="">
-            <div class="ModalStandard-container" backdrop="">
-                <div class="ModalStandard-contents" ng-transclude="">
-    <div class="pa-retention-offer-status ng-scope">
-        <!-- ngIf: paRetentionOfferStatus.modeIsSuccess -->
-
-        <!-- ngIf: !paRetentionOfferStatus.modeIsSuccess --><div ng-if="!paRetentionOfferStatus.modeIsSuccess" class="ng-scope">
-            <img class="tp-margin-bottom--double" ng-src="https://static.thumbtackstatic.com/_assets/images/release/modules/pa-retention-offer-status/images/sorry_mark-0c8b0480.svg" alt="fail_icon" src="https://static.thumbtackstatic.com/_assets/images/release/modules/pa-retention-offer-status/images/sorry_mark-0c8b0480.svg">
-            <div class="tp-heading-4 tp-margin-bottom">
-                Oops!
+            <div responsive-if="below-xs" responsive-grid="page" class="ng-scope">
+               <!-- ngIf: responsiveIfVisible -->
             </div>
-            <div class="tp-heading-6 tp-margin-bottom--quad">
-                It looks like you've already claimed this offer.
+         </div>
+         <quote-list class="WorkInbox ng-isolate-scope">
+            <div class="EmptyState">
+               <div class="EmptyState-icon">
+                  <svg-icon type="work--empty_states_icons--empty_quote_icon" size="lg" class="ng-scope theme-large IconContainer">
+                     <svg class="Icon" viewBox="0 0 48 48">
+                        <use xlink:href="#thumbprinticon-work--empty_states_icons--empty_quote_icon_48"></use>
+                     </svg>
+                  </svg-icon>
+               </div>
+               <div class="EmptyState-message">
+               </div>
             </div>
-
-            <button class="tp-button pa-retention-offer-status__button" ng-click="paRetentionOfferStatus.closeSelf()">
-                Dismiss
+         </quote-list>
+      </div>
+   </div>
+   <alert alert-id="quote-archive-error" theme="caution" class="ng-scope">
+      <div class="alert T2-S alert--caution" ng-class="{
+         'alert--visible': alert.isVisible,
+         'alert--caution': alert.theme === 'caution',
+         'alert--success': alert.theme === 'success',
+         }">
+         <div class="alert__content">
+            <div ng-transclude=""><span class="ng-scope">
+               Could not archive this quote because it is already archived. Please reload the page.
+               </span>
+            </div>
+            <div class="alert__message ng-binding" ng-bind="alert.message"></div>
+            <svg-icon class="alert__close ng-scope theme-small IconContainer" type="close" size="sm" ng-click="alert.hide()">
+               <svg class="Icon" viewBox="0 0 16 16">
+                  <use xlink:href="#thumbprinticon-close_16"></use>
+               </svg>
+            </svg-icon>
+         </div>
+      </div>
+   </alert>
+   <pa-retention-offer-status check-mark-img-url="https://static.thumbtackstatic.com/_assets/images/release/modules/pa-retention-offer-status/images/green_check_mark-8e4b4a26.svg" sorry-mark-img-url="https://static.thumbtackstatic.com/_assets/images/release/modules/pa-retention-offer-status/images/sorry_mark-0c8b0480.svg" class="ng-isolate-scope">
+      <modal-standard modal-id="pa-retention-offer-status-modal" class="ng-isolate-scope" style="display: block;">
+         <div class="ModalStandard" ng-class="{
+            'is-visible': modalStandard.isVisible,
+            'theme-opaque': modalStandard.options.themeOpaque,
+            'theme-white-background': modalStandard.options.themeWhiteBackground,
+            }" backdrop="">
+            <button ng-hide="hideClose" class="ModalStandard-close Link" closes-modal-on-click="">
+               <svg-icon type="close" size="sm" class="ng-scope theme-small IconContainer">
+                  <svg class="Icon" viewBox="0 0 16 16">
+                     <use xlink:href="#thumbprinticon-close_16"></use>
+                  </svg>
+               </svg-icon>
             </button>
-        </div><!-- end ngIf: !paRetentionOfferStatus.modeIsSuccess -->
-    </div>
-</div>
+            <div class="page-grid" backdrop="">
+               <div class="column-lg-4 column-lg-offset-1" backdrop="">
+                  <div class="ModalStandard-container" backdrop="">
+                     <div class="ModalStandard-contents" ng-transclude="">
+                        <div class="pa-retention-offer-status ng-scope">
+                           <!-- ngIf: paRetentionOfferStatus.modeIsSuccess -->
+                           <!-- ngIf: !paRetentionOfferStatus.modeIsSuccess -->
+                           <div ng-if="!paRetentionOfferStatus.modeIsSuccess" class="ng-scope">
+                              <img class="tp-margin-bottom--double" ng-src="https://static.thumbtackstatic.com/_assets/images/release/modules/pa-retention-offer-status/images/sorry_mark-0c8b0480.svg" alt="fail_icon" src="https://static.thumbtackstatic.com/_assets/images/release/modules/pa-retention-offer-status/images/sorry_mark-0c8b0480.svg">
+                              <div class="tp-heading-4 tp-margin-bottom">
+                                 Oops!
+                              </div>
+                              <div class="tp-heading-6 tp-margin-bottom--quad">
+                                 It looks like you've already claimed this offer.
+                              </div>
+                              <button class="tp-button pa-retention-offer-status__button" ng-click="paRetentionOfferStatus.closeSelf()">
+                              Dismiss
+                              </button>
+                           </div>
+                           <!-- end ngIf: !paRetentionOfferStatus.modeIsSuccess -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
+         </div>
+      </modal-standard>
+   </pa-retention-offer-status>
 </div>
-</modal-standard>
-</pa-retention-offer-status>
-</div>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('javascript'); ?>
+<script type="text/javascript" src="<?php echo e(URL::to('public/assets/pa-active-quote-page-ng.es6-2f45a194.js')); ?>"></script>
+
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layouts.proffetionalDash', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -92,14 +92,33 @@
                                 <li>
                                     <a href="question">Service Questions</a>
                                 </li>
+                                <li>
+                                    <a href="showServiceQuotesCredit">Service Quotes Credit</a>
+                                </li>
                             </ul>
                         </div>
                     </li>
+
                     <li>
                         <a href="page">
                             <i class="material-icons">assignment</i>
                             <p>Meta Management</p>
                         </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#generalSettings" class="collapsed"   aria-expanded="generalSettings">
+                           <i class="material-icons">group</i>
+                            <p>General settings
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <div class="collapse" id="generalSettings" aria-expanded="false" style="height: auto;">
+                            <ul class="nav">
+                                <li>
+                                    <a href="paymentSetting">payment setting</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <?php endif; ?>
                 </ul>

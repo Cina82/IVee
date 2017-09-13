@@ -33,7 +33,7 @@
                         <div class="testimonial-carousel__item">
 
                             <div class="testimonial-carousel__quote-container">
-                                <h2 class="testimonial-carousel__quote">Building a business isn’t easy, but Thumbtack is giving you a quicker path. You can’t put a price on that freedom Thumbtack gives you.</h2>
+                                <h2 class="testimonial-carousel__quote">Building a business isn’t easy, but Ivee is giving you a quicker path. You can’t put a price on that freedom Ivee gives you.</h2>
                             </div>
 
                             <div class="testimonial-carousel__pro">
@@ -60,7 +60,7 @@
                         <div class="testimonial-carousel__item">
 
                             <div class="testimonial-carousel__quote-container">
-                                <h2 class="testimonial-carousel__quote">If you stick with it, the business will come. I’m so happy I didn’t give up on Thumbtack early on. It was truly a lifesaver when starting out.</h2>
+                                <h2 class="testimonial-carousel__quote">If you stick with it, the business will come. I’m so happy I didn’t give up on Ivee early on. It was truly a lifesaver when starting out.</h2>
                             </div>
 
                             <div class="testimonial-carousel__pro">
@@ -137,7 +137,7 @@
 
                                             <div class="ghg-steps__step__text">
                                                 <h2 class="ghg-steps__step__title" itemprop="headline">See how it works</h2>
-                                                <p class="ghg-steps__step__description">Find new customers on Thumbtack.</p>
+                                                <p class="ghg-steps__step__description">Find new customers on Ivee.</p>
                                                 <p class="ghg-steps__step__link">Learn more</p>
                                             </div>
 
@@ -177,7 +177,7 @@
 
                                             <div class="ghg-steps__step__text">
                                                 <h2 class="ghg-steps__step__title" itemprop="headline">Get more reviews</h2>
-                                                <p class="ghg-steps__step__description">They don’t all have to be from Thumbtack.</p>
+                                                <p class="ghg-steps__step__description">They don’t all have to be from Ivee.</p>
                                                 <p class="ghg-steps__step__link">Learn more</p>
                                             </div>
 

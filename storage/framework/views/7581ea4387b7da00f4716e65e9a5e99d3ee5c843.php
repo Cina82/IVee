@@ -88,7 +88,7 @@
             <div class="dynamic-row">
                 <div>
                     <div>
-                        <p>&copy; Thumbtack, Inc.</p>
+                        <p>&copy; Ivee, Inc.</p>
                                                 <div>
                             <a href="<?php echo e(URL::to('privacy')); ?>" target="_blank">Privacy policy</a> 
                             <a href="<?php echo e(URL::to('terms')); ?>" target="_blank" class="last">Terms of Use</a>

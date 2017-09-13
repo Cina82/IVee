@@ -34,7 +34,7 @@
                                         </div>
 
                                         <div class="intro-content__description">
-                                            <p>Creating a great profile takes time, but it’s worth it. Your profile helps customers decide if you’re the right pro for the job. Show them who you are in your “About” section and in your photos. <strong>83% of pros hired on Thumbtack include at least one picture highlighting their work.</strong></p>
+                                            <p>Creating a great profile takes time, but it’s worth it. Your profile helps customers decide if you’re the right pro for the job. Show them who you are in your “About” section and in your photos. <strong>83% of pros hired on Ivee include at least one picture highlighting their work.</strong></p>
                                         </div>
 
                                     </div>
@@ -56,7 +56,7 @@
                                                     <div class="testimonial-carousel__item">
 
                                                         <div class="testimonial-carousel__quote-container">
-                                                            <h2 class="testimonial-carousel__quote">Looking through the photos on a pro’s Thumbtack profile has been really helpful for me in figuring out what I actually want for my project.</h2>
+                                                            <h2 class="testimonial-carousel__quote">Looking through the photos on a pro’s Ivee profile has been really helpful for me in figuring out what I actually want for my project.</h2>
                                                         </div>
 
                                                         <div class="testimonial-carousel__pro">
@@ -65,7 +65,7 @@
                                                                 <div class="testimonial-carousel__pro-name">Shabrina J.</div>
 
                                                                 <div class="testimonial-carousel__pro-profession">New York, New York
-                                                                    <br>Thumbtack Customer</div>
+                                                                    <br>Ivee Customer</div>
 
                                                             </div>
 
@@ -89,7 +89,7 @@
                                         </div>
 
                                         <figcaption class="video-section__caption">
-                                            Easy steps to build your Thumbtack profile.
+                                            Easy steps to build your Ivee profile.
                                             <div id=profilepicture> </div>
                                         </figcaption>
 
@@ -257,7 +257,7 @@
                                                                 </div>
 
                                                                 <div class="testimonial-carousel__pro-link-container">
-                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link">See Garrett’s Thumbtack profile&nbsp;»</a>
+                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link">See Garrett’s Ivee profile&nbsp;»</a>
                                                                 </div>
 
                                                             </div>
@@ -288,7 +288,7 @@
                                                                 </div>
 
                                                                 <div class="testimonial-carousel__pro-link-container">
-                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link">See Shane’s Thumbtack profile&nbsp;»</a>
+                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link">See Shane’s Ivee profile&nbsp;»</a>
                                                                 </div>
 
                                                             </div>
@@ -300,7 +300,7 @@
                                                     <div class="testimonial-carousel__item">
 
                                                         <div class="testimonial-carousel__quote-container">
-                                                            <h2 class="testimonial-carousel__quote">Explain who you are and what you do. Upload photos and get credentials that Thumbtack offers. Get certified with the Better Business Bureau. Do everything you can to differentiate yourself.</h2>
+                                                            <h2 class="testimonial-carousel__quote">Explain who you are and what you do. Upload photos and get credentials that Ivee offers. Get certified with the Better Business Bureau. Do everything you can to differentiate yourself.</h2>
                                                         </div>
 
                                                         <div class="testimonial-carousel__pro">
@@ -319,7 +319,7 @@
                                                                 </div>
 
                                                                 <div class="testimonial-carousel__pro-link-container">
-                                                                    <a href="http://www.thumbtack.com/id/coeur-d-alene/wedding-services/wedding-officiant" target="_blank" class="testimonial-carousel__pro-link">See Dave’s Thumbtack profile&nbsp;»</a>
+                                                                    <a href="http://www.thumbtack.com/id/coeur-d-alene/wedding-services/wedding-officiant" target="_blank" class="testimonial-carousel__pro-link">See Dave’s Ivee profile&nbsp;»</a>
                                                                 </div>
 
                                                             </div>
@@ -350,7 +350,7 @@
                                                                 </div>
 
                                                                 <div class="testimonial-carousel__pro-link-container">
-                                                                    <a href="https://www.thumbtack.com/ca/santa-monica/yoga/fitness-training-services" target="_blank" class="testimonial-carousel__pro-link">See Meghan’s Thumbtack profile&nbsp;»</a>
+                                                                    <a href="https://www.thumbtack.com/ca/santa-monica/yoga/fitness-training-services" target="_blank" class="testimonial-carousel__pro-link">See Meghan’s Ivee profile&nbsp;»</a>
                                                                 </div>
 
                                                             </div>
@@ -377,7 +377,7 @@
                                                     Are you ready to update your profile to get more clients?
                                                 </div>
                                                 <div class="footer-cta__button-container tp-col tp-col--12 tp-col--md-6">
-                                                    <a href="https://www.thumbtack.com/profile/dashboard" class="footer-cta__button-link tp-button tp-button--large" target="_blank" rel="noopener noreferrer">
+                                                    <a href="" class="footer-cta__button-link tp-button tp-button--large" target="_blank" rel="noopener noreferrer">
                     Build Your Profile              </a>
                                                 </div>
 

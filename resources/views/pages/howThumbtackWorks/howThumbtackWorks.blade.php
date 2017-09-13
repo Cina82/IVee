@@ -44,7 +44,7 @@
                                         </div>
 
                                         <div class="intro-content__description">
-                                            <p>Whether you’re scaling your business, filling the gaps in your schedule, or just starting out, Thumbtack will help you find the right customers.</p>
+                                            <p>Whether you’re scaling your business, filling the gaps in your schedule, or just starting out, Ivee will help you find the right customers.</p>
                                         </div>
 
                                     </div>
@@ -66,7 +66,7 @@
                                                     <div class="testimonial-carousel__item">
 
                                                         <div class="testimonial-carousel__quote-container">
-                                                            <h2 class="testimonial-carousel__quote">Thumbtack is my go-to when I need something done. It’s so easy to find pros and schedule jobs. Everything I need to know is right there in front of me.</h2>
+                                                            <h2 class="testimonial-carousel__quote">Ivee is my go-to when I need something done. It’s so easy to find pros and schedule jobs. Everything I need to know is right there in front of me.</h2>
                                                         </div>
 
                                                         <div class="testimonial-carousel__pro">
@@ -98,10 +98,10 @@
                                         </div>
 
                                         <figcaption class="video-section__caption">
-                                            Learn how Thumbtack works </figcaption>
+                                            Learn how Ivee works </figcaption>
                                     </figure>
                                     <hr class="tp-rule">
-                                    <h2 class="subsection_title tp-heading-4">How Thumbtack works</h2>
+                                    <h2 class="subsection_title tp-heading-4">How Ivee works</h2>
                                     <div class="image-section">
                                         <div class="tp-grid tp-grid--center">
                                             <div class="image-section__wrap tp-col tp-col--12">
@@ -114,12 +114,12 @@
                                         <div class="tp-grid">
 
                                             <div class="content-block__content tp-col tp-col--12 ">
-                                                <p><strong>Customers come to Thumbtack to find local professionals.</strong></p>
+                                                <p><strong>Customers come to Ivee to find local professionals.</strong></p>
                                                 <p>They need to hire someone for a project &#8211; like a kitchen renovation, a wedding or pretty much anything. We ask them specific questions, and they ask us to find local professionals to help.</p>
                                                 <p><strong>We send you those warm leads. </strong></p>
-                                                <p>When you sign up with Thumbtack, you tell us what you’re looking for &#8211; how far you want to travel, what projects you can work on, and when you’re available. Then we match you with customers that fit. We’ll send you the customer’s project description &#8211; we call it a request.</p>
+                                                <p>When you sign up with Ivee, you tell us what you’re looking for &#8211; how far you want to travel, what projects you can work on, and when you’re available. Then we match you with customers that fit. We’ll send you the customer’s project description &#8211; we call it a request.</p>
                                                 <p><strong>You only pay to send the first message.</strong></p>
-                                                <p>We call it a quote. You decide if it’s a good fit, then send a message and price estimate. You pay with Thumbtack credits, which cost around $1.67 each. You’ll see how many credits it’ll take to quote on any job before you click “send.”</p>
+                                                <p>We call it a quote. You decide if it’s a good fit, then send a message and price estimate. You pay with Ivee credits, which cost around $1.67 each. You’ll see how many credits it’ll take to quote on any job before you click “send.”</p>
                                                 <p><strong>Customers choose from up to 5 quotes.</strong></p>
                                                 <p>They’ll look through everyone’s prices, messages, profiles and reviews and either hire someone right then or send a message for more info. You can email or text back to finalize the details of a job. And once you’re hired, we’ll ask the customer to review you.</p>
                                             </div>
@@ -146,7 +146,7 @@
                                                     <div class="testimonial-carousel__item">
 
                                                         <div class="testimonial-carousel__quote-container">
-                                                            <h2 class="testimonial-carousel__quote">For anyone who is skeptical and just starting out, try it. So many people are online, Googling, it’s easy to get lost in the abyss. Being on Thumbtack fine tunes the search for your potential clients. You’re only competing against four other quotes.</h2>
+                                                            <h2 class="testimonial-carousel__quote">For anyone who is skeptical and just starting out, try it. So many people are online, Googling, it’s easy to get lost in the abyss. Being on Ivee fine tunes the search for your potential clients. You’re only competing against four other quotes.</h2>
                                                         </div>
 
                                                         <div class="testimonial-carousel__pro">

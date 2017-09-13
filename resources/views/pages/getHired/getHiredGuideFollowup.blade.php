@@ -34,7 +34,7 @@
                                         </div>
 
                                         <div class="intro-content__description">
-                                            <p>Thumbtack lets you know when your quote has been viewed so you can perfectly time your follow-up message. Many customers get busy and lose track of their introductions, but that doesn’t mean they’re no longer interested. <strong>Top Pros follow up regularly on quotes with no response and turn them into hires. </strong></p>
+                                            <p>Ivee lets you know when your quote has been viewed so you can perfectly time your follow-up message. Many customers get busy and lose track of their introductions, but that doesn’t mean they’re no longer interested. <strong>Top Pros follow up regularly on quotes with no response and turn them into hires. </strong></p>
                                         </div>
 
                                     </div>
@@ -56,7 +56,7 @@
                                                     <div class="testimonial-carousel__item">
 
                                                         <div class="testimonial-carousel__quote-container">
-                                                            <h2 class="testimonial-carousel__quote">Generally I do a few back and forths on the Thumbtack messaging service. When you call a pro and they ask all the right questions, it makes the process of choosing so much easier.</h2>
+                                                            <h2 class="testimonial-carousel__quote">Generally I do a few back and forths on the Ivee messaging service. When you call a pro and they ask all the right questions, it makes the process of choosing so much easier.</h2>
                                                         </div>
 
                                                         <div class="testimonial-carousel__pro">
@@ -65,7 +65,7 @@
                                                                 <div class="testimonial-carousel__pro-name">Catherine H.</div>
 
                                                                 <div class="testimonial-carousel__pro-profession">New York, New York
-                                                                    <br>Thumbtack Customer</div>
+                                                                    <br>Ivee Customer</div>
 
                                                             </div>
 
@@ -101,7 +101,7 @@
                                         <div class="tp-grid">
 
                                             <div class="content-block__content tp-col tp-col--12">
-                                                <p>When you send a quote, Thumbtack notifies the customer and shares your profile information. If you don’t hear back in a day or two, send a follow-up message to schedule a call or offer an incentive, like a free consultation. When you do hear from customers, reply quickly.</p>
+                                                <p>When you send a quote, Ivee notifies the customer and shares your profile information. If you don’t hear back in a day or two, send a follow-up message to schedule a call or offer an incentive, like a free consultation. When you do hear from customers, reply quickly.</p>
                                             </div>
 
                                         </div>

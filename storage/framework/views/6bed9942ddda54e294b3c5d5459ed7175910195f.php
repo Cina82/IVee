@@ -96,7 +96,7 @@
       </div>
 
       <div class="page-grid theme-flex-columns">
-        <?php  $count = 0;  ?>
+        <?php   $count = 0;  ?>
         <?php $__currentLoopData = $serviceName; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $Servicename): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
           
           <div class="column-xs-6 column-sm-6 column-md-3 column-lg-2 Projects-projectCard">
@@ -121,8 +121,9 @@
                </div>
                <div class="Projects-projectCard-middle">
                   <ul class="Projects-projectCard-pros">
+                    <?php  $proCount = 0;  ?>
                     <?php $__currentLoopData = $users[$count]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $us): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                    
+                    <?php if($proCount < 3): ?>
                     <li class="Projects-projectCard-pros-item">
                         <a href="<?php echo e(URL::to('userProfile')); ?>/<?php echo e($us[0]->id); ?>" data-trigger="1">
                            <avatar class="Avatar Avatar--md">
@@ -132,6 +133,8 @@
                            </avatar>
                         </a>
                      </li>
+                     <?php  $proCount = $proCount + 1;  ?> 
+                     <?php endif; ?>
                      <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> 
                      <?php  $count = $count + 1;  ?>
                   </ul>
@@ -144,13 +147,11 @@
                   </div>
                </div>
                <div class="Projects-projectCard-bottom">
-                  <a href="<?php echo e(URL::to('')); ?>" class="Button theme-medium">
+                  <a href="<?php echo e(URL::to('viewQuotes')); ?>" class="Button theme-medium">
                   View Quotes
                   </a>
                   <p class="Projects-projectCard-actionLink">
-                     <span class="Link ng-scope" event-track="dashboard/click request again" event-track-on="click" open-request-form-modal="" ng-click="openModalWithCategoryId(
-                        'Q9sYIW2IZP5AkA',
-                        'dashboard-renew')">
+                     <span class="Link ng-scope">
                      Request again
                      </span>
                   </p>

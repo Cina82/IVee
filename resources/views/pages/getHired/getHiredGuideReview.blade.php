@@ -34,7 +34,7 @@
                                         </div>
 
                                         <div class="intro-content__description">
-                                            <p>Reviews are often the biggest influence on a customer’s hiring decision—a great review gives you credibility. To get hired more often, ask for reviews from past customers (both on and off Thumbtack). <strong>85% of the pros hired on Thumbtack have at least 1 review.</strong></p>
+                                            <p>Reviews are often the biggest influence on a customer’s hiring decision—a great review gives you credibility. To get hired more often, ask for reviews from past customers (both on and off Ivee). <strong>85% of the pros hired on Ivee have at least 1 review.</strong></p>
                                         </div>
 
                                     </div>
@@ -56,7 +56,7 @@
                                                     <div class="testimonial-carousel__item">
 
                                                         <div class="testimonial-carousel__quote-container">
-                                                            <h2 class="testimonial-carousel__quote">I rely a lot on reviews when considering whether or not to hire a pro on Thumbtack. It’s so important to read reviews from people whose projects are similar to mine.</h2>
+                                                            <h2 class="testimonial-carousel__quote">I rely a lot on reviews when considering whether or not to hire a pro on Ivee. It’s so important to read reviews from people whose projects are similar to mine.</h2>
                                                         </div>
 
                                                         <div class="testimonial-carousel__pro">
@@ -65,7 +65,7 @@
                                                                 <div class="testimonial-carousel__pro-name">Bret W.</div>
 
                                                                 <div class="testimonial-carousel__pro-profession">San Francisco, California
-                                                                    <br>Thumbtack Customer</div>
+                                                                    <br>Ivee Customer</div>
 
                                                             </div>
 
@@ -101,7 +101,7 @@
                                         <div class="tp-grid">
 
                                             <div class="content-block__content tp-col tp-col--12">
-                                                <p>Building a solid rating takes time, but you can get up to 10 reviews from past customers even before your first Thumbtack hire. Once you’re hired on Thumbtack, we’ll ask your customers to review you. All reviews from Thumbtack customers display on your profile along with the label “Verified Review.”</p>
+                                                <p>Building a solid rating takes time, but you can get up to 10 reviews from past customers even before your first Ivee hire. Once you’re hired on Ivee, we’ll ask your customers to review you. All reviews from Ivee customers display on your profile along with the label “Verified Review.”</p>
                                             </div>
 
                                         </div>
@@ -164,7 +164,7 @@
                                                 <div id="reviewemail1" class="hidden-modaal">
                                                     <h3>Anja&#8217;s email</h3>
                                                     <p>Hi Tanner,</p>
-                                                    <p>It&#8217;s been a while, but I still show off photos from your job more than any others in my portfolio. My customers are constantly inspired by your story and the results we accomplished. I just signed up on Thumbtack to find more excellent customers like you, and reviews are a big part of my profile. Can you take a moment to write a couple sentences about working with me? I&#8217;d love if my future customers could hear about your experience firsthand. You won&#8217;t need to sign up for anything, just go to this link: [Anja’s custom review link].</p>
+                                                    <p>It&#8217;s been a while, but I still show off photos from your job more than any others in my portfolio. My customers are constantly inspired by your story and the results we accomplished. I just signed up on Ivee to find more excellent customers like you, and reviews are a big part of my profile. Can you take a moment to write a couple sentences about working with me? I&#8217;d love if my future customers could hear about your experience firsthand. You won&#8217;t need to sign up for anything, just go to this link: [Anja’s custom review link].</p>
                                                     <p>Thanks, and don&#8217;t be a stranger!</p>
                                                 </div>
                                                 <div id="reviewemail2" class="hidden-modaal">
@@ -187,7 +187,7 @@
                                         <div class="tp-grid">
 
                                             <div class="content-block__content tp-col tp-col--12">
-                                                <p>Every pro gets an occasional negative review. Try not to get discouraged and instead, use it as a chance to show off your customer service skills. Customers often look at the pro’s response to a negative review to understand how you react when things don’t go perfectly. If you follow up with a thoughtful and positive response, future customers will see that you’re responsive and solution-oriented. <a class="modaal" href="#negativereview" data-modaal-type="inline">Here are some examples</a> of great responses from Thumbtack pros.</p>
+                                                <p>Every pro gets an occasional negative review. Try not to get discouraged and instead, use it as a chance to show off your customer service skills. Customers often look at the pro’s response to a negative review to understand how you react when things don’t go perfectly. If you follow up with a thoughtful and positive response, future customers will see that you’re responsive and solution-oriented. <a class="modaal" href="#negativereview" data-modaal-type="inline">Here are some examples</a> of great responses from Ivee pros.</p>
                                                 <p>Keep in mind that once you submit a response, you can’t edit it again, so make sure you’re confident in your response before you post it.</p>
                                                 <p>Check out more <a href="#" target="_blank" rel="noopener noreferrer">tips for responding to negative reviews</a>.</p>
                                                 <div id="negativereview" class="hidden-modaal">
@@ -221,7 +221,7 @@
                                                     <div class="testimonial-carousel__item">
 
                                                         <div class="testimonial-carousel__quote-container">
-                                                            <h2 class="testimonial-carousel__quote">Before I had any clients through Thumbtack, I reached out to my existing and former clients who knew my work well and asked them to write me a review. They always said yes—and if a few days went by without a review, I gently nudged them in a very friendly way.</h2>
+                                                            <h2 class="testimonial-carousel__quote">Before I had any clients through Ivee, I reached out to my existing and former clients who knew my work well and asked them to write me a review. They always said yes—and if a few days went by without a review, I gently nudged them in a very friendly way.</h2>
                                                         </div>
 
                                                         <div class="testimonial-carousel__pro">

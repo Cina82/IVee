@@ -20,13 +20,13 @@
                 </a>
             </div>
             <div class="header-middle-container">
-            <a class="middle-tab " href="<?php echo e(URL::to('explore')); ?>" event-track="dashboard/click explore" event-track-on="click">Index
+            <a class="middle-tab " href="<?php echo e(URL::to('proffetionalDash/Requests')); ?>" event-track="dashboard/click explore" event-track-on="click">Index
             </a>
-            <a class="middle-tab " href="<?php echo e(URL::to('explore')); ?>" event-track="dashboard/click explore" event-track-on="click">Calender
+            <!-- <a class="middle-tab " href="<?php echo e(URL::to('explore')); ?>" event-track="dashboard/click explore" event-track-on="click">Calender
+            </a> -->
+            <a class="middle-tab " href="<?php echo e(URL::to('professionaolDash/services')); ?>" event-track="dashboard/click explore" event-track-on="click">Services
             </a>
-            <a class="middle-tab " href="<?php echo e(URL::to('explore')); ?>" event-track="dashboard/click explore" event-track-on="click">Services
-            </a>
-            <a class="middle-tab " href="<?php echo e(URL::to('explore')); ?>" event-track="dashboard/click explore" event-track-on="click">Insights
+            <a class="middle-tab " href="<?php echo e(URL::to('professionaolDash/insights')); ?>" event-track="dashboard/click explore" event-track-on="click">Insights
             </a>
             </div>
 

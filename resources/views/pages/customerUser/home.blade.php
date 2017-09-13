@@ -97,7 +97,7 @@
       </div>
 
       <div class="page-grid theme-flex-columns">
-        @php $count = 0; @endphp
+        @php  $count = 0; @endphp
         @foreach($serviceName as $Servicename)
           
           <div class="column-xs-6 column-sm-6 column-md-3 column-lg-2 Projects-projectCard">
@@ -120,8 +120,9 @@
                </div>
                <div class="Projects-projectCard-middle">
                   <ul class="Projects-projectCard-pros">
+                    @php $proCount = 0; @endphp
                     @foreach($users[$count] as $us)
-                    
+                    @if($proCount < 3)
                     <li class="Projects-projectCard-pros-item">
                         <a href="{{URL::to('userProfile')}}/{{$us[0]->id}}" data-trigger="1">
                            <avatar class="Avatar Avatar--md">
@@ -131,6 +132,8 @@
                            </avatar>
                         </a>
                      </li>
+                     @php $proCount = $proCount + 1; @endphp 
+                     @endif
                      @endforeach 
                      @php $count = $count + 1; @endphp
                   </ul>
@@ -143,13 +146,11 @@
                   </div>
                </div>
                <div class="Projects-projectCard-bottom">
-                  <a href="{{URL::to('')}}" class="Button theme-medium">
+                  <a href="{{URL::to('viewQuotes')}}" class="Button theme-medium">
                   View Quotes
                   </a>
                   <p class="Projects-projectCard-actionLink">
-                     <span class="Link ng-scope" event-track="dashboard/click request again" event-track-on="click" open-request-form-modal="" ng-click="openModalWithCategoryId(
-                        'Q9sYIW2IZP5AkA',
-                        'dashboard-renew')">
+                     <span class="Link ng-scope">
                      Request again
                      </span>
                   </p>

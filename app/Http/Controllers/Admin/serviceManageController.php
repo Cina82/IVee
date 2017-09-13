@@ -10,7 +10,9 @@ use Illuminate\Validation\Rule;
 use App\Models\Admin\ServiceModel;
 use App\Models\Admin\CategoryModel;
 use App\Models\Admin\SubCategoryModel;
+use App\Models\Admin\serviceQuotesCredit;
 use Image;
+use DB;
 use Session;
 class serviceManageController extends Controller
 {
@@ -91,7 +93,9 @@ class serviceManageController extends Controller
         public function deleteService($id)
         {
              $post = ServiceModel::find($id);
+             $credit = DB::table('showServiceQuotesCredit')->where('serviceId', $id)->delete();
              $post->delete();
+             
              Session::flash('message', 'Service Delete Successfully.');
              Session::flash('alert-class', 'alert-success');
              return redirect('service');

@@ -3,23 +3,7 @@
     <div class="page-grid theme-full-bleed-at-xs">
         <div class="column-lg-6">
 			
-            <div class="inbox-options" quote-list-search>
-                <div responsive-if="above-xs" responsive-grid="page">
-                    <div class="HeaderDesktop">
-                        <h1 class="WorkHeader">In Progress</h1>
-                        <search-field-desktop on-search="performSearch(query)">
-                        </search-field-desktop>
-                    </div>
-                </div>
-
-                <div responsive-if="below-xs" responsive-grid="page">
-                    <div class="HeaderMobile">
-                        <h1 class="WorkHeader">In Progress</h1>
-                        <search-field-mobile on-search="performSearch(query)"></search-field-mobile>
-                    </div>
-                </div>
-            </div>
-			<quote-list class="WorkInbox ng-isolate-scope">
+            <quote-list class="WorkInbox ng-isolate-scope">
                                     <div class="EmptyState">
                                                     <div class="EmptyState-icon">
                                 <svg-icon type="work--empty_states_icons--empty_active_icon" size="lg" class="ng-scope theme-large IconContainer"><svg class="Icon" viewBox="0 0 48 48">

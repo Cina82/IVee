@@ -22,3 +22,9 @@
 .progress {
 	height: 10px !important;
 }
+.modal-body.wizard-body {
+    background-color: #F4F3F2 !important;
+}
+.modal-footer .wizard-footer{
+	background-color: #ffffff !important;
+}

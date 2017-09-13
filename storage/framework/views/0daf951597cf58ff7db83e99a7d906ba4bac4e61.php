@@ -12,6 +12,8 @@ and collect(request()->segments())->last() != 'terms'
 and collect(request()->segments())->last() != 'privacy'
 and collect(request()->segments())->last() != 'reset'
 and collect(request()->segments())->last() != 'blog'
+and collect(request()->segments())->last() != 'payAndSendQuotes'
+and collect(request()->segments())->last() != 'paywithpaypal'
 ): ?>
             
 <style>

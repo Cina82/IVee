@@ -1,9 +1,7 @@
 
-<?php if(collect(request()->segments())->last() == 'login'): ?>
+<?php if(collect(request()->segments())->last() == 'login' or collect(request()->segments())->last() == 'explore1'): ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
 <?php endif; ?>
-
 <script src="<?php echo e(URL::to('public/assets/jquery.browser-c000434a.js')); ?>">
     
 </script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script><script>
@@ -138,7 +136,7 @@
     <script src="<?php echo e(URL::to('public/assets/install-native-app-ng.es6-77e5c22f.js')); ?>">
     </script>
 
-    <script>
+     <script>
         $(document).ready(function() {
             angular.module('requestForm').constant(
                 'requestFormViewModel',

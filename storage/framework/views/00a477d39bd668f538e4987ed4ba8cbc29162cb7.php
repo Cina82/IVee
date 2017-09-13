@@ -115,13 +115,19 @@
                 3.95015528 70 0 71.854102 3.95015528 76 4.58359214 73 7.65835921 73.7082039 12
                 "></polygon></clipPath></defs></svg>
 
-            
+            <?php  $segment = Request::segment(1);  ?>
+
             <?php echo $__env->make('proffetionalDash.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-            
-            <?php echo $__env->make('proffetionalDash.nav', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-            <?php echo $__env->yieldContent('content'); ?>
-            <?php echo $__env->make('proffetionalDash.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-            <?php echo $__env->yieldContent('script'); ?>
+
+            <?php if($segment != 'professionaolQuotes'): ?>
+                <?php echo $__env->make('proffetionalDash.nav', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php endif; ?>
+
+                <?php echo $__env->yieldContent('content'); ?>
+            <?php if($segment != 'professionaolQuotes'): ?>
+                <?php echo $__env->make('proffetionalDash.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php endif; ?>
+                <?php echo $__env->yieldContent('script'); ?>
             <?php echo $__env->make('proffetionalDash.footerScript', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 </body>
 </html>

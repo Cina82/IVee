@@ -3,7 +3,7 @@
       <div class="tp-wrap-snap">
          <div class="full-footer__legal">
             <div class="full-footer__legal__copyright">
-               © 2017 Thumbtack, Inc.
+               © 2017 Ivee, Inc.
             </div>
             <ul class="full-footer__legal__docs">
                <li class="full-footer__legal__docs__item">

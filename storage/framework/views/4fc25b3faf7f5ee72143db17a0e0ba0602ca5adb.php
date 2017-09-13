@@ -1565,7 +1565,7 @@
                                 <div class="Hero-content tp-col tp-col--12 tp-col--lg-8 tp-color--white" data-reactid="17">
                                     <h1 class="tp-heading-1 tp-margin-bottom--double" data-reactid="18"><!-- react-text: 19 -->Accomplish (almost) anything<!-- /react-text --></h1>
                                     <div class="tp-heading-5" data-reactid="20">
-                                        <!-- react-text: 21 -->Book a DJ for your wedding. Remodel your first home. Meet the perfect dog-sitter. You can do it all—and much, much more—with Thumbtack. Just tell us what you need, and we&#x27;ll introduce you to several qualified professionals. Then, compare and hire the pro that&#x27;s right for you. It&#x27;s that easy.
+                                        <!-- react-text: 21 -->Book a DJ for your wedding. Remodel your first home. Meet the perfect dog-sitter. You can do it all—and much, much more—with Ivee. Just tell us what you need, and we&#x27;ll introduce you to several qualified professionals. Then, compare and hire the pro that&#x27;s right for you. It&#x27;s that easy.
                                         <!-- /react-text -->
                                     </div>
                                 </div>
@@ -1574,7 +1574,7 @@
                     </div>
                     <div class="how-it-works" data-reactid="22">
                         <div class="tp-wrap-snap" data-reactid="23">
-                            <h2 class="how-it-works__header tp-heading-3" data-reactid="24"><!-- react-text: 25 -->How does Thumbtack work?<!-- /react-text --></h2>
+                            <h2 class="how-it-works__header tp-heading-3" data-reactid="24"><!-- react-text: 25 -->How does Ivee work?<!-- /react-text --></h2>
                             <div class="how-it-works__stack" data-reactid="26">
                                 <div class="how-it-works__stack__img-wrap" data-reactid="27"><img src="https://static2.thumbtackstatic.com/_assets/images/release/pages/how-it-works-page/images/step-1-a207e271.jpg" data-reactid="28" /></div>
                                 <div class="how-it-works__stack__content" data-reactid="29" dir="rtl">

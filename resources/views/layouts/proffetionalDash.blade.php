@@ -115,13 +115,19 @@
                 3.95015528 70 0 71.854102 3.95015528 76 4.58359214 73 7.65835921 73.7082039 12
                 "></polygon></clipPath></defs></svg>
 
-            
+            @php $segment = Request::segment(1); @endphp
+
             @include('proffetionalDash.header')
-            
-            @include('proffetionalDash.nav')
-            @yield('content')
-            @include('proffetionalDash.footer')
-            @yield('script')
+
+            @if($segment != 'professionaolQuotes')
+                @include('proffetionalDash.nav')
+            @endif
+
+                @yield('content')
+            @if($segment != 'professionaolQuotes')
+                @include('proffetionalDash.footer')
+            @endif
+                @yield('script')
             @include('proffetionalDash.footerScript')
 </body>
 </html>

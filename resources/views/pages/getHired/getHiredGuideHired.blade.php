@@ -34,7 +34,7 @@
                                         </div>
 
                                         <div class="intro-content__description">
-                                            <p>Congratulations! Once you’re hired on Thumbtack, do what you do best—deliver a great experience and make sure to mark yourself as hired to increase your chances of getting a review. <strong>Keep up your momentum with these tools that make getting hired faster and easier.</strong></p>
+                                            <p>Congratulations! Once you’re hired on Ivee, do what you do best—deliver a great experience and make sure to mark yourself as hired to increase your chances of getting a review. <strong>Keep up your momentum with these tools that make getting hired faster and easier.</strong></p>
                                         </div>
 
                                     </div>
@@ -56,7 +56,7 @@
                                                     <div class="testimonial-carousel__item">
 
                                                         <div class="testimonial-carousel__quote-container">
-                                                            <h2 class="testimonial-carousel__quote">I don’t think that I would have been able to find the same quality pros without Thumbtack. I’m already thinking of a couple new projects around my home to tackle!</h2>
+                                                            <h2 class="testimonial-carousel__quote">I don’t think that I would have been able to find the same quality pros without Ivee. I’m already thinking of a couple new projects around my home to tackle!</h2>
                                                         </div>
 
                                                         <div class="testimonial-carousel__pro">
@@ -65,7 +65,7 @@
                                                                 <div class="testimonial-carousel__pro-name">Elida S.</div>
 
                                                                 <div class="testimonial-carousel__pro-profession">Los Angeles, California
-                                                                    <br>Thumbtack Customer</div>
+                                                                    <br>Ivee Customer</div>
 
                                                             </div>
 
@@ -101,7 +101,7 @@
                                         <div class="tp-grid">
 
                                             <div class="content-block__content tp-col tp-col--12">
-                                                <p>Reviews from Thumbtack customers are labeled “Verified Review” on your profile. People appreciate reading reviews from other Thumbtack customers to help determine whether you’re the right fit for their project. These reviews increase your credibility and build customer trust.</p>
+                                                <p>Reviews from Ivee customers are labeled “Verified Review” on your profile. People appreciate reading reviews from other Ivee customers to help determine whether you’re the right fit for their project. These reviews increase your credibility and build customer trust.</p>
                                             </div>
 
                                         </div>
@@ -119,7 +119,7 @@
                                                     <li><strong>If a customer marks you as hired, we automatically email them</strong> to ask for a review.</li>
                                                     <li><strong>Otherwise, mark yourself as hired on a customer’s project.</strong> We’ll email the customer to confirm they’ve hired you for the job and ask them to write you a review.</li>
                                                     <li><strong>Schedule the email asking for a review.</strong> Once you&#8217;re marked as hired, look below your quote to find the date when we’ll email the customer. It’s best for this email to be sent within 1-2 days of a completed job, or in the case of a long-term project, about a month after you’ve started working together. To reschedule the review request email to a better date, click &#8220;Set a new date.”</li>
-                                                    <li><strong>Ask for a review in a follow-up message.</strong> Messaging customers directly on Thumbtack makes it easy for them to head straight to your profile and leave their review after reading your message.</li>
+                                                    <li><strong>Ask for a review in a follow-up message.</strong> Messaging customers directly on Ivee makes it easy for them to head straight to your profile and leave their review after reading your message.</li>
                                                 </ol>
                                             </div>
 
@@ -254,7 +254,7 @@
                                                     <div class="testimonial-carousel__item">
 
                                                         <div class="testimonial-carousel__quote-container">
-                                                            <h2 class="testimonial-carousel__quote">I’ve created quote templates for our most common requests so we can speak directly to the customer’s needs. Each template also includes our Best of Thumbtack award and information about licenses, insurance, and qualifications.</h2>
+                                                            <h2 class="testimonial-carousel__quote">I’ve created quote templates for our most common requests so we can speak directly to the customer’s needs. Each template also includes our Best of Ivee award and information about licenses, insurance, and qualifications.</h2>
                                                         </div>
 
                                                         <div class="testimonial-carousel__pro">
@@ -285,7 +285,7 @@
                                                     <div class="testimonial-carousel__item">
 
                                                         <div class="testimonial-carousel__quote-container">
-                                                            <h2 class="testimonial-carousel__quote">Recently, I started asking clients to make sure they mark me as hired on Thumbtack. This way they get a message asking to write me a review, which they usually do. Think about reviews on day one or you'll lose business opportunities.</h2>
+                                                            <h2 class="testimonial-carousel__quote">Recently, I started asking clients to make sure they mark me as hired on Ivee. This way they get a message asking to write me a review, which they usually do. Think about reviews on day one or you'll lose business opportunities.</h2>
                                                         </div>
 
                                                         <div class="testimonial-carousel__pro">

@@ -9,19 +9,16 @@
             font-weight: 400;
             src: url(https://thumbprint.thumbtack.com/asset/font/721263/2cd55546-ec00-4af9-aeca-4a3cd186da53.woff2) format("woff2"), url(https://thumbprint.thumbtack.com/asset/font/721263/1e9892c0-6927-4412-9874-1b82801ba47a.woff) format("woff")
         }
-        
         @font-face {
             font-family: Avenir;
             font-weight: 500;
             src: url(https://thumbprint.thumbtack.com/asset/font/721275/627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2) format("woff2"), url(https://thumbprint.thumbtack.com/asset/font/721275/f26faddb-86cc-4477-a253-1e1287684336.woff) format("woff")
         }
-        
         @font-face {
             font-family: Avenir;
             font-weight: 600;
             src: url(https://thumbprint.thumbtack.com/asset/font/721269/aad99a1f-7917-4dd6-bbb5-b07cedbff64f.woff2) format("woff2"), url(https://thumbprint.thumbtack.com/asset/font/721269/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff) format("woff")
         }
-        
         html {
             box-sizing: border-box
         }
@@ -1567,7 +1564,7 @@
                                 <div class="Hero-content tp-col tp-col--12 tp-col--lg-8 tp-color--white" data-reactid="17">
                                     <h1 class="tp-heading-1 tp-margin-bottom--double" data-reactid="18"><!-- react-text: 19 -->Accomplish (almost) anything<!-- /react-text --></h1>
                                     <div class="tp-heading-5" data-reactid="20">
-                                        <!-- react-text: 21 -->Book a DJ for your wedding. Remodel your first home. Meet the perfect dog-sitter. You can do it all—and much, much more—with Thumbtack. Just tell us what you need, and we&#x27;ll introduce you to several qualified professionals. Then, compare and hire the pro that&#x27;s right for you. It&#x27;s that easy.
+                                        <!-- react-text: 21 -->Book a DJ for your wedding. Remodel your first home. Meet the perfect dog-sitter. You can do it all—and much, much more—with Ivee. Just tell us what you need, and we&#x27;ll introduce you to several qualified professionals. Then, compare and hire the pro that&#x27;s right for you. It&#x27;s that easy.
                                         <!-- /react-text -->
                                     </div>
                                 </div>
@@ -1576,7 +1573,7 @@
                     </div>
                     <div class="how-it-works" data-reactid="22">
                         <div class="tp-wrap-snap" data-reactid="23">
-                            <h2 class="how-it-works__header tp-heading-3" data-reactid="24"><!-- react-text: 25 -->How does Thumbtack work?<!-- /react-text --></h2>
+                            <h2 class="how-it-works__header tp-heading-3" data-reactid="24"><!-- react-text: 25 -->How does Ivee work?<!-- /react-text --></h2>
                             <div class="how-it-works__stack" data-reactid="26">
                                 <div class="how-it-works__stack__img-wrap" data-reactid="27"><img src="https://static2.thumbtackstatic.com/_assets/images/release/pages/how-it-works-page/images/step-1-a207e271.jpg" data-reactid="28" /></div>
                                 <div class="how-it-works__stack__content" data-reactid="29" dir="rtl">

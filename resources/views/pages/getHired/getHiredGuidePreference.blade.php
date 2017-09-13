@@ -34,7 +34,7 @@
                                         </div>
 
                                         <div class="intro-content__description">
-                                            <p>Find your customer “sweet spot.” Three main factors affect the kinds of customer requests you receive on Thumbtack: your job types, travel preferences, and availability.</p>
+                                            <p>Find your customer “sweet spot.” Three main factors affect the kinds of customer requests you receive on Ivee: your job types, travel preferences, and availability.</p>
                                         </div>
 
                                     </div>
@@ -56,7 +56,7 @@
                                                     <div class="testimonial-carousel__item">
 
                                                         <div class="testimonial-carousel__quote-container">
-                                                            <h2 class="testimonial-carousel__quote">I run a small business so my schedule is tight. On Thumbtack I can find pros who are ready to work as soon as I need them. Last time I used Thumbtack, I hired a packer and they came the same day.</h2>
+                                                            <h2 class="testimonial-carousel__quote">I run a small business so my schedule is tight. On Ivee I can find pros who are ready to work as soon as I need them. Last time I used Ivee, I hired a packer and they came the same day.</h2>
                                                         </div>
 
                                                         <div class="testimonial-carousel__pro">
@@ -65,7 +65,7 @@
                                                                 <div class="testimonial-carousel__pro-name">Yolanda F.</div>
 
                                                                 <div class="testimonial-carousel__pro-profession">Washington, D.C.
-                                                                    <br>Thumbtack Customer</div>
+                                                                    <br>Ivee Customer</div>
 
                                                             </div>
 
@@ -162,7 +162,7 @@
                                         <div class="tp-grid">
 
                                             <div class="content-block__content tp-col tp-col--12">
-                                                <p>Manage your schedule with Thumbtack. You can view your calendar in your <a href="#">Account Settings</a> page. The calendar lets you block off the days and hours you’re unavailable so you only receive customer requests for times you’re free.</p>
+                                                <p>Manage your schedule with Ivee. You can view your calendar in your <a href="#">Account Settings</a> page. The calendar lets you block off the days and hours you’re unavailable so you only receive customer requests for times you’re free.</p>
                                             </div>
 
                                         </div>

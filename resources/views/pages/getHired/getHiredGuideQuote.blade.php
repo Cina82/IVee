@@ -65,7 +65,7 @@
                                                                 <div class="testimonial-carousel__pro-name">Kara B.</div>
 
                                                                 <div class="testimonial-carousel__pro-profession">Los Angeles, California
-                                                                    <br>Thumbtack Customer</div>
+                                                                    <br>Ivee Customer</div>
 
                                                             </div>
 
@@ -210,7 +210,7 @@
                                         <div class="tp-grid">
 
                                             <div class="content-block__content tp-col tp-col--12">
-                                                <p>After writing your first quote, you’ll be prompted to buy Thumbtack Credits to send it—sort of like buying postage for a delivery. You only pay to send quotes, and you keep all of what you earn from customers.</p>
+                                                <p>After writing your first quote, you’ll be prompted to buy Ivee Credits to send it—sort of like buying postage for a delivery. You only pay to send quotes, and you keep all of what you earn from customers.</p>
                                                 <p>Each credit costs $1.67, or you can <a href="#" target="_blank" rel="noopener noreferrer">buy credit packs for discounts</a>. The number of credits needed to quote on each request varies based on the job’s value and competition from other pros in that market.</p>
                                                 <p>Every request displays the number of credits you’ll need to send a quote. <strong>If your quote isn’t viewed within 48 hours, we’ll automatically refund those credits back to your account. </strong></p>
                                                 <p>Check out <a href="#" target="_blank" rel="noopener noreferrer">details on credits and pricing</a>.</p>

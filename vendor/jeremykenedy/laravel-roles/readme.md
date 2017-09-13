@@ -1,7 +1,10 @@
-# Roles And Permissions For Laravel 5.4
+# Roles And Permissions For Laravel,Supports Laravel 5.3, 5.4, and 5.5.
 
-A Powerful package for handling roles and permissions in Laravel 5.4
-This package is an adaptation of [romanbican/roles](https://github.com/romanbican/roles) and [ultraware/roles](https://github.com/ultraware/roles/).
+[![Total Downloads](https://poser.pugx.org/jeremykenedy/laravel-roles/d/total.svg)](https://packagist.org/packages/jeremykenedy/laravel-roles)
+[![Latest Stable Version](https://poser.pugx.org/jeremykenedy/laravel-roles/v/stable.svg)](https://packagist.org/packages/jeremykenedy/laravel-roles)
+[![License](https://poser.pugx.org/jeremykenedy/laravel-roles/license.svg)](https://packagist.org/packages/jeremykenedy/laravel-roles)
+
+A Powerful package for handling roles and permissions in Laravel.
 
 - [Installation](#installation)
     - [Composer](#composer)
@@ -27,6 +30,8 @@ This package is an adaptation of [romanbican/roles](https://github.com/romanbica
 - [More Information](#more-information)
 - [License](#license)
 
+---
+
 ## Installation
 
 This package is very easy to set up. There are only couple of steps.
@@ -39,7 +44,10 @@ composer require jeremykenedy/laravel-roles
 ```
 
 ### Service Provider
+* Laravel 5.5 and up
+Uses package auto discovery feature, no need to edit the `config/app.php` file.
 
+* Laravel 5.4 and below
 Add the package to your application service providers in `config/app.php` file.
 
 ```php
@@ -67,7 +75,7 @@ Publish the package config file and migrations to your application. Run these co
 
 1. Include `HasRoleAndPermission` trait and also implement `HasRoleAndPermission` contract inside your `User` model. See example below.
 
-2. Include `use jeremykenedy\LararvelRoles\Traits\HasRoleAndPermission;` in the top of your `User` model below the namespace and implement the `HasRoleAndPermission` trait. See example below.
+2. Include `use jeremykenedy\LaravelRoles\Traits\HasRoleAndPermission;` in the top of your `User` model below the namespace and implement the `HasRoleAndPermission` trait. See example below.
 
 Example `User` model Trait And Contract:
 
@@ -132,15 +140,73 @@ class DatabaseSeeder extends Seeder
 
 3. Seed an initial set of Permissions, Roles, and Users with roles.
 
-`php artisan db:seed`
+```
+composer dump-autoload
+php artisan db:seed
+```
+
+#### Roles Seeded
+|Property|Value|
+|----|----|
+|Name| Admin|
+|Slug| admin|
+|Description| Admin Role|
+|Level| 5|
+
+|Property|Value|
+|----|----|
+|Name| User|
+|Slug| user|
+|Description| User Role|
+|Level| 1|
+
+|Property|Value|
+|----|----|
+|Name| Unverified|
+|Slug| unverified|
+|Description| Unverified Role|
+|Level| 0|
+
+#### Permissions Seeded:
+|Property|Value|
+|----|----|
+|name|Can View Users|
+|slug|view.users|
+|description|Can view users|
+|model|Permission|
+
+|Property|Value|
+|----|----|
+|name|Can Create Users|
+|slug|create.users|
+|description|Can create new users|
+|model|Permission|
+
+|Property|Value|
+|----|----|
+|name|Can Edit Users|
+|slug|edit.users|
+|description|Can edit users|
+|model|Permission|
+
+|Property|Value|
+|----|----|
+|name|Can Delete Users|
+|slug|delete.users|
+|description|Can delete users|
+|model|Permission|
 
 
-##### And that's it!
+### And that's it!
+
+---
 
 ## Migrate from bican roles
 If you migrate from bican/roles to jeremykenedy/LaravelRoles you will need to update a few things.
 - Change all calls to `can`, `canOne` and `canAll` to `hasPermission`, `hasOnePermission`, `hasAllPermissions`.
 - Change all calls to `is`, `isOne` and `isAll` to `hasRole`, `hasOneRole`, `hasAllRoles`.
+
+---
 
 ## Usage
 
@@ -425,23 +491,26 @@ protected $routeMiddleware = [
 Now you can easily protect your routes.
 
 ```php
-$router->get('/example', [
-    'as' => 'example',
-    'middleware' => 'role:admin',
-    'uses' => 'ExampleController@index',
-]);
+Route::get('/', function () {
+    //
+})->middleware('role:admin');
 
-$router->post('/example', [
-    'as' => 'example',
-    'middleware' => 'permission:edit.articles',
-    'uses' => 'ExampleController@index',
-]);
+Route::get('/', function () {
+    //
+})->middleware('permission:edit.articles');
 
-$router->get('/example', [
-    'as' => 'example',
-    'middleware' => 'level:2', // level >= 2
-    'uses' => 'ExampleController@index',
-]);
+Route::get('/', function () {
+    //
+})->middleware('level:2'); // level >= 2
+
+Route::get('/', function () {
+    //
+})->middleware('role:admin', 'level:2'); // level >= 2 and Admin
+
+Route::group(['middleware' => ['role:admin']], function () {
+    //
+});
+
 ```
 
 It throws `\jeremykenedy\LaravelRoles\Exceptions\RoleDeniedException`, `\jeremykenedy\LaravelRoles\Exceptions\PermissionDeniedException` or `\jeremykenedy\LaravelRoles\Exceptions\LevelDeniedException` exceptions if it goes wrong.
@@ -449,23 +518,38 @@ It throws `\jeremykenedy\LaravelRoles\Exceptions\RoleDeniedException`, `\jeremyk
 You can catch these exceptions inside `app/Exceptions/Handler.php` file and do whatever you want.
 
 ```php
-/**
- * Render an exception into an HTTP response.
- *
- * @param  \Illuminate\Http\Request  $request
- * @param  \Exception  $e
- * @return \Illuminate\Http\Response
- */
-public function render($request, Exception $e)
-{
-    if ($e instanceof \jeremykenedy\LaravelRoles\Exceptions\RoleDeniedException) {
-        // you can for example flash message, redirect...
-        return redirect()->back();
-    }
+    /**
+     * Render an exception into an HTTP response.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Exception  $exception
+     * @return \Illuminate\Http\Response
+     */
+    public function render($request, Exception $exception)
+    {
 
-    return parent::render($request, $e);
-}
+        $userLevelCheck = $exception instanceof \jeremykenedy\LaravelRoles\Exceptions\RoleDeniedException ||
+            $exception instanceof \jeremykenedy\LaravelRoles\Exceptions\RoleDeniedException ||
+            $exception instanceof \jeremykenedy\LaravelRoles\Exceptions\PermissionDeniedException ||
+            $exception instanceof \jeremykenedy\LaravelRoles\Exceptions\LevelDeniedException;
+
+        if ($userLevelCheck) {
+
+            if ($request->expectsJson()) {
+                return Response::json(array(
+                    'error'    =>  403,
+                    'message'   =>  'Unauthorized.'
+                ), 403);
+            }
+
+            abort(403);
+        }
+
+        return parent::render($request, $exception);
+    }
 ```
+
+---
 
 ## Config File
 
@@ -474,6 +558,9 @@ You can change connection for models, slug separator, models path and there is a
 ## More Information
 
 For more information, please have a look at [HasRoleAndPermission](https://github.com/jeremykenedy/laravel-roles/blob/master/src/Contracts/HasRoleAndPermission.php) contract.
+
+## Credit Note
+This package is an adaptation of [romanbican/roles](https://github.com/romanbican/roles) and [ultraware/roles](https://github.com/ultraware/roles/).
 
 ## License
 

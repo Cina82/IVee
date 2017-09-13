@@ -11,19 +11,19 @@
             <!-- Hero -->
 
             <hero class="Hero " responsive-image responsive-grid="page" uses-densities above-md="{
-        '1x': '            https://static.thumbtackstatic.com/_assets/images/release/pages/about-page/images/about-page-hero_desktop-9b802081.jpg
+        '1x': '{{URL::to('public/assets/img/about-page-hero_desktop-9b802081.jpg')}}
     ',
-        '2x': '            https://static.thumbtackstatic.com/_assets/images/release/pages/about-page/images/about-page-hero_desktop_retina-d7a2fa03.jpg
+        '2x': '{{URL::to('public/assets/img/about-page-hero_desktop_retina-d7a2fa03.jpg')}}
     '
     }" above-sm-below-md="{
-        '1x': '            https://static.thumbtackstatic.com/_assets/images/release/pages/about-page/images/about-page-hero_mobile-4938e477.jpg
+        '1x': '{{URL::to('public/assets/img/about-page-hero_mobile-4938e477.jpg')}}
     ',
-        '2x': '            https://static.thumbtackstatic.com/_assets/images/release/pages/about-page/images/about-page-hero_mobile_retina-591242fc.jpg
+        '2x': '{{URL::to('public/assets/img/about-page-hero_mobile_retina-591242fc.jpg')}}
     '
     }" below-sm="{
-        '1x': '            https://static.thumbtackstatic.com/_assets/images/release/pages/about-page/images/about-page-hero_small-5ae04dcd.jpg
+        '1x': '{{URL::to('public/assets/img/about-page-hero_small-5ae04dcd.jpg')}}
     ',
-        '2x': '            https://static.thumbtackstatic.com/_assets/images/release/pages/about-page/images/about-page-hero_small_retina-b783a2e5.jpg
+        '2x': '{{URL::to('public/assets/img/about-page-hero_small_retina-b783a2e5.jpg')}}
     '
     }">
                 <div class="Hero-tint ">
@@ -103,7 +103,7 @@
                                     <div class="gallery__image__tint"></div>
                                     <div class="gallery__text">
                                         <blockquote class="tp-heading-4 tp-margin-bottom">
-                                            Thumbtack has a real opportunity to transform how local professionals find new customers. The Thumbtack team is highly impressive and the opportunity in front of them is enormous.
+                                            Ivee has a real opportunity to transform how local professionals find new customers. The Ivee team is highly impressive and the opportunity in front of them is enormous.
                                         </blockquote>
                                         <div class="tp-heading-6">Bloomberg</div>
                                     </div>
@@ -135,7 +135,7 @@
                         <div class="tp-grid tp-grid--center creating-impact__wrap">
                             <div class="tp-col tp-col--12 tp-col--sm-10 tp-col--md-8">
                                 <div class="creating-impact__wrap__title tp-heading-3">We’re leading the way</div>
-                                <p>Americans spend nearly $700 billion annually on the types of services we offer on Thumbtack. That’s a massive opportunity to transform how people hire local pros, and help small businesses flourish in the process.</p>
+                                <p>Americans spend nearly $700 billion annually on the types of services we offer on Ivee. That’s a massive opportunity to transform how people hire local pros, and help small businesses flourish in the process.</p>
                             </div>
                         </div>
                         <div class="tp-grid">
@@ -211,7 +211,7 @@
                         <div class="tp-grid tp-grid--center">
                             <div class="perks__intro tp-col tp-col--12 tp-col--sm-10 tp-col--md-8">
                                 <h2 class="tp-heading-3">But wait - there&#039;s more!</h2>
-                                <p>Beyond the rewarding work, we offer some pretty great extras to keep every Thumbtack employee healthy, happy and successful.</p>
+                                <p>Beyond the rewarding work, we offer some pretty great extras to keep every Ivee employee healthy, happy and successful.</p>
                             </div>
                         </div>
                         <div class="tp-grid">

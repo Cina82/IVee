@@ -7,10 +7,9 @@
                 'theme-no-top-margin':
                     '',
             }">
-
-            <div class="page-grid theme-full-bleed-at-xs">
+             <div class="page-grid theme-full-bleed-at-xs">
                 <div class="column-lg-6">
-                    <pa-upsell-rich-data-banner class="ng-isolate-scope">
+                    <pa-upsell-rich-data-banner class="ng-isolate-scope" dir="rtl" >
                         <div responsive-if="above-md" responsive-grid="page" class="ng-scope">
                             <!-- ngIf: responsiveIfVisible -->
                             <div ng-if="responsiveIfVisible" class="ng-scope">
@@ -39,7 +38,7 @@
                         </div>
                     </pa-upsell-rich-data-banner>
 
-                    <div class="WorkLeads-RequestsHeader">
+                    <div class="WorkLeads-RequestsHeader" dir="rtl">
                         <h1 class="WorkHeader">
                                     Requests
                                 </h1>
@@ -62,7 +61,7 @@
                             </svg>
                         </svg-icon>
                         </span>
-                        <ul class="Select-box">
+                        <ul class="Select-box" >
                             <li>Most relevant</li>
                             <li>Newest</li>
                         </ul>
@@ -81,15 +80,15 @@
                 </span>
             </div>
             <div class="WorkInbox">
-                <ul class="ContentList">
+                <ul class="ContentList" dir="rtl">
                 @foreach($customerData as $cust)
-
+                    
                 @php 
                      $decodeQuestion = json_decode($cust['questionAndOption']);
                      $options = json_decode($decodeQuestion->options);
                      
                  @endphp
-                    <a href="" class="WorkItem Request is-unread ContentList-item ContentList-item-rightColumn ng-isolate-scope">
+                        <a href="{{URL::to('professionaolQuotes')}}/{{$cust['serviceId']}}/{{$cust['userId']}}" class="WorkItem Request is-unread ContentList-item ContentList-item-rightColumn ng-isolate-scope" type="submit">
                         <span class="Indicator"></span>
                         <div class="ContentList-item-column">
                             <h3 class="WorkItem-title T2-R">
@@ -117,7 +116,7 @@
                             </p>
                         </div>
 
-                        <div class="ContentList-item-column">
+                        <div class="ContentList-item-column" style="text-align: left !important;">
                             <div class="WorkItem-time Request-time">
                                 <span aura-time-ago="" aura-time-ago-bind="1503124522000" class="ng-isolate-scope">Aug 19 at 6:35 am</span>
                             </div>
@@ -127,7 +126,6 @@
                             </div>
                         </div>
                     </a>
-
                     @endforeach
                 </ul>
 

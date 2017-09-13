@@ -75,6 +75,15 @@ Route::group(['middleware'=> ['auth', 'activated', 'currentUser']], function () 
     Route::post('avatar/upload', ['as' => 'avatar.upload', 'uses' => 'ProfilesController@upload']);
 
 });
+
+// route for view/blade file
+Route::get('paywithpaypal', array('as' => 'paywithpaypal','uses' => 'PaypalController@payWithPaypal',));
+// route for post request
+Route::post('paypal', array('as' => 'paypal','uses' => 'PaypalController@postPaymentWithpaypal',));
+// route for check status responce
+Route::get('paypal', array('as' => 'status','uses' => 'PaypalController@getPaymentStatus',));
+
+
 //professional management
 Route::get('prosignup', 'pro\proManageController@prosignup');
 Route::get('prosubcate/{id}','pro\proManageController@prosubcat');
@@ -86,10 +95,11 @@ Route::get('saveServiceProvide','pro\proManageController@saveServiceProvide');
 
 Route::get('customerQuestion', 'customerQuestion\customerQuestionManageController@customerQuestion');
 Route::post('popupQuestionAdd', 'customerQuestion\customerQuestionManageController@popupQuestionAdd');
-
-
-
 Route::get('subCategoryOption{id}', 'Admin\subCategoryManageController@subCategoryOption');
+
+Route::get('viewQuotes', 'customerDash\customerDashManageController@viewQuotes');
+
+
 Route::get('reset', 'Auth\ForgotPasswordController@reset'); 
 Route::get('choose-account', 'Auth\LoginController@signUpCategory');
 Route::get('professionalHire', 'Auth\LoginController@proffetionalHire');
@@ -137,6 +147,11 @@ Route::get('getHiredGuideQuote', 'getHiredGuide\getHiredGuideManageController@ge
 Route::get('getHiredGuideFollowup', 'getHiredGuide\getHiredGuideManageController@getHiredGuideFollowup');
 
 Route::get('getHiredGuideHired', 'getHiredGuide\getHiredGuideManageController@getHiredGuideHired');
+
+
+
+
+
 
 // Registered, activated, and is admin routes.
 Route::group(['middleware'=> ['auth', 'activated', 'role:superadmin']], function () {
@@ -229,11 +244,36 @@ Route::group(['middleware'=> ['auth', 'activated', 'role:admin']], function () {
   Route::get('editQuestion{id}', 'Admin\questionManageController@showEditQuestion');
   Route::post('editQuestion', 'Admin\questionManageController@editQuestion');
   Route::get('deleteQuestion{id}', 'Admin\questionManageController@deleteQuestion');
+
+  //credit Management
+  Route::get('showServiceQuotesCredit', 'Admin\creditManageController@showServiceQuotesCredit');
+  Route::get('newServiceQuotesCredit','Admin\creditManageController@newServiceQuotesCredit');
+  Route::post('saveServiceQuotesCredit','Admin\creditManageController@saveServiceQuotesCredit');
+  Route::get('editQuotesCredit{id}', 'Admin\creditManageController@editServiceQuotesCredit');
+  Route::post('editQuotesCredit', 'Admin\creditManageController@editQuotesCredit');
+  Route::get('deleteQuotesCredit{id}', 'Admin\creditManageController@deleteQuotesCredit');
 });
 
-//proffetional Dashboard management
+//payment Setting 
+
+Route::get('paymentSetting', 'Admin\paymentSettingController@showPaymentSetting');
+ Route::get('newPaymentSetting','Admin\paymentSettingController@newPaymentSetting');
+  Route::post('savePaymentSetting','Admin\paymentSettingController@savePaymentSetting');
+  Route::get('editPaymentSetting{id}', 'Admin\paymentSettingController@showEditPaymentSetting');
+  Route::post('editPaymentSetting', 'Admin\paymentSettingController@editPaymentSetting');
+  Route::get('deletePaymentSetting{id}', 'Admin\paymentSettingController@deletePaymentSetting');
+
 
 Route::get('proffetionalDash/Requests', 'proffetionalDash\proffetionalDashController@Requests');
+Route::get('professionaolQuotes/{serviceId}/{custId}', 'proffetionalDash\proffetionalDashController@professionaolQuotes');
+Route::get('professionaolDash/services', 'proffetionalDash\proffetionalDashController@viewServices');
+Route::get('professionaolDash/insights', 'proffetionalDash\proffetionalDashController@insights');
+
+
+
+Route::post('addProfessionalQuotes', 'proffetionalDash\proffetionalDashController@addProfessionalQuotes');
+Route::get('payAndSendQuotes', 'proffetionalDash\proffetionalDashController@payAndSendQuotes');
+
 Route::get('proffetionalDash/Hired', 'proffetionalDash\proffetionalDashController@Hired');
 Route::get('proffetionalDash/Sent', 'proffetionalDash\proffetionalDashController@Sent');
 Route::get('proffetionalDash/Archived', 'proffetionalDash\proffetionalDashController@Archived');
