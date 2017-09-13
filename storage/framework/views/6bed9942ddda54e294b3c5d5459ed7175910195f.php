@@ -108,9 +108,7 @@
 
                   </h3>
                   <h4 class="Projects-projectCard-top-subtitle B2-S theme-secondary">
-
-                    <?php echo e($Servicename[0]->created_at); ?>
-
+                     <?php echo e($Servicename[0]->created_at); ?>
 
                   </h4>
                   <span class="Projects-projectCard-top-cta B3-S">
@@ -147,7 +145,7 @@
                   </div>
                </div>
                <div class="Projects-projectCard-bottom">
-                  <a href="<?php echo e(URL::to('viewQuotes')); ?>" class="Button theme-medium">
+                  <a href="<?php echo e(URL::to('viewQuotes')); ?>/<?php echo e($Servicename[0]->id); ?>" class="Button theme-medium">
                   View Quotes
                   </a>
                   <p class="Projects-projectCard-actionLink">

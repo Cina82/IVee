@@ -190,7 +190,7 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         App\Providers\LocalEnvironmentServiceProvider::class,
         Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
-         Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
+        Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
         
 
     ],

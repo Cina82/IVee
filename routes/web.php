@@ -90,7 +90,7 @@ Route::get('customerQuestion', 'customerQuestion\customerQuestionManageControlle
 Route::post('popupQuestionAdd', 'customerQuestion\customerQuestionManageController@popupQuestionAdd');
 Route::get('subCategoryOption{id}', 'Admin\subCategoryManageController@subCategoryOption');
 
-Route::get('viewQuotes', 'customerDash\customerDashManageController@viewQuotes');
+Route::get('viewQuotes/{serviceId}', 'customerDash\customerDashManageController@viewQuotes');
 
 
 Route::get('reset', 'Auth\ForgotPasswordController@reset'); 

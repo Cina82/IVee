@@ -108,9 +108,7 @@
                      {{$Servicename[0]->name}}
                   </h3>
                   <h4 class="Projects-projectCard-top-subtitle B2-S theme-secondary">
-
-                    {{$Servicename[0]->created_at}}
-
+                     {{$Servicename[0]->created_at}}
                   </h4>
                   <span class="Projects-projectCard-top-cta B3-S">
                   <a href="{{URL::to('')}}">
@@ -146,7 +144,7 @@
                   </div>
                </div>
                <div class="Projects-projectCard-bottom">
-                  <a href="{{URL::to('viewQuotes')}}" class="Button theme-medium">
+                  <a href="{{URL::to('viewQuotes')}}/{{$Servicename[0]->id}}" class="Button theme-medium">
                   View Quotes
                   </a>
                   <p class="Projects-projectCard-actionLink">

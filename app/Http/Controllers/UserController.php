@@ -49,7 +49,6 @@ class UserController extends Controller
         if ($user->isCustomer()) {
 
             $service = CustomerServiceQuestion::where('customerId',Auth::id())->get();
-            
             $serviceName = array();
             $users =array();
             foreach ($service as $services) {
