@@ -55,6 +55,18 @@ class proffetionalDashController extends Controller
 
         return view('pages.profetionalUser.proffetionalDash.Requests',compact('customerData'));
     }
+    public function AddQuotesCredit(Request $request)
+    {
+        $userData = User::select('credits')->where('id',Auth::id())->get();
+        $oldCredit = 0;
+        foreach ($userData as $key) {
+            $oldCredit = (int)$key->credits;
+        }
+        $post = array();
+        $post['credits'] = (int)$request->amount + $oldCredit ;
+        $pages = User::where('id',Auth::id())->update($post);
+        return redirect('proffetionalDash/Requests');
+    }
     public function professionaolQuotes($serviceId,$custId)
     {
           $customerData = DB::table('users')

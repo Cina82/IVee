@@ -5,7 +5,7 @@
 @endsection
 @section('content')
  <quote-payment-page-dollars class="ng-scope">
-   <form action="paypal" method="post" class="ng-valid ng-dirty">
+   <form action="{{URL::to('proffetionalDash/AddQuotesCredit')}}" method="post" class="ng-valid ng-dirty">
       
       {{ csrf_field() }}
       @if ($message = Session::get('success'))

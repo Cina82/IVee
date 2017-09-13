@@ -76,13 +76,6 @@ Route::group(['middleware'=> ['auth', 'activated', 'currentUser']], function () 
 
 });
 
-// route for view/blade file
-Route::get('paywithpaypal', array('as' => 'paywithpaypal','uses' => 'PaypalController@payWithPaypal',));
-// route for post request
-Route::post('paypal', array('as' => 'paypal','uses' => 'PaypalController@postPaymentWithpaypal',));
-// route for check status responce
-Route::get('paypal', array('as' => 'status','uses' => 'PaypalController@getPaymentStatus',));
-
 
 //professional management
 Route::get('prosignup', 'pro\proManageController@prosignup');
@@ -265,6 +258,8 @@ Route::get('paymentSetting', 'Admin\paymentSettingController@showPaymentSetting'
 
 
 Route::get('proffetionalDash/Requests', 'proffetionalDash\proffetionalDashController@Requests');
+Route::post('proffetionalDash/AddQuotesCredit', 'proffetionalDash\proffetionalDashController@AddQuotesCredit');
+
 Route::get('professionaolQuotes/{serviceId}/{custId}', 'proffetionalDash\proffetionalDashController@professionaolQuotes');
 Route::get('professionaolDash/services', 'proffetionalDash\proffetionalDashController@viewServices');
 Route::get('professionaolDash/insights', 'proffetionalDash\proffetionalDashController@insights');

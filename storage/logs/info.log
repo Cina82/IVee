@@ -1942,3 +1942,7 @@ Log Entry Details:
 Log Entry Details:
 ["[object] (App\\Models\\User: {\"id\":5,\"name\":null,\"first_name\":\"shan\",\"last_name\":null,\"email\":\"shan@gmail.com\",\"credits\":0,\"driverLicense\":\"0\",\"zipCode\":0,\"userName\":\"\",\"image\":\"christian.jpg\",\"mobile\":\"787895850\",\"role_data\":4,\"user_role_id\":2,\"signup_ip_address\":null,\"signup_confirmation_ip_address\":null,\"signup_sm_ip_address\":null,\"admin_ip_address\":null,\"created_at\":\"2017-07-14 09:28:20\",\"updated_at\":\"2017-08-23 13:10:19\"})"]
 []
+[2017-09-13 09:22:56] production.INFO: User Logged Out.  
+Log Entry Details:
+["[object] (App\\Models\\User: {\"id\":44,\"name\":\"prashant\",\"first_name\":\"prashant\",\"last_name\":\"patel\",\"email\":\"prashant@gmail.com\",\"credits\":50.9581,\"driverLicense\":\"0000859680\",\"zipCode\":33,\"userName\":\"prashantPatel\",\"image\":\"1504521633.jpg\",\"mobile\":\"0012547866\",\"role_data\":null,\"user_role_id\":null,\"signup_ip_address\":\"127.0.0.1\",\"signup_confirmation_ip_address\":null,\"signup_sm_ip_address\":null,\"admin_ip_address\":null,\"created_at\":\"2017-09-04 10:40:33\",\"updated_at\":\"2017-09-13 09:14:46\"})"]
+[]
