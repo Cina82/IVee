@@ -30,7 +30,7 @@ class UserController extends Controller
      */
     public function index()
     {
-
+        $test = "";
         $user = Auth::user();
 		
         if ($user->isSuperadmin()) {

@@ -93,6 +93,9 @@ Route::get('subCategoryOption{id}', 'Admin\subCategoryManageController@subCatego
 Route::get('viewQuotes/{serviceId}', 'customerDash\customerDashManageController@viewQuotes');
 
 
+
+
+
 Route::get('reset', 'Auth\ForgotPasswordController@reset'); 
 Route::get('choose-account', 'Auth\LoginController@signUpCategory');
 Route::get('professionalHire', 'Auth\LoginController@proffetionalHire');
