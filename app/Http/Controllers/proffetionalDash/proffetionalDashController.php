@@ -20,40 +20,7 @@ class proffetionalDashController extends Controller
     
     public function Requests()
     {
-
-          $proDetails = ProfessionalServiceProvide::where('userId',Auth::id())->get();
-          $customerData = array();
-         foreach ($proDetails as $proDetail) {
-
-            $serviceIdArray =explode(',',$proDetail->serviceId);
-            $count = count($serviceIdArray);
-            $data  = array();
-            for ($i=0; $i < $count; $i++) { 
-                $serviceId = $serviceIdArray[$i];    
-                
-                $serviceDetails = ServiceModel::select('id','name','created_at')->where('id',$serviceId)->get();
-                $customerServiceName = $serviceDetails[0]->name;
-                $customerServiceId = $serviceDetails[0]->id;
-                $post = CustomerServiceQuestion::all();
-                foreach ($post as $posts) {
-                    if($posts['serviceId'] == $serviceId)
-                    {   
-                        $userId = $posts->customerId;
-                        $name = User::select('first_name')->where('id',$userId)->get();
-                        $data['serviceId']=$customerServiceId;
-                        $data['serviceName']=$customerServiceName;
-                        $data['userId']=$userId;
-                        $data['questionAndOption']=$posts->questionAndOption;
-                        $data['name']=$name[0]->first_name;
-                    }
-
-                }
-                $customerData[]=$data;
-            }
-         
-        }
-
-        return view('pages.profetionalUser.proffetionalDash.Requests',compact('customerData'));
+        return redirect('home');
     }
     public function AddQuotesCredit(Request $request)
     {
@@ -67,7 +34,7 @@ class proffetionalDashController extends Controller
         $pages = User::where('id',Auth::id())->update($post);
         return redirect('proffetionalDash/Requests');
     }
-    public function professionaolQuotes($serviceId,$custId)
+    public function professionalQuotes($serviceId,$custId)
     {
           $customerData = DB::table('users')
                         ->join('customerServiceQuestion', 'users.id', '=', 'customerServiceQuestion.customerId')
@@ -157,7 +124,34 @@ class proffetionalDashController extends Controller
         }
         return view('pages.profetionalUser.proffetionalDash.services',compact('data'));
     }
-
+    public function addService()
+    {
+        return view('pages.profetionalUser.proffetionalDash.addService');
+    }
+    public function saveService($serviceId)
+    {
+        $data = ProfessionalServiceProvide::where('userId',Auth::id())->get()->toArray();
+        $exploadArray = explode(",",$data[0]['serviceId']);
+        array_push($exploadArray,$serviceId);
+        $addService = implode(",",$exploadArray);
+        $ary['serviceId'] = $addService;
+        $updateService = ProfessionalServiceProvide::where('userId',Auth::id())->update($ary);
+        $serviceName = ServiceModel::select('name')->where('id',$serviceId)->get()->toArray();
+        $post = new ProfessionalQuotes();
+        $post['userId']= Auth::id();
+        $post['serviceId']= $serviceId;
+        $post['serviceName']=$serviceName[0]['name'];
+        $post->save();
+        return redirect('professionaolDash/services');
+    }
+    public function celender()
+    {
+        return view('pages.profetionalUser.proffetionalDash.calender');
+    }
+    public function guide()
+    {
+        return view('pages.profetionalUser.proffetionalDash.guide');   
+    }
     public function insights()
     {
         $service = ProfessionalServiceProvide::select('serviceId')->where('userId',Auth::id())->get();
@@ -185,6 +179,11 @@ class proffetionalDashController extends Controller
     {
         return view('pages.profetionalUser.proffetionalDash.payAndSendQuotes');
     }
+    
+    public function inProgress()
+    {
+        return view('pages.profetionalUser.proffetionalDash.inProgress');
+    }
     public function Hired()
     {
         return view('pages.profetionalUser.proffetionalDash.hired');
@@ -203,5 +202,12 @@ class proffetionalDashController extends Controller
     {
         return view('pages.profetionalUser.proffetionalDash.archived');
     }       
-    
+    public function profile()
+    {
+        return view('pages.profetionalUser.proffetionalDash.profile');
+    }
+    public function settings()
+    {
+        return view('pages.profetionalUser.proffetionalDash.settings');    
+    }
 }

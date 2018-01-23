@@ -26,14 +26,14 @@
                                     <div class="intro-content">
                                         <div class="intro-content__container tp-grid tp-grid--middle">
                                             <div class="intro-content__title-container tp-col tp-col--8">
-                                                <h2 class="intro-content__title">Add reviews and get hired more often.</h2>
+                                                <h2 class="intro-content__title" dir="rtl">Add reviews and get hired more often.</h2>
                                             </div>
                                             <div class="intro-content__step-icon-container tp-col tp-col--4">
                                                 <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/ghg_get-reviews.svg" class="intro-content__step-icon" />
                                             </div>
                                         </div>
 
-                                        <div class="intro-content__description">
+                                        <div class="intro-content__description" dir="rtl">
                                             <p>Reviews are often the biggest influence on a customer’s hiring decision—a great review gives you credibility. To get hired more often, ask for reviews from past customers (both on and off Ivee). <strong>85% of the pros hired on Ivee have at least 1 review.</strong></p>
                                         </div>
 
@@ -62,9 +62,9 @@
                                                         <div class="testimonial-carousel__pro">
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Bret W.</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Bret W.</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">San Francisco, California
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">San Francisco, California
                                                                     <br>Ivee Customer</div>
 
                                                             </div>
@@ -95,12 +95,12 @@
 
                                     <hr class="tp-rule">
 
-                                    <h2 class="subsection_title tp-heading-4">Getting your first review</h2>
+                                    <h2 class="subsection_title tp-heading-4" dir="rtl">Getting your first review</h2>
 
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <p>Building a solid rating takes time, but you can get up to 10 reviews from past customers even before your first Ivee hire. Once you’re hired on Ivee, we’ll ask your customers to review you. All reviews from Ivee customers display on your profile along with the label “Verified Review.”</p>
                                             </div>
 
@@ -114,11 +114,11 @@
                                             <div class="content-block__title tp-col tp-col--12 tp-Text--center tp-PushDouble--bottom">
                                                 Make it easy for customers to review you: </div>
 
-                                            <div class="content-block__content tp-col tp-col--12 tp-col--md-6">
+                                            <div class="content-block__content tp-col tp-col--12 tp-col--md-6" dir="rtl">
                                                 <p><strong>Email or text your personalized link to previous customers.</strong> To find your link, go to the reviews section of your profile and click “Manage reviews.” Your review link never changes or expires.</p>
                                             </div>
 
-                                            <div class="content-block__content tp-col tp-col--12 tp-col--md-6">
+                                            <div class="content-block__content tp-col tp-col--12 tp-col--md-6" dir="rtl">
                                                 <p><strong>Follow up! Give customers a friendly nudge after a few days.</strong> You can respond to every review to say thanks and emphasize how much you enjoyed the project.</p>
                                             </div>
 
@@ -129,7 +129,7 @@
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <p>Here’s how to <a href="#">find and share your review link</a>.</p>
                                             </div>
 
@@ -139,7 +139,7 @@
 
                                     <hr class="tp-rule">
 
-                                    <h2 class="subsection_title tp-heading-4">How to ask for reviews</h2>
+                                    <h2 class="subsection_title tp-heading-4" dir="rtl">How to ask for reviews</h2>
 
                                     <div class="image-section">
                                         <div class="tp-grid tp-grid--center">
@@ -155,11 +155,11 @@
                                             <div class="content-block__title tp-col tp-col--12 tp-Text--center tp-PushDouble--bottom">
                                                 Two example emails from pros requesting reviews: </div>
 
-                                            <div class="content-block__content tp-col tp-col--12 tp-col--md-6">
+                                            <div class="content-block__content tp-col tp-col--12 tp-col--md-6" dir="rtl">
                                                 <p><strong>Request a review.</strong> See <a class="modaal" href="#reviewemail1" data-modaal-type="inline">Anja’s email</a> requesting a review from a past customer. Her message is friendly and encouraging. Anja makes it easy to write a review by including her personalized link.</p>
                                             </div>
 
-                                            <div class="content-block__content tp-col tp-col--12 tp-col--md-6">
+                                            <div class="content-block__content tp-col tp-col--12 tp-col--md-6" dir="rtl">
                                                 <p><strong>Follow up.</strong> See <a class="modaal" href="#reviewemail2" data-modaal-type="inline">Jonas’ email</a> to follow up on a request for a review. His message is lighthearted and sincere without being pushy.</p>
                                                 <div id="reviewemail1" class="hidden-modaal">
                                                     <h3>Anja&#8217;s email</h3>
@@ -181,9 +181,9 @@
 
                                     <hr class="tp-rule">
 
-                                    <h2 class="subsection_title tp-heading-4">Responding to negative reviews</h2>
+                                    <h2 class="subsection_title tp-heading-4" dir="rtl">Responding to negative reviews</h2>
 
-                                    <div class="content-block">
+                                    <div class="content-block" dir="rtl">
                                         <div class="tp-grid">
 
                                             <div class="content-block__content tp-col tp-col--12">
@@ -231,9 +231,9 @@
                                                             </div>
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Kaitlyn Noble</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Kaitlyn Noble</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Nutrition & Fitness Coaching</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">Nutrition & Fitness Coaching</div>
 
                                                             </div>
 
@@ -254,9 +254,9 @@
                                                             </div>
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Ian McCarthy</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Ian McCarthy</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Bartending Services</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">Bartending Services</div>
 
                                                             </div>
 
@@ -277,9 +277,9 @@
                                                             </div>
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Daphne Simpson-Wellman</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Daphne Simpson-Wellman</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Floral Design</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">Floral Design</div>
 
                                                             </div>
 
@@ -301,7 +301,7 @@
                                         <div class="tp-wrap">
                                             <div class="tp-grid tp-grid--middle">
 
-                                                <div class="footer-cta__title tp-col tp-col--12 tp-col--md-6">
+                                                <div class="footer-cta__title tp-col tp-col--12 tp-col--md-6" dir="rtl">
                                                     Ready to get reviews and get hired more often?
                                                 </div>
                                                 <div class="footer-cta__button-container tp-col tp-col--12 tp-col--md-6">

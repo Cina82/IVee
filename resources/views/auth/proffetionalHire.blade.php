@@ -3,7 +3,7 @@
 @section('content')
 
   <div class="col-md-5 col-md-offset-4 center-block" style="margin: 0 auto; float: none;">
-            <h2 class="text-center">Create Your Account</h1>
+            <h2 class="text-center">عضو شوید</h1>
             <div class="panel panel-default">
                 
                 <div class="panel-body">
@@ -11,7 +11,7 @@
                         {{ csrf_field() }}
                          <div class="form-group">
                         <div class="col-md-6">
-                        <label for="name" class="my-control-label" style="text-align: left !important;font-family: 'PT Sans', sans-serif !important;">First Name</label>
+                        <label for="name" class="my-control-label" style="text-align: left !important;font-family: 'PT Sans', sans-serif !important;">نام</label>
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             
                             <div class="col-md-12">
@@ -26,7 +26,7 @@
                         </div>
                         </div>
                         <div class="col-md-6">
-                        <label for="familyName" class="my-control-label" style="text-align: left !important;font-family: 'PT Sans', sans-serif !important;">Family Name</label>
+                        <label for="familyName" class="my-control-label" style="text-align: left !important;font-family: 'PT Sans', sans-serif !important;">نام خانوادگی</label>
                         <div class="form-group{{ $errors->has('familyName') ? ' has-error' : '' }}">
                             
                             <div class="col-md-12">
@@ -41,7 +41,7 @@
                         </div>
                         </div>
                         <div class="col-md-12">
-                        <label for="driverLicense" class="my-control-label" style="text-align: left !important;font-family: 'PT Sans', sans-serif !important;">Driver license</label>
+                        <label for="driverLicense" class="my-control-label" style="text-align: left !important;font-family: 'PT Sans', sans-serif !important;">کد ملی</label>
 
                         <div class="form-group{{ $errors->has('driverLicense') ? ' has-error' : '' }}">
                             
@@ -58,7 +58,7 @@
 
                              
                         <div class="col-md-6">
-                        <label for="mobile" class="my-control-label" style="text-align: left !important;font-family: 'PT Sans', sans-serif !important;">Phone Number</label>
+                        <label for="mobile" class="my-control-label" style="text-align: left !important;font-family: 'PT Sans', sans-serif !important;">شماره موبایل</label>
 
                         <div class="form-group{{ $errors->has('mobile') ? ' has-error' : '' }}">
                             
@@ -74,7 +74,7 @@
                         </div>
 
                         <div class="col-md-6">
-                        <label for="zipCode" class="my-control-label" style="text-align: left !important;font-family: 'PT Sans', sans-serif !important;">Zip Code</label>
+                        <label for="zipCode" class="my-control-label" style="text-align: left !important;font-family: 'PT Sans', sans-serif !important;">شهر</label>
 
                         <div class="form-group{{ $errors->has('zipCode') ? ' has-error' : '' }}">
                             
@@ -91,7 +91,7 @@
                         
 
                         <div class="col-md-12">
-                        <label for="email" class="my-control-label" style="text-align: left !important;font-family: 'PT Sans', sans-serif !important;">Email</label>
+                        <label for="email" class="my-control-label" style="text-align: left !important;font-family: 'PT Sans', sans-serif !important;">ایمیل</label>
 
                         <div class="form-group{{ $errors->has('zipCode') ? ' has-error' : '' }}">
                             
@@ -106,7 +106,7 @@
                         </div>
                         </div>
                         <div class="col-md-12">
-                        <label for="image" class="my-control-label" style="text-align: left !important;font-family: 'PT Sans', sans-serif !important;">Image profile upload</label>
+                        <label for="image" class="my-control-label" style="text-align: left !important;font-family: 'PT Sans', sans-serif !important;">عکس پروفایل</label>
 
                         <div class="form-group{{ $errors->has('zipCode') ? ' has-error' : '' }}">
                             
@@ -122,7 +122,7 @@
                         </div>
 
                          <div class="col-md-12">
-                        <label for="userName" class="my-control-label" style="text-align: left !important;font-family: 'PT Sans', sans-serif !important;">User Name</label>
+                        <label for="userName" class="my-control-label" style="text-align: left !important;font-family: 'PT Sans', sans-serif !important;">نام کاربری</label>
 
                         <div class="form-group{{ $errors->has('userName') ? ' has-error' : '' }}">
                             
@@ -138,7 +138,7 @@
                         </div>
 
                          <div class="col-md-12">
-                        <label for="password" class="my-control-label" style="text-align: left !important;font-family: 'PT Sans', sans-serif !important;">Password</label>
+                        <label for="password" class="my-control-label" style="text-align: left !important;font-family: 'PT Sans', sans-serif !important;">پسورد</label>
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             
@@ -155,7 +155,7 @@
                         
                             <div class="col-md-12">
                                 <button type="submit" class="mybtn btn-block btn-lg" style="background-color: #3f93f3 !important; color: #fff">
-                                    Create Account
+                                    عضو شوید
                                 </button>
 
                             </div>

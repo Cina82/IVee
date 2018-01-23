@@ -22,7 +22,7 @@
                     <section id="text-15" class="widget widget_text">
                         <div class="widget-wrap">
                             <div class="textwidget">
-                                <h1>We make it easy to hire the right  professional for any project.</h1>
+                                <h1>ما برای استخدام حرفه ای مناسب برای هر پروژه آسان می کنیم.</h1>
                                 <p><img class="wp-image-10818 size-medium" src="https://www.thumbtack.com/blog/wp-content/uploads/2016/05/how-to.png" alt="We make it easy to hire the right professional for any project." width="250" height="226" /></p>
                             </div>
                         </div>
@@ -32,12 +32,12 @@
                     <section id="text-16" class="widget widget_text">
                         <div class="widget-wrap">
                             <div class="textwidget">
-                                <h4>1. Tell us what you need</h4>
-                                <p>Answer a few quick questions about what type of pro you’re looking for.</p>
-                                <h4>2. Review free quotes</h4>
-                                <p>Within hours, you’ll receive up to five custom quotes based on your specific needs.</p>
-                                <h4>3. Hire the right pro</h4>
-                                <p>Compare quotes, profiles, and reviews, then hire the pro that’s right for you.</p>
+                                <h4>1. به ما بگویید چه چیزی نیاز دارید</h4>
+                                <p>چند سوال سریع در مورد نوع حرفه ای که دنبال آن هستید پاسخ دهید.</p>
+                                <h4>2. بررسی نقل قول رایگان</h4>
+                                <p>در عرض چند ساعت شما به پنج درخواست سفارشی بر اساس نیازهای خاص خود دریافت خواهید کرد.</p>
+                                <h4>3. استخدام طرفدار راست</h4>
+                                <p>مقایسه نقل قول ها، پروفایل ها و نظرات، و سپس استخدام طرفدار که برای شما مناسب است.</p>
                             </div>
                         </div>
                     </section>
@@ -46,6 +46,6 @@
         </div>
         <footer class="site-footer" itemscope itemtype="https://schema.org/WPFooter">
             <div class="wrap">
-                <p><a href="//www.thumbtack.com/company">About</a> &middot; <a href="//www.thumbtack.com/jobs">Jobs</a> &middot; <a href="//www.thumbtack.com/blog">Blog</a> &middot; <a href="//www.thumbtack.com/engineering">Engineering</a> &middot; Copyright &#x000A9;&nbsp;2017 &middot; Thumbtack, Inc </p>
+                <p><a href="//www.thumbtack.com/company">درباره ما</a> &middot; <a href="//www.thumbtack.com/jobs">شغل</a> &middot; <a href="//www.thumbtack.com/blog">بلاگ</a> &middot; <a href="//www.thumbtack.com/engineering">مهندسی</a> &middot; کپی رایت &#x000A9;&nbsp;2017 &middot; IVee, Inc </p>
             </div>
         </footer>

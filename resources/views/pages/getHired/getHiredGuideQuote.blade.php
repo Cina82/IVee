@@ -26,14 +26,14 @@
                                     <div class="intro-content">
                                         <div class="intro-content__container tp-grid tp-grid--middle">
                                             <div class="intro-content__title-container tp-col tp-col--8">
-                                                <h2 class="intro-content__title">Customize your price and message.</h2>
+                                                <h2 class="intro-content__title" dir="rtl">Customize your price and message.</h2>
                                             </div>
                                             <div class="intro-content__step-icon-container tp-col tp-col--4">
                                                 <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/ghg_send-quote.svg" class="intro-content__step-icon" />
                                             </div>
                                         </div>
 
-                                        <div class="intro-content__description">
+                                        <div class="intro-content__description" dir="rtl">
                                             <p>Customers are looking for quotes that match their needs and grab their attention. New pros often send 10 quotes before getting their first hire, and those who succeed say they refined their quote until it worked. <strong>Learn from past quotes and test different approaches.</strong></p>
                                         </div>
 
@@ -62,10 +62,10 @@
                                                         <div class="testimonial-carousel__pro">
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Kara B.</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Kara B.</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Los Angeles, California
-                                                                    <br>Ivee Customer</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">Los Angeles, California
+                                                                    <br dir="rtl">Ivee Customer</div>
 
                                                             </div>
 
@@ -95,12 +95,12 @@
 
                                     <hr class="tp-rule">
 
-                                    <h2 class="subsection_title tp-heading-4">Three winning quote examples</h2>
+                                    <h2 class="subsection_title tp-heading-4" dir="rtl">Three winning quote examples</h2>
 
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <p>Great quotes are personalized, highlight your expertise, and outline next steps. Below are three examples from successful pros.</p>
                                                 <ol>
                                                     <li><strong>Greet customers by name and show you’re qualified.</strong> See <a class="modaal" href="#ghgquote1" data-modaal-type="inline">Rick’s photography quote</a>. He shows excitement to work with the customer, shares his experience, and briefly describes a similar project he recently completed.</li>
@@ -154,7 +154,7 @@
 
                                     <hr class="tp-rule">
 
-                                    <h2 class="subsection_title tp-heading-4">Pricing your quotes</h2>
+                                    <h2 class="subsection_title tp-heading-4" dir="rtl">Pricing your quotes</h2>
 
                                     <div class="image-section">
                                         <div class="tp-grid tp-grid--center">
@@ -167,7 +167,7 @@
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <p>Not sure how to price your quote? You’re the expert on the value you offer and what you need to take home from each job. Check out<a href="#" target="_blank" rel="noopener noreferrer"> cost estimates for each job type</a> to get insight into market averages. Keep in mind that these prices are averages and that customers don’t always hire the lowest quote. Choose whatever price works best for your business and prove your value in your quote message and profile.</p>
                                             </div>
 
@@ -178,10 +178,10 @@
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__title tp-col tp-col--12 tp-Text--center tp-PushDouble--bottom">
+                                            <div class="content-block__title tp-col tp-col--12 tp-Text--center tp-PushDouble--bottom" dir="rtl" >
                                                 When it’s time to price your quote, look for one or more of these options: </div>
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl" >
                                                 <ul>
                                                     <li><strong>Hourly rate.</strong> Provide your ongoing hourly rate.</li>
                                                     <li><strong>Fixed price.</strong> State the total fixed price for the job or a package deal, if it applies.</li>
@@ -196,7 +196,7 @@
 
                                     <hr class="tp-rule">
 
-                                    <h2 class="subsection_title tp-heading-4">Sending your quotes</h2>
+                                    <h2 class="subsection_title tp-heading-4" dir="rtl">Sending your quotes</h2>
 
                                     <div class="image-section">
                                         <div class="tp-grid tp-grid--center">
@@ -209,7 +209,7 @@
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <p>After writing your first quote, you’ll be prompted to buy Ivee Credits to send it—sort of like buying postage for a delivery. You only pay to send quotes, and you keep all of what you earn from customers.</p>
                                                 <p>Each credit costs $1.67, or you can <a href="#" target="_blank" rel="noopener noreferrer">buy credit packs for discounts</a>. The number of credits needed to quote on each request varies based on the job’s value and competition from other pros in that market.</p>
                                                 <p>Every request displays the number of credits you’ll need to send a quote. <strong>If your quote isn’t viewed within 48 hours, we’ll automatically refund those credits back to your account. </strong></p>
@@ -249,16 +249,16 @@
                                                             </div>
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Josh Downing</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Josh Downing</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">General Contracting</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">General Contracting</div>
 
                                                                 <div class="testimonial-carousel__pro-stars-container">
-                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews"> (9 reviews)</span>
+                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews" dir="rtl"> (9 reviews)</span>
                                                                 </div>
 
                                                                 <div class="testimonial-carousel__pro-link-container">
-                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link">See Josh’s full interview&nbsp;»</a>
+                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link" dir="rtl">See Josh’s full interview&nbsp;»</a>
                                                                 </div>
 
                                                             </div>
@@ -280,16 +280,16 @@
                                                             </div>
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Rachel Grahmann</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Rachel Grahmann</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Photography & Design</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">Photography & Design</div>
 
                                                                 <div class="testimonial-carousel__pro-stars-container">
-                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews"> (18 reviews)</span>
+                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews" dir="rtl"> (18 reviews)</span>
                                                                 </div>
 
                                                                 <div class="testimonial-carousel__pro-link-container">
-                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link">See Rachel’s full interview&nbsp;»</a>
+                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link" dir="rtl">See Rachel’s full interview&nbsp;»</a>
                                                                 </div>
 
                                                             </div>
@@ -311,16 +311,16 @@
                                                             </div>
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Rebecca Foster</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Rebecca Foster</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Event Planner</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">Event Planner</div>
 
                                                                 <div class="testimonial-carousel__pro-stars-container">
-                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews"> (4 reviews)</span>
+                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews" dir="rtl"> (4 reviews)</span>
                                                                 </div>
 
                                                                 <div class="testimonial-carousel__pro-link-container">
-                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link">See Rebecca’s full interview&nbsp;»</a>
+                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link" dir="rtl">See Rebecca’s full interview&nbsp;»</a>
                                                                 </div>
 
                                                             </div>
@@ -343,7 +343,7 @@
                                         <div class="tp-wrap">
                                             <div class="tp-grid tp-grid--middle">
 
-                                                <div class="footer-cta__title tp-col tp-col--12 tp-col--md-6">
+                                                <div class="footer-cta__title tp-col tp-col--12 tp-col--md-6" dir="rtl">
                                                     Are you ready to update your quotes to get hired more often?
                                                 </div>
                                                 <div class="footer-cta__button-container tp-col tp-col--12 tp-col--md-6">
@@ -369,8 +369,8 @@
                     <div class="tp-grid">
                         <div class="footer-block__container tp-col tp-col--12 tp-col--md-8 tp-col--md-offset-4 ">
                             <div class="footer-block__content">
-                                <span class="footer-block__title">Next article: Follow up</span>
-                                <div class="footer-block__description">
+                                <span class="footer-block__title" dir="rtl">Next article: Follow up</span>
+                                <div class="footer-block__description" >
                                     Send a great follow-up message to seal the deal. </div>
                             </div>
 

@@ -1,15 +1,103 @@
 @extends('layouts.thumb')
 @section('css')
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="{{URL::to('public/wizardDemo/wizard.css')}}" rel="stylesheet" />
     <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="{{URL::to('public/wizardDemo/javascripts/jquery.validate.min.js')}}"></script>
     <script src="{{URL::to('public/wizardDemo/javascripts/jquery.validate.unobtrusive.js')}}"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="{{URL::to('public/wizardDemo/wizard.js')}}"></script>   
+    <script type="text/javascript" src="{{URL::to('public/wizardDemo/wizard.js')}}"></script> 
 @endsection
 @section('content')
 <div class="Homepage">
+
+<script>
+      $(document).ready(function()
+      {
+            $("#serviceSearch").keyup(function(){  
+               var searchval = $(this).val();
+                     if(searchval == ""){
+                        $("#suggesstion-box").hide();
+                     }
+                     else{ 
+                           $.ajax({
+                           'url':'{{ URL::to("serviceSearch") }}/'+searchval,
+                           'success':function(message)
+                           {
+                              $("#suggesstion-box").show();
+                              $("#suggesstion-box").html(message);
+                              $("#suggesstion-box").css("background","");
+                           } 
+                        }); 
+                     }
+            });
+      });
+
+
+      function selectdata (val) { 
+
+      var tn = document.getElementById("serviceSearchToken").value;
+      $.ajax({
+      'url':'{{ URL::to("serviceQuestion") }}/'+val,
+      'data':{tn:tn},
+      'success':function(message)
+      {
+            $("#searchSerivePopup").html(message);
+            $('#searchSerivePopup').wizard({
+                title: '',
+                validators: [{
+                    step: 1,
+                    validate: function () {
+                        
+                    }
+                }],
+                onSubmit: function () {
+                  
+                    $('<div>onSubmit called</div>').appendTo('#EventLog');
+                    $('#searchSerivePopup').wizard('end', {
+                        info: 'this is an info message',
+                        warning: 'this is a warning message',
+                        success: 'this is a success message',
+                        error: 'this is an error message',
+                        autoClose: false // close after 5 seconds
+                    });
+                },
+                onReset: function () {
+                    $('<div>onReset called</div>').appendTo('#EventLog');
+                    $('#TextBox1').val('');
+                    $('#TextBox2').val('');
+                },
+                onCancel: function () {
+                  
+                    $('<div>onCancel called</div>').appendTo('#EventLog');
+                },
+                onClose: function () {
+                    $('<div>onClose called</div>').appendTo('#EventLog');
+                },
+                onOpen: function () {
+                   var count = $("#searchSerivePopup .modal-dialog").length; 
+
+                    if(count > 1)
+                    { 
+                      $("#searchSerivePopup .modal-dialog:last").remove();
+                    }
+                    $('<div>onOpen called</div>').appendTo('#EventLog');
+                },
+                previousText: 'Back',
+                nextText: 'Next',
+                submitText: 'Submit',
+                showCancel: true,
+                showPrevious: true,
+                showProgress: true,
+                isModal: true,
+                autoOpen: false
+            });
+         $('#searchSerivePopup').wizard('open');
+      } 
+      });
+      }
+</script>
+
    <div viewport-element="hero">
       <hero
          class="Hero "
@@ -69,20 +157,11 @@
                            <div class="SearchForm-form-inputGroup multi-line-sm" dir="rtl">
                            
                               <span class="SearchForm-form-query B2-S"
-                                 ng-class="{'dropdownOpen': suggestionsOpen}">
+                                 ">
                                  <input class="query"
-                                    ng-class="{'is-empty-state': isEmptyState}"
-                                    required
-                                    autocomplete="off"
                                     placeholder="?What service do you need"
                                     type="search"
-                                    event-track="home page/start service query"
-                                    event-track-on="keypress"
-                                    event-track-data="{
-                                    pageType: '4',
-                                    searchOrigin: 'searchform-homepage',
-                                    }"
-                                    event-track-once
+                                    id="serviceSearch" 
                                     />
                                  <div class="SearchForm-form-query-clearQuery">
                                     <label
@@ -105,23 +184,24 @@
                                  theme-large
                                  "
                                  type="submit"
-                                 event-track="hercule/click get started"
-                                 event-track-on="click"
-                                 event-track-data="{
-                                 pageType: '4',
-                                 searchOrigin: 'searchform-homepage',
-                                 }">
+                                 >
                               Get Started
                               </button>
                            </div>
                         </form>
+                        <div id="suggesstion-box" style="display: none; padding-left: 200px; background: #fff;" ></div>
+                        <div class="wizard" id="searchSerivePopup" dir="rtl">
+                          <input name="_token" type="hidden" id="serviceSearchToken" value="{{ csrf_token() }}">
+                        </div>
                      </div>
                   </div>
                </div>
+
             </div>
          </div>
       </hero>
    </div>
+
    @include('menu.menu')
    <div class="Moments  ">
       <div class="Moments-container">
@@ -1203,20 +1283,21 @@
                   <h4 class="tp-heading-4 Moments-moment-title">Home Improvement</h4>
                </div>
             </div>
-            <div class="page-grid theme-full-bleed-at-xs">
+            <div class="page-grid theme-full-bleed-at-xs" dir="rtl">
                <div class="column-lg-6">
                   <category-carousel
                      count="11"
                      responsive-grid="page">
                      <div class="CategoryCarousel">
-                        <div
-                           class="CategoryCarousel-paddle paddle-left"
-                           ng-click="carousel.onClickLeft()">
+                         <div
+                           class="CategoryCarousel-paddle paddle-right"
+                           ng-click="carousel.onClickRight()">
                            <svg-icon
-                              type="left-caret"
+                              type="right-caret"
                               size="md">
                            </svg-icon>
                         </div>
+
                         <div class="CategoryCarousel-container">
                            <div class="CategoryCarousel-list">
                             
@@ -1234,7 +1315,7 @@
                                        onclick="customerQuestion({{$hmp->id}})" style="text-decoration: none;"
                                        >
                                     <img src="{{URL::to('public/uploads')}}/{{$hmp->image}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
+                                       <div class="ServiceBox-item-label" dir="rtl">
                                           <span class=" tp-heading-6 ">
                                           {{$hmp->name}}
                                           </span>
@@ -1295,13 +1376,14 @@
                            </div>
                         </div>
                         <div
-                           class="CategoryCarousel-paddle paddle-right"
-                           ng-click="carousel.onClickRight()">
+                           class="CategoryCarousel-paddle paddle-left"
+                           ng-click="carousel.onClickLeft()">
                            <svg-icon
-                              type="right-caret"
+                              type="left-caret"
                               size="md">
                            </svg-icon>
                         </div>
+                       
                      </div>
                   </category-carousel>
                </div>
@@ -1316,21 +1398,21 @@
                   <h4 class="tp-heading-4 Moments-moment-title">Weddings and Events</h4>
                </div>
             </div>
-            <div class="page-grid theme-full-bleed-at-xs">
+            <div class="page-grid theme-full-bleed-at-xs" dir="rtl">
                <div class="column-lg-6">
                   <category-carousel
                      count="9"
                      responsive-grid="page">
                      <div class="CategoryCarousel">
-                        <div
-                           class="CategoryCarousel-paddle paddle-left"
-                           ng-click="carousel.onClickLeft()">
+                       <div
+                           class="CategoryCarousel-paddle paddle-right"
+                           ng-click="carousel.onClickRight()">
                            <svg-icon
-                              type="left-caret"
+                              type="right-caret"
                               size="md">
                            </svg-icon>
                         </div>
-                        <div class="CategoryCarousel-container">
+                          <div class="CategoryCarousel-container">
                            <div class="CategoryCarousel-list">
                               @foreach($event as $evt)
                                  <div class="CategoryCarousel-item">
@@ -1345,7 +1427,7 @@
                                     <a class="ServiceBox-item"
                                       onclick="customerQuestion({{$evt->id}})" style="text-decoration: none;">
                                     <img src="{{URL::to('public/uploads')}}/{{$evt->image}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
+                                       <div class="ServiceBox-item-label" dir="rtl">
                                           <span class=" tp-heading-6 ">
                                           {{$evt->name}}
                                           </span>
@@ -1405,14 +1487,15 @@
                            @endforeach
                          </div>
                         </div>
-                        <div
-                           class="CategoryCarousel-paddle paddle-right"
-                           ng-click="carousel.onClickRight()">
+                         <div
+                           class="CategoryCarousel-paddle paddle-left"
+                           ng-click="carousel.onClickLeft()">
                            <svg-icon
-                              type="right-caret"
+                              type="left-caret"
                               size="md">
                            </svg-icon>
                         </div>
+                        
                      </div>
                   </category-carousel>
                </div>
@@ -1426,17 +1509,17 @@
                   <h4 class="tp-heading-4 Moments-moment-title">Wellness</h4>
                </div>
             </div>
-            <div class="page-grid theme-full-bleed-at-xs">
+            <div class="page-grid theme-full-bleed-at-xs" dir="rtl">
                <div class="column-lg-6">
                   <category-carousel
                      count="8"
                      responsive-grid="page">
                      <div class="CategoryCarousel">
                         <div
-                           class="CategoryCarousel-paddle paddle-left"
-                           ng-click="carousel.onClickLeft()">
+                           class="CategoryCarousel-paddle paddle-right"
+                           ng-click="carousel.onClickRight()">
                            <svg-icon
-                              type="left-caret"
+                              type="right-caret"
                               size="md">
                            </svg-icon>
                         </div>
@@ -1456,7 +1539,7 @@
                                        onclick="customerQuestion({{$wls->id}})" style="text-decoration: none;"
                                        >
                                     <img src="{{URL::to('public/uploads')}}/{{$wls->image}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
+                                       <div class="ServiceBox-item-label" dir="rtl">
                                           <span class=" tp-heading-6 ">
                                              {{$wls->name}}
                                           </span>
@@ -1518,13 +1601,14 @@
                            </div>
                         </div>
                         <div
-                           class="CategoryCarousel-paddle paddle-right"
-                           ng-click="carousel.onClickRight()">
+                           class="CategoryCarousel-paddle paddle-left"
+                           ng-click="carousel.onClickLeft()">
                            <svg-icon
-                              type="right-caret"
+                              type="left-caret"
                               size="md">
                            </svg-icon>
                         </div>
+                        
                      </div>
                   </category-carousel>
                </div>
@@ -1538,17 +1622,19 @@
                   <h4 class="tp-heading-4 Moments-moment-title">More Services Near You</h4>
                </div>
             </div>
-            <div class="page-grid theme-full-bleed-at-xs">
+            <div class="page-grid theme-full-bleed-at-xs" dir="rtl">
                <div class="column-lg-6">
                   <category-carousel
                      count="14"
                      responsive-grid="page">
                      <div class="CategoryCarousel">
-                        <div
-                           class="CategoryCarousel-paddle paddle-left"
-                           ng-click="carousel.onClickLeft()">
+                        
+
+                      <div
+                           class="CategoryCarousel-paddle paddle-right"
+                           ng-click="carousel.onClickRight()">
                            <svg-icon
-                              type="left-caret"
+                              type="right-caret"
                               size="md">
                            </svg-icon>
                         </div>
@@ -1570,7 +1656,7 @@
                                        ng-click="openModalWithCategoryId('dGELR947mm7esA', 'moments')"
                                        >
                                     <img src="{{URL::to('public/uploads')}}/{{$msc['image']}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
+                                       <div class="ServiceBox-item-label" dir="rtl">
                                           <span class=" tp-heading-6 ">
                                           {{$msc['name']}} 
                                           </span>
@@ -1583,13 +1669,14 @@
                            </div>
                         </div>
                         <div
-                           class="CategoryCarousel-paddle paddle-right"
-                           ng-click="carousel.onClickRight()">
+                           class="CategoryCarousel-paddle paddle-left"
+                           ng-click="carousel.onClickLeft()">
                            <svg-icon
-                              type="right-caret"
+                              type="left-caret"
                               size="md">
                            </svg-icon>
                         </div>
+                        
                      </div>
                   </category-carousel>
                </div>
@@ -2612,10 +2699,10 @@
             <h2 class="customer-stories__heading tp-heading-2">Customers use Ivee to get millions of projects done quickly and easily</h2>
             <div class="tp-grid">
                <div class="customer-stories__item-wrap tp-col tp-col--12 tp-col--md-4">
-                  <a href="https://www.thumbtack.com/blog/finding-an-engagement-photographer-on-thumbtack/" class="customer-stories__item"
+                  <a href="" class="customer-stories__item"
                      event-track="home page/clicked customer story"
                      event-track-on="click"
-                     event-track-data="{ story_type: 'amanda' }">
+                     event-track-data="{ story_type: 'amanda' }" style="text-decoration: none;">
                      <div class="customer-stories__item__image"
                         style="background-image: url({{URL::to('public/assets/img/amanda-2fa7c886.jpg')}})">
                         <div class="customer-stories__item__image-tint"></div>
@@ -2624,24 +2711,24 @@
                         </h3>
                      </div>
                      <div class="customer-stories__item__content">
-                        <div class="customer-stories__item__quote">
+                        <div class="customer-stories__item__quote" dir="rtl">
                            “<strong>Mickey</strong> is incredibly talented, worked within our budget and gave us GREAT results for the price. He's an awesome guy, and we couldn't be happier with how our engagement photos turned out.”
                         </div>
                         <div class="customer-stories__item__credit">
                            <img src="{{URL::to('public/assets/img/pro-mickey-76701e1b.jpg')}}"
                               class="customer-stories__item__img">
                            <div class="customer-stories__item__info">
-                              <h4 class="customer-stories__item__description">
+                              <h4 class="customer-stories__item__description" dir="rtl">
                                  The pro
                               </h4>
-                              <div class="customer-stories__item__name">
+                              <div class="customer-stories__item__name" dir="rtl">  
                                  Mickey Strider
                               </div>
                               <div class="customer-stories__item__rating">
                                  <span star-rating
                                     star-rating-bind="4.7">
                                  </span>
-                                 <span>
+                                 <span dir="rtl">
                                  (20 reviews)
                                  </span>
                               </div>
@@ -2651,10 +2738,10 @@
                   </a>
                </div>
                <div class="customer-stories__item-wrap tp-col tp-col--12 tp-col--md-4">
-                  <a href="https://www.thumbtack.com/blog/finding-your-voice-on-thumbtack/" class="customer-stories__item"
+                  <a href="" class="customer-stories__item"
                      event-track="home page/clicked customer story"
                      event-track-on="click"
-                     event-track-data="{ story_type: 'gurpreet' }">
+                     event-track-data="{ story_type: 'gurpreet' }" style="text-decoration: none;">
                      <div class="customer-stories__item__image"
                         style="background-image: url({{URL::to('public/assets/img/gurpreet-e04a1d83.jpg')}})">
                         <div class="customer-stories__item__image-tint"></div>
@@ -2663,24 +2750,24 @@
                         </h3>
                      </div>
                      <div class="customer-stories__item__content">
-                        <div class="customer-stories__item__quote">
+                        <div class="customer-stories__item__quote" dir="rtl">
                            “It was an honor learning from <strong>Sam</strong>. He is an amazing singer and teacher! I saw major improvements in my voice, breathing and vocal dynamics; connecting with songs at a level I didn't know existed.”
                         </div>
                         <div class="customer-stories__item__credit">
                            <img src="{{URL::to('public/assets/img/pro-sam-da0071d9.jpg')}}"
                               class="customer-stories__item__img">
                            <div class="customer-stories__item__info">
-                              <h4 class="customer-stories__item__description">
+                              <h4 class="customer-stories__item__description" dir="rtl">
                                  The pro
                               </h4>
-                              <div class="customer-stories__item__name">
+                              <div class="customer-stories__item__name" dir="rtl">
                                  Sam Shin
                               </div>
                               <div class="customer-stories__item__rating">
                                  <span star-rating
                                     star-rating-bind="4.7">
                                  </span>
-                                 <span>
+                                 <span dir="rtl">
                                  (32 reviews)
                                  </span>
                               </div>
@@ -2690,10 +2777,10 @@
                   </a>
                </div>
                <div class="customer-stories__item-wrap tp-col tp-col--12 tp-col--md-4">
-                  <a href="https://www.thumbtack.com/blog/thumbtack-artists-mural-supports-colorado-river-at-colfax-whole-foods/" class="customer-stories__item"
+                  <a href="" class="customer-stories__item"
                      event-track="home page/clicked customer story"
                      event-track-on="click"
-                     event-track-data="{ story_type: 'sarah' }">
+                     event-track-data="{ story_type: 'sarah' }" style="text-decoration: none;">
                      <div class="customer-stories__item__image"
                         style="background-image: url({{URL::to('public/assets/img/sarah-b78df6e9.jpg')}})">
                         <div class="customer-stories__item__image-tint"></div>
@@ -2702,24 +2789,24 @@
                         </h3>
                      </div>
                      <div class="customer-stories__item__content">
-                        <div class="customer-stories__item__quote">
+                        <div class="customer-stories__item__quote" dir="rtl">
                            “<strong>Gary</strong> was friendly, professional, and his work was incredible. He helped us create a design we loved within our budget. Whole Foods customers say how much the mural brightens our space!”
                         </div>
                         <div class="customer-stories__item__credit">
                            <img src="{{URL::to('public/assets/img/pro-gary-85649e63.jpg')}}"
                               class="customer-stories__item__img">
                            <div class="customer-stories__item__info">
-                              <h4 class="customer-stories__item__description">
+                              <h4 class="customer-stories__item__description" dir="rtl">
                                  The pro
                               </h4>
-                              <div class="customer-stories__item__name">
+                              <div class="customer-stories__item__name" dir="rtl">
                                  Gary Gomez
                               </div>
                               <div class="customer-stories__item__rating">
                                  <span star-rating
                                     star-rating-bind="4.7">
                                  </span>
-                                 <span>
+                                 <span dir="rtl">
                                  (26 reviews)
                                  </span>
                               </div>
@@ -2790,7 +2877,7 @@
                      open-youtube-modal
                      youtube-autoplay
                      youtube-id="bruu4u_Z-SY">
-                     <div class="testimonial-videos__item__text">
+                     <div class="testimonial-videos__item__text" dir="rtl">
                         <div class="testimonial-videos__item__name tp-heading-4">
                            Sara
                         </div>
@@ -2815,7 +2902,7 @@
                            open-youtube-modal
                            youtube-autoplay
                            youtube-id="jiDNg8Ichgk">
-                           <div class="testimonial-videos__item__text">
+                           <div class="testimonial-videos__item__text" dir="rtl">
                               <div class="testimonial-videos__item__name tp-heading-4">
                                  Richard
                               </div>
@@ -2838,7 +2925,7 @@
                            open-youtube-modal
                            youtube-autoplay
                            youtube-id="4NmVC8Wpxgs">
-                           <div class="testimonial-videos__item__text">
+                           <div class="testimonial-videos__item__text" dir="rtl">
                               <div class="testimonial-videos__item__name tp-heading-4">
                                  Kate
                               </div>
@@ -2863,7 +2950,7 @@
                      open-youtube-modal
                      youtube-autoplay
                      youtube-id="_3NsbqnjNxU">
-                     <div class="testimonial-videos__item__text">
+                     <div class="testimonial-videos__item__text"  dir="rtl">
                         <div class="testimonial-videos__item__name tp-heading-4">
                            Bonnie
                         </div>
@@ -2886,7 +2973,7 @@
                      open-youtube-modal
                      youtube-autoplay
                      youtube-id="aMJaW5eLsis">
-                     <div class="testimonial-videos__item__text">
+                     <div class="testimonial-videos__item__text" dir="rtl">
                         <div class="testimonial-videos__item__name tp-heading-4">
                            Eric
                         </div>
@@ -2932,7 +3019,7 @@
             homepage-redirect-to-near-me=""
             >
             <div class="SearchForm-form-inputGroup 1" >
-               <span class="SearchForm-form-query B2-S"
+               <span class="SearchForm-form-query B2-S dropdownOpen"
                   ng-class="{'dropdownOpen': suggestionsOpen}">
                   <input class="query"
                      ng-class="{'is-empty-state': isEmptyState}"
@@ -4941,8 +5028,6 @@
        </p>
    </div>
 </script>
-
-
 
 
 @endsection

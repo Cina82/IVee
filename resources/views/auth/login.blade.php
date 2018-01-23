@@ -14,7 +14,7 @@
   <login class="LoginWrap">
         <div class="Login">
             <h1 class="Login-title tp-heading-3">
-                                    Welcome back
+                                    مجدد خوش آمدید
                             </h1>
 
             <form action="{{URL::to('login')}}"
@@ -34,7 +34,7 @@
                 <input-text
                     id="login-email"
                     input-text-label="Email address" 
-                    theme-standalone-label>
+                    theme-standalone-label dir="rtl">
 
                     <input
                         class="tp-text-input tp-text-input--large"
@@ -53,7 +53,7 @@
                 <input-text
                     id="login-password"
                     input-text-label="Password" 
-                    theme-standalone-label>
+                    theme-standalone-label dir="rtl">
 
                     <input
                         class="tp-text-input tp-text-input--large"
@@ -84,7 +84,7 @@
                      <a class="tp-text-3--static" href="{{URL::to('reset')}}"
                         ng-click="resetUsersPassword(loginModel.email)">
 
-                        Forgot password?
+                        پسورد را فراموش کردم!
                     </a>
                     
                 </div>
@@ -98,17 +98,17 @@
                 <div class="Login-separator">or</div>
 
                 <a href="" class="tp-button tp-button--large tp-button--full" style="background-color:#DB4437 !important; border-color:#DB4437 !important; ">
-                   Login With Google
+                   با Gmail وارد شوید
                 </a>
 
                 <div class="Login-facebookDisclaimer tp-text-3--static">
-                    We'll never post without permission.
+                    ما هرگز بدون اجازه پست نخواهیم کرد.
                 </div>
             </form>
 
                             <div class="Login-noAccountLink">
-                    Don't have an account?
-                    <a href="{{URL::to('choose-account')}}">Sign up.</a>
+                                آیا عضو نیستید؟
+                    <a href="{{URL::to('choose-account')}}">ثبت نام</a>
                 </div>
                     </div>
     </login>

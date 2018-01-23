@@ -26,14 +26,14 @@
                                     <div class="intro-content">
                                         <div class="intro-content__container tp-grid tp-grid--middle">
                                             <div class="intro-content__title-container tp-col tp-col--8">
-                                                <h2 class="intro-content__title">Here’s how to keep up your momentum.</h2>
+                                                <h2 class="intro-content__title" dir="rtl">Here’s how to keep up your momentum.</h2>
                                             </div>
                                             <div class="intro-content__step-icon-container tp-col tp-col--4">
                                                 <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/ghg_hired.svg" class="intro-content__step-icon" />
                                             </div>
                                         </div>
 
-                                        <div class="intro-content__description">
+                                        <div class="intro-content__description" dir="rtl">
                                             <p>Congratulations! Once you’re hired on Ivee, do what you do best—deliver a great experience and make sure to mark yourself as hired to increase your chances of getting a review. <strong>Keep up your momentum with these tools that make getting hired faster and easier.</strong></p>
                                         </div>
 
@@ -62,9 +62,9 @@
                                                         <div class="testimonial-carousel__pro">
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Elida S.</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Elida S.</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Los Angeles, California
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">Los Angeles, California
                                                                     <br>Ivee Customer</div>
 
                                                             </div>
@@ -95,12 +95,12 @@
 
                                     <hr class="tp-rule">
 
-                                    <h2 class="subsection_title tp-heading-4">Get verified reviews.</h2>
+                                    <h2 class="subsection_title tp-heading-4" dir="rtl">Get verified reviews.</h2>
 
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <p>Reviews from Ivee customers are labeled “Verified Review” on your profile. People appreciate reading reviews from other Ivee customers to help determine whether you’re the right fit for their project. These reviews increase your credibility and build customer trust.</p>
                                             </div>
 
@@ -114,7 +114,7 @@
                                             <div class="content-block__title tp-col tp-col--12 tp-Text--center tp-PushDouble--bottom">
                                                 Four ways to get verified reviews: </div>
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <ol>
                                                     <li><strong>If a customer marks you as hired, we automatically email them</strong> to ask for a review.</li>
                                                     <li><strong>Otherwise, mark yourself as hired on a customer’s project.</strong> We’ll email the customer to confirm they’ve hired you for the job and ask them to write you a review.</li>
@@ -129,7 +129,7 @@
 
                                     <hr class="tp-rule">
 
-                                    <h2 class="subsection_title tp-heading-4">Save time with quote templates.</h2>
+                                    <h2 class="subsection_title tp-heading-4" dir="rtl">Save time with quote templates.</h2>
 
                                     <div class="image-section">
                                         <div class="tp-grid tp-grid--center">
@@ -142,7 +142,7 @@
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <p>Send great quotes in seconds with quote templates. Create custom templates for different occasions, types of requests, or price ranges to help you send twice as many quotes in half the time.</p>
                                             </div>
 
@@ -156,12 +156,12 @@
                                             <div class="content-block__title tp-col tp-col--12 tp-Text--center tp-PushDouble--bottom">
                                                 When using quote templates: </div>
 
-                                            <div class="content-block__content tp-col tp-col--12 tp-col--md-6">
+                                            <div class="content-block__content tp-col tp-col--12 tp-col--md-6" dir="rtl">
                                                 <p><strong>The customer’s name automatically updates</strong> in your template.</p>
                                                 <p><strong>Update any greetings</strong> that specify time of day or year.</p>
                                             </div>
 
-                                            <div class="content-block__content tp-col tp-col--12 tp-col--md-6">
+                                            <div class="content-block__content tp-col tp-col--12 tp-col--md-6" dir="rtl">
                                                 <p><strong>Check your attachments</strong> for anything customer-specific or outdated.</p>
                                                 <p><strong>Try out different templates</strong> to see which option gets you hired most often.</p>
                                             </div>
@@ -173,7 +173,7 @@
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <p>Here’s how to <a href="#" target="_blank" rel="noopener noreferrer">set up quote templates</a>.</p>
                                             </div>
 
@@ -183,7 +183,7 @@
 
                                     <hr class="tp-rule">
 
-                                    <h2 class="subsection_title tp-heading-4">Never run out of credits.</h2>
+                                    <h2 class="subsection_title tp-heading-4" dir="rtl">Never run out of credits.</h2>
 
                                     <div class="image-section">
                                         <div class="tp-grid tp-grid--center">
@@ -196,7 +196,7 @@
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <p>Auto-reload makes it faster and easier to buy credits and send quotes. Turn on auto-reload to automatically buy the credit pack of your choice (or pay-as-you-go) whenever you run out. Auto-reload can only be activated on the desktop or mobile site in your account settings. Once enabled, it works on any device and can be turned off at any time. Check out <a href="#" target="_blank" rel="noopener noreferrer">details about how auto-reload works</a>.</p>
                                             </div>
 
@@ -233,16 +233,16 @@
                                                             </div>
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Matt Salazar</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Matt Salazar</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Chef</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">Chef</div>
 
                                                                 <div class="testimonial-carousel__pro-stars-container">
-                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews"> (32 reviews)</span>
+                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews" dir="rtl"> (32 reviews)</span>
                                                                 </div>
 
                                                                 <div class="testimonial-carousel__pro-link-container">
-                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link">See Matt’s full interview&nbsp;»</a>
+                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link" dir="rtl">See Matt’s full interview&nbsp;»</a>
                                                                 </div>
 
                                                             </div>
@@ -264,16 +264,16 @@
                                                             </div>
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Michael Himelfarb</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Michael Himelfarb</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Mold Remediation Services</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">Mold Remediation Services</div>
 
                                                                 <div class="testimonial-carousel__pro-stars-container">
-                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews"> (24 reviews)</span>
+                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews" dir="rtl"> (24 reviews)</span>
                                                                 </div>
 
                                                                 <div class="testimonial-carousel__pro-link-container">
-                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link">See Michael's full interview&nbsp;»</a>
+                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link" dir="rtl">See Michael's full interview&nbsp;»</a>
                                                                 </div>
 
                                                             </div>
@@ -295,16 +295,16 @@
                                                             </div>
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Chris Grimes</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Chris Grimes</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Handyman Services</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">Handyman Services</div>
 
                                                                 <div class="testimonial-carousel__pro-stars-container">
-                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews"> (48 reviews)</span>
+                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews" dir="rtl"> (48 reviews)</span>
                                                                 </div>
 
                                                                 <div class="testimonial-carousel__pro-link-container">
-                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link">See Chris’s full interview&nbsp;»</a>
+                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link" dir="rtl">See Chris’s full interview&nbsp;»</a>
                                                                 </div>
 
                                                             </div>
@@ -326,16 +326,16 @@
                                                             </div>
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">JaNae Thomas</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">JaNae Thomas</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Bartending</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl"> Bartending</div>
 
                                                                 <div class="testimonial-carousel__pro-stars-container">
-                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews"> (27 reviews)</span>
+                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews" dir="rtl"> (27 reviews)</span>
                                                                 </div>
 
                                                                 <div class="testimonial-carousel__pro-link-container">
-                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link">See JaNae’s full interview&nbsp;»</a>
+                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link" dir="rtl">See JaNae’s full interview&nbsp;»</a>
                                                                 </div>
 
                                                             </div>
@@ -358,7 +358,7 @@
                                         <div class="tp-wrap">
                                             <div class="tp-grid tp-grid--middle">
 
-                                                <div class="footer-cta__title tp-col tp-col--12 tp-col--md-6">
+                                                <div class="footer-cta__title tp-col tp-col--12 tp-col--md-6" dir="rtl">
                                                     Make quoting faster and easier now.
                                                 </div>
                                                 <div class="footer-cta__button-container tp-col tp-col--12 tp-col--md-6">

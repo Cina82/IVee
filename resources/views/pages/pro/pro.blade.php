@@ -84,7 +84,7 @@
 
 
 <div ng-controller="BrowseController" class="ng-scope">
-    <div class="BrowseSection theme-desktop-only ">
+    <div class="BrowseSection theme-desktop-only " dir="rtl">
         <div class="BrowseSection-meta_tabs">
             @php $ic=0; @endphp
 			@foreach($category as $cat)
@@ -124,16 +124,17 @@
                },
               });
         }
+
         </script>
         <div class="BrowseSection-submetaContainer">
             <div class="BrowseSection-submetaLists" id="subdatanew">
             	@foreach($subcategory as $scat)
                 <!-- ngRepeat: subMeta in selectedMeta.subMetas | orderBy: 'toString()' --><div class="BrowseSection-submetaBox ng-scope" ng-repeat="subMeta in selectedMeta.subMetas | orderBy: 'toString()'">
 
-                    <a class="BrowseSection-submeta ng-binding" href="{{ URL::to('serviceProvide') }}{{ $scat->id }}">
+                    <a class="BrowseSection-submeta ng-binding" href="{{ URL::to('serviceProvide') }}{{ $scat->id }}" style="text-align: right;">
                        {{ $scat->name }}
                         <svg class="BrowseSection-submetaIcon">
-                            <use xlink:href="#thumbprinticon-right-caret_16"></use>
+                            <use xlink:href="#thumbprinticon-left-caret_24"></use>
                         </svg>
 
                     </a>
@@ -185,7 +186,7 @@
 
 
 <div class="ContentSection HowThumbtackWorksSection">
-    <h2>How Thumbtack works</h2>
+    <h2>How Ivee works</h2>
     <div class="ThreeUp HowThumbtackWorksSection-steps theme-desktop-only">
                     <div class="ThreeUpItem">
                 <div class="HowThumbtackWorksSection-step">
@@ -271,9 +272,9 @@
     <div class="ContentSection inner">
         <div class="CalculatorSection">
             <div class="SkillMatchingSection">
-                <div class="SkillMatchingSection-inner" dir="rtl">
+                <div class="SkillMatchingSection-inner" style="text-align: right !important;">
                     <h2>Your services are in demand</h2>
-                    <p>Tens of thousands of customers turn to Thumbtack each day to hire the right
+                    <p>Tens of thousands of customers turn to Ivee each day to hire the right
                         professionals. Join more than 200,000 pros who are helping them accomplish
                         their projects.</p>
                 </div>
@@ -362,7 +363,7 @@
                 </p>
             </div>
             <div class="hover-description">
-                <p>"Using Thumbtack, I was able to transition out of my job in finance. I am my own boss, which is phenomenal."</p>
+                <p>"Using Ivee, I was able to transition out of my job in finance. I am my own boss, which is phenomenal."</p>
             </div>
             <span class="play-video-icon">
                 <img src="https://static.thumbtackstatic.com/media/primo/static/pro/play-icon.png"
@@ -531,7 +532,7 @@
                             "https://static.thumbtackstatic.com/media/primo/static/pro/gallery-success-stories.svg">
                         <h3>Success stories
                         </h3>
-                        <p>See what our pros have to say about their Thumbtack experience.
+                        <p>See what our pros have to say about their Ivee experience.
                         </p>
                         <a href="{{URL::to('stories')}}" target="_blank"
                             >Read more</a>
@@ -562,7 +563,7 @@
                 </p>
             </div>
             <div class="hover-description">
-                <p>"Using Thumbtack, I was able to transition out of my job in finance. I am my own boss, which is phenomenal."</p>
+                <p>"Using Ivee, I was able to transition out of my job in finance. I am my own boss, which is phenomenal."</p>
             </div>
             <span class="play-video-icon">
                 <img src="https://static.thumbtackstatic.com/media/primo/static/pro/play-icon.png"
@@ -762,10 +763,10 @@
         <div class="ContentSection">
             <div class="dynamic-row">
      
-                <div class="text">
+                <div class="text" dir="rtl">
                     <h2><span class="desktop-line-break">Get hired on</span> the go
                     </h2>
-                    <p>The Thumbtack app makes it easy to quote on jobs and respond to customers
+                    <p>The Ivee app makes it easy to quote on jobs and respond to customers
                         from anywhere.
                     </p>
                 </div>
@@ -823,7 +824,7 @@
                         ">
                         <img src="https://static.thumbtackstatic.com/media/primo/static/pro/business3.png" />
                         <div class="description">
-                            <h3>Thumbtack Connect Tours</h3>
+                            <h3>Ivee Connect Tours</h3>
                             <p>Through local events, we provide our pros with a network for success.</p>
                             <a href="{{URL::to('thumbtackSanDigo')}}" target="_blank">See our events</a>
                         </div>
@@ -858,7 +859,7 @@
                                ">
                             <img src="https://static.thumbtackstatic.com/media/primo/static/pro/business3.png" />
                             <div class="description">
-                                <h3>Thumbtack Connect Tours</h3>
+                                <h3>Ivee Connect Tours</h3>
                                 <p>Through local events, we provide our pros with a network for success.</p>
                                 <a href="{{URL::to('thumbtackSanDigo')}}"
                                     target="_blank">See our events</a>

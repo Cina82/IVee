@@ -119,12 +119,12 @@
 
             @include('proffetionalDash.header')
 
-            @if($segment != 'professionaolQuotes')
+            @if($segment != 'professionaolQuotes' and collect(request()->segments())->last() != 'profile' and collect(request()->segments())->last() != 'settings'and collect(request()->segments())->last() != 'addService')
                 @include('proffetionalDash.nav')
             @endif
 
                 @yield('content')
-            @if($segment != 'professionaolQuotes')
+            @if($segment != 'professionaolQuotes' and collect(request()->segments())->last() != 'addService')
                 @include('proffetionalDash.footer')
             @endif
                 @yield('script')

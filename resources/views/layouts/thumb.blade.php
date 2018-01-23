@@ -51,9 +51,9 @@
     <!-- <link rel="stylesheet" href="{{ URL::To('public/assets/core-2afe3060.css') }}" /> -->
     <link rel="stylesheet" href="{{ URL::To('public/assets/full-f074da3d.css') }}" />
     <link rel="stylesheet" href="{{ URL::To('public/assets/homepage-ad0001b2.css') }}" />
-    <link rel="stylesheet" href="{{ URL::To('public/assets/core-7d4aafb5.css') }}" />
-    
-   <!--  <link rel="stylesheet" href="{{URL::to('public/assets/core-581c500c.css')}}"/> -->
+    <!-- <link rel="stylesheet" href="{{ URL::To('public/assets/core-7d4aafb5.css') }}" />
+     -->
+    <link rel="stylesheet" href="{{URL::to('public/assets/core-159e4f5e.css')}}"/>
     <style type="text/css">
         .Moments-moment-title {
     margin-bottom: 24px;

@@ -18,8 +18,8 @@
     <div class="dynamic-row">
 
         <h1 class="title-wrapper">
-                            Reset
-                        your password
+                            بازنگاری
+                        پسورد
         </h1>
 
         <div class="box">
@@ -27,17 +27,17 @@
 <form id="reset-password" name="reset-password" method="post" action="https://www.thumbtack.com/reset-password" accept-charset="UTF-8">
                 <fieldset>
                     <div class="form-field">
-                        <label for="email">What's your email address?</label><input id="email" name="email" type="email" tabindex="100" placeholder="user@example.com" />
+                        <label for="email">ایمیل شما چیست؟</label><input id="email" name="email" type="email" tabindex="100" placeholder="user@example.com" />
                     </div>
                     <p class="body-text">
-                        When you click the button below, we'll send an email to
-                        the provided email address with instructions for
-                                                    choosing a new
-                                                password.
+                        وقتی روی دکمه زیر کلیک میکنید، یک ایمیل به آن ارسال میکنیم
+                        آدرس ایمیل ارائه شده با دستورالعمل برای
+                        انتخاب جدید
+                        کلمه عبور.
                     </p>
                 </fieldset>
                 <fieldset>
-                <a href="" class="tp-button" tabindex="101">Reset Your Password</a>
+                <a href="" class="tp-button" tabindex="101">بازنگاری پسورد</a>
 
                 </fieldset>
             </form>
@@ -48,9 +48,9 @@
 <div class="wrapper footer footer-wrapper">
     <div class="footer-copyright">
         <p class="copyright">
-            &copy; Thumbtack, Inc. All Rights Reserved &bull;
-            <a href="https://www.thumbtack.com/privacy" target="_blank">Privacy Policy</a> &bull;
-            <a href="https://www.thumbtack.com/terms" target="_blank">Terms of Use</a>
+            &copy; IVee, Inc. All Rights Reserved &bull;
+            <a href="https://www.thumbtack.com/privacy" target="_blank">سیاست حفظ حریم خصوصی</a> &bull;
+            <a href="https://www.thumbtack.com/terms" target="_blank">شرایط استفاده</a>
         </p>
     </div>
 </div>

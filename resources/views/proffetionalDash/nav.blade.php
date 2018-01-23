@@ -1,36 +1,25 @@
+
 <div class="InboxTabs">
         <div class="InboxTabs-wrapper">
             <ul>
-                  <li class="InboxTabs-wrapper-tab requests
-                            ">
-                        <a href="{{URL::to('proffetionalDash/Requests')}}">
-                            Requests
-                                                    </a>
+
+                    <li @if(collect(request()->segments())->last() == 'home')class="InboxTabs-wrapper-tab active" @else class="InboxTabs-wrapper-tab" @endif
+                    >
+                        <a href="{{URL::to('proffetionalDash/Requests')}}">Requests</a>
                     </li>
-                                    <li class="InboxTabs-wrapper-tab contacted
-                            active">
-                        <a href="{{URL::to('home')}}">
-                            In Progress
-                                                    </a>
+                    <li @if(collect(request()->segments())->last() == 'inProgress')class="InboxTabs-wrapper-tab active" @else class="InboxTabs-wrapper-tab" @endif>
+                        <a href="{{URL::to('proffetionalDash/inProgress')}}">In Progress</a>
                     </li>
-                                    <li class="InboxTabs-wrapper-tab hired
-                            ">
-                        <a href="{{URL::to('proffetionalDash/Hired')}}">
-                            Hired
-                                                    </a>
+                    <li  @if(collect(request()->segments())->last() == 'Hired')class="InboxTabs-wrapper-tab active" @else class="InboxTabs-wrapper-tab" @endif>
+                        <a href="{{URL::to('proffetionalDash/Hired')}}">Hired</a>
                     </li>
-                                    <li class="InboxTabs-wrapper-tab sent
-                            ">
-                        <a href="{{URL::to('proffetionalDash/Sent')}}">
-                            Sent
-                                                    </a>
+                    <li @if(collect(request()->segments())->last() == 'Sent')class="InboxTabs-wrapper-tab active" @else class="InboxTabs-wrapper-tab" @endif>
+                        <a href="{{URL::to('proffetionalDash/Sent')}}">Sent</a>
                     </li>
-                                    <li class="InboxTabs-wrapper-tab archived
-                            ">
-                        <a href="{{URL::to('proffetionalDash/Archived')}}">
-                            Archived
-                                                    </a>
+                    <li @if(collect(request()->segments())->last() == 'Archived')class="InboxTabs-wrapper-tab active" @else class="InboxTabs-wrapper-tab" @endif>
+                        <a href="{{URL::to('proffetionalDash/Archived')}}">Archived</a>
                     </li>
-                            </ul>
+            </ul>
         </div>
     </div>
+    

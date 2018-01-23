@@ -26,14 +26,14 @@
                                     <div class="intro-content">
                                         <div class="intro-content__container tp-grid tp-grid--middle">
                                             <div class="intro-content__title-container tp-col tp-col--8">
-                                                <h2 class="intro-content__title">Get more customers with a profile that sets you apart.</h2>
+                                                <h2 class="intro-content__title" dir="rtl">Get more customers with a profile that sets you apart.</h2>
                                             </div>
                                             <div class="intro-content__step-icon-container tp-col tp-col--4">
                                                 <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/ghg_build-profile.svg" class="intro-content__step-icon" />
                                             </div>
                                         </div>
 
-                                        <div class="intro-content__description">
+                                        <div class="intro-content__description" dir="rtl">
                                             <p>Creating a great profile takes time, but it’s worth it. Your profile helps customers decide if you’re the right pro for the job. Show them who you are in your “About” section and in your photos. <strong>83% of pros hired on Ivee include at least one picture highlighting their work.</strong></p>
                                         </div>
 
@@ -97,12 +97,12 @@
 
                                     <hr class="tp-rule">
 
-                                    <h2 class="subsection_title tp-heading-4">Be the face of your business.</h2>
+                                    <h2 class="subsection_title tp-heading-4" dir="rtl">Be the face of your business.</h2>
 
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <p>Take a look at Baron’s profile picture below—it’s:</p>
                                             </div>
 
@@ -117,7 +117,7 @@
                                                 <p><img class="aligncenter size-full wp-image-18885" src="https://www.thumbtack.com/pro-center/wp-content/uploads/2017/05/Baron_Profile-Picture-Example.png" alt="Baron's Profile Picture Example" width="240" height="240" /></p>
                                             </div>
 
-                                            <div class="content-block__content tp-col tp-col--12 tp-col--md-6">
+                                            <div class="content-block__content tp-col tp-col--12 tp-col--md-6" dir="rtl">
                                                 <p><strong>Friendly.</strong> Customers like to see a smiling face. Baron looks enthusiastic and ready to help.</p>
                                                 <p><strong>Professional.</strong> A quality headshot is worth the investment.</p>
                                                 <p><strong>Clear and sharp.</strong> Aim for 500&#215;500 pixels to get the best resolution.</p>
@@ -130,7 +130,7 @@
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <p>Here’s how to <a href="#" target="_blank" rel="noopener noreferrer">upload or edit your profile picture</a>.</p>
                                                 <div id="about"></div>
                                             </div>
@@ -141,7 +141,7 @@
 
                                     <hr class="tp-rule">
 
-                                    <h2 class="subsection_title tp-heading-4">Help customers learn more about you.</h2>
+                                    <h2 class="subsection_title tp-heading-4" dir="rtl">Help customers learn more about you.</h2>
 
                                     <div class="image-section">
                                         <div class="tp-grid tp-grid--center">
@@ -154,7 +154,7 @@
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <p>Take a look at <a href="#" target="_blank" rel="noopener noreferrer">Rachel&#8217;s “About” section</a>. It addresses three main questions customers have:</p>
                                             </div>
 
@@ -165,7 +165,7 @@
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <ol>
                                                     <li><strong>Do you have the right experience for the job?</strong> Give a few examples of your work. List your relevant years in business and any training, education, or certifications. Don’t forget to <a href="#" target="_blank" rel="noopener noreferrer">upload any occupational licenses</a> you’ve earned.</li>
                                                     <li><strong>Are you someone I want to work with?</strong> Show your love for what you do with stories about why you started your business or what keeps you going.</li>
@@ -181,7 +181,7 @@
 
                                     <hr class="tp-rule">
 
-                                    <h2 class="subsection_title tp-heading-4">Show off your best work.</h2>
+                                    <h2 class="subsection_title tp-heading-4" dir="rtl">Show off your best work.</h2>
 
                                     <div class="image-section">
                                         <div class="tp-grid tp-grid--center">
@@ -194,7 +194,7 @@
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <p>Take a look at <a href="#" target="_blank" rel="noopener noreferrer">Ian and Rosa’s media section</a>. You can add photos, videos, and even audio recordings. Consider including:</p>
                                             </div>
 
@@ -205,7 +205,7 @@
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <ol>
                                                     <li><strong>Original content</strong> that tells a story and shows you in action</li>
                                                     <li><strong>Before-and-after</strong> examples</li>
@@ -248,16 +248,16 @@
                                                             </div>
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Garrett Hurlbut</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Garrett Hurlbut</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Painting</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">Painting</div>
 
                                                                 <div class="testimonial-carousel__pro-stars-container">
                                                                     <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews"> (32 reviews)</span>
                                                                 </div>
 
                                                                 <div class="testimonial-carousel__pro-link-container">
-                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link">See Garrett’s Ivee profile&nbsp;»</a>
+                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link" dir="rtl">See Garrett’s Ivee profile&nbsp;»</a>
                                                                 </div>
 
                                                             </div>
@@ -279,16 +279,16 @@
                                                             </div>
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Shane Wolcansek</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Shane Wolcansek</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Plumbing & Bath Remodels</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl" >Plumbing & Bath Remodels</div>
 
                                                                 <div class="testimonial-carousel__pro-stars-container">
                                                                     <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews"> (40 reviews)</span>
                                                                 </div>
 
                                                                 <div class="testimonial-carousel__pro-link-container">
-                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link">See Shane’s Ivee profile&nbsp;»</a>
+                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link" dir="rtl">See Shane’s Ivee profile&nbsp;»</a>
                                                                 </div>
 
                                                             </div>
@@ -310,16 +310,16 @@
                                                             </div>
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Dave Cavanaugh</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Dave Cavanaugh</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Wedding Officiant</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">Wedding Officiant</div>
 
                                                                 <div class="testimonial-carousel__pro-stars-container">
                                                                     <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews"> (24 reviews)</span>
                                                                 </div>
 
                                                                 <div class="testimonial-carousel__pro-link-container">
-                                                                    <a href="http://www.thumbtack.com/id/coeur-d-alene/wedding-services/wedding-officiant" target="_blank" class="testimonial-carousel__pro-link">See Dave’s Ivee profile&nbsp;»</a>
+                                                                    <a href="http://www.thumbtack.com/id/coeur-d-alene/wedding-services/wedding-officiant" target="_blank" class="testimonial-carousel__pro-link" dir="rtl"> See Dave’s Ivee profile&nbsp;»</a>
                                                                 </div>
 
                                                             </div>
@@ -341,16 +341,16 @@
                                                             </div>
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Meghan Aro</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Meghan Aro</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Nutrition & Fitness Consulting</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">Nutrition & Fitness Consulting</div>
 
                                                                 <div class="testimonial-carousel__pro-stars-container">
                                                                     <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews"> (22 reviews)</span>
                                                                 </div>
 
                                                                 <div class="testimonial-carousel__pro-link-container">
-                                                                    <a href="https://www.thumbtack.com/ca/santa-monica/yoga/fitness-training-services" target="_blank" class="testimonial-carousel__pro-link">See Meghan’s Ivee profile&nbsp;»</a>
+                                                                    <a href="https://www.thumbtack.com/ca/santa-monica/yoga/fitness-training-services" target="_blank" class="testimonial-carousel__pro-link" dir="rtl">See Meghan’s Ivee profile&nbsp;»</a>
                                                                 </div>
 
                                                             </div>
@@ -373,11 +373,11 @@
                                         <div class="tp-wrap">
                                             <div class="tp-grid tp-grid--middle">
 
-                                                <div class="footer-cta__title tp-col tp-col--12 tp-col--md-6">
+                                                <div class="footer-cta__title tp-col tp-col--12 tp-col--md-6" dir="rtl">
                                                     Are you ready to update your profile to get more clients?
                                                 </div>
                                                 <div class="footer-cta__button-container tp-col tp-col--12 tp-col--md-6">
-                                                    <a href="" class="footer-cta__button-link tp-button tp-button--large" target="_blank" rel="noopener noreferrer">
+                                                    <a href="" class="footer-cta__button-link tp-button tp-button--large" target="_blank" rel="noopener noreferrer" dir="rtl">
                     Build Your Profile              </a>
                                                 </div>
 

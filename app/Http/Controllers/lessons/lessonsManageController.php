@@ -15,7 +15,7 @@ class lessonsManageController extends Controller
     	$lessons = DB::table('serviceQuestion')
             			->join('categoryServices', 'categoryServices.id', '=', 'serviceQuestion.categoryServiceId')
             			->select('categoryServices.id as id','categoryServices.categoryId as catId','categoryServices.name as name','categoryServices.image as image','serviceQuestion.id as qId','serviceQuestion.question as question')
-						->where('categoryServices.categoryId',8)
+						->where('categoryServices.categoryId',24)
 						->get();
 
 		/*$lession = ServiceModel::where('categoryId',8)->get();*/

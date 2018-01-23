@@ -14,6 +14,93 @@
 @endsection
 @section('content')
 <div class="ExploreV1">
+<script>
+      $(document).ready(function()
+      {
+            $("#serviceSearch").keyup(function(){  
+               var searchval = $(this).val();
+                     if(searchval == ""){
+                        $("#suggesstion-box").hide();
+                     }
+                     else{ 
+                           $.ajax({
+                           'url':'{{ URL::to("serviceSearch") }}/'+searchval,
+                           'success':function(message)
+                           {
+                              $("#suggesstion-box").show();
+                              $("#suggesstion-box").html(message);
+                              $("#suggesstion-box").css("background","");
+                           } 
+                        }); 
+                     }
+            });
+      });
+
+
+      function selectdata (val) { 
+
+      var tn = document.getElementById("serviceSearchToken").value;
+      $.ajax({
+      'url':'{{ URL::to("serviceQuestion") }}/'+val,
+      'data':{tn:tn},
+      'success':function(message)
+      {
+            $("#searchSerivePopup").html(message);
+            $('#searchSerivePopup').wizard({
+                title: '',
+                validators: [{
+                    step: 1,
+                    validate: function () {
+                        
+                    }
+                }],
+                onSubmit: function () {
+                  
+                    $('<div>onSubmit called</div>').appendTo('#EventLog');
+                    $('#searchSerivePopup').wizard('end', {
+                        info: 'this is an info message',
+                        warning: 'this is a warning message',
+                        success: 'this is a success message',
+                        error: 'this is an error message',
+                        autoClose: false // close after 5 seconds
+                    });
+                },
+                onReset: function () {
+                    $('<div>onReset called</div>').appendTo('#EventLog');
+                    $('#TextBox1').val('');
+                    $('#TextBox2').val('');
+                },
+                onCancel: function () {
+                  
+                    $('<div>onCancel called</div>').appendTo('#EventLog');
+                },
+                onClose: function () {
+                    $('<div>onClose called</div>').appendTo('#EventLog');
+                },
+                onOpen: function () {
+                   var count = $("#searchSerivePopup .modal-dialog").length; 
+
+                    if(count > 1)
+                    { 
+                      $("#searchSerivePopup .modal-dialog:last").remove();
+                    }
+                    $('<div>onOpen called</div>').appendTo('#EventLog');
+                },
+                previousText: 'Back',
+                nextText: 'Next',
+                submitText: 'Submit',
+                showCancel: true,
+                showPrevious: true,
+                showProgress: true,
+                isModal: true,
+                autoOpen: false
+            });
+         $('#searchSerivePopup').wizard('open');
+      } 
+      });
+      }
+</script>
+
    <div viewport-element="hero">
       <div class="ExploreHero">
          <div class="page-grid">
@@ -29,20 +116,11 @@
                      <form search-form open-request-form-modal from-homepage="" hide-intro-screen="" ng-submit="submitSearch($event)" class="SearchForm-form" action="#" hercule-root-url="https://hercule.thumbtack.com" hercule-version="0" include-test="" page-type="demo" search-origin="explore-v1" event-name="explore-v1" homepage-redirect-to-near-me="">
                         <div class="SearchForm-form-inputGroup 1" dir="rtl">
                            <span class="SearchForm-form-query B2-S" ng-class="{'dropdownOpen': suggestionsOpen}">
-                              <input class="query"
-                                 ng-class="{'is-empty-state': isEmptyState}"
-                                 required
-                                 autocomplete="off"
-                                 placeholder="?What service do you need"
-                                 type="search"
-                                 event-track="home page/start service query"
-                                 event-track-on="keypress"
-                                 event-track-data="{
-                                 pageType: 'demo',
-                                 searchOrigin: 'explore-v1',
-                                 }"
-                                 event-track-once
-                                 />
+                               <input class="query"
+                                    placeholder="?What service do you need"
+                                    type="search"
+                                    id="serviceSearch" 
+                                    />
                               <div class="SearchForm-form-query-clearQuery">
                                  <label
                                     ng-class="{'is-empty-state': isEmptyState}"
@@ -78,6 +156,11 @@
                            </button>
                         </div>
                      </form>
+                     <div id="suggesstion-box" style="display: none; padding-left: 140px; background: #fff;" ></div>
+                        <div class="wizard" id="searchSerivePopup" dir="ltr">
+                          <input name="_token" type="hidden" id="serviceSearchToken" value="{{ csrf_token() }}">
+                        </div>
+                     </div>
                   </div>
                 </div>
             </div>
@@ -92,14 +175,16 @@
                   <h4 class="tp-heading-4 Moments-moment-title">Popular in your area</h4>
                </div>
             </div>
-            <div class="page-grid theme-full-bleed-at-xs">
+            <div class="page-grid theme-full-bleed-at-xs" dir="rtl">
                <div class="column-lg-6">
                   <category-carousel count="25" responsive-grid="page">
                      <div class="CategoryCarousel">
-                        <div class="CategoryCarousel-paddle paddle-left" ng-click="carousel.onClickLeft()">
-                           <svg-icon type="left-caret" size="md">
+                        
+                        <div class="CategoryCarousel-paddle paddle-right" ng-click="carousel.onClickRight()">
+                           <svg-icon type="right-caret" size="md">
                            </svg-icon>
                         </div>
+
                         <div class="CategoryCarousel-container">
                            <div class="CategoryCarousel-list">
                               <div class="CategoryCarousel-item">
@@ -538,10 +623,11 @@
                               </div>
                            </div>
                         </div>
-                        <div class="CategoryCarousel-paddle paddle-right" ng-click="carousel.onClickRight()">
-                           <svg-icon type="right-caret" size="md">
+                        <div class="CategoryCarousel-paddle paddle-left" ng-click="carousel.onClickLeft()">
+                           <svg-icon type="left-caret" size="md">
                            </svg-icon>
                         </div>
+                        
                      </div>
                   </category-carousel>
                </div>
@@ -553,12 +639,15 @@
                   <h4 class="tp-heading-4 Moments-moment-title">Trending now</h4>
                </div>
             </div>
-            <div class="page-grid theme-full-bleed-at-xs">
+            <div class="page-grid theme-full-bleed-at-xs" dir="rtl">
                <div class="column-lg-6">
                   <category-carousel count="6" responsive-grid="page">
                      <div class="CategoryCarousel">
-                        <div class="CategoryCarousel-paddle paddle-left" ng-click="carousel.onClickLeft()">
-                           <svg-icon type="left-caret" size="md">
+                        
+
+
+                        <div class="CategoryCarousel-paddle paddle-right" ng-click="carousel.onClickRight()">
+                           <svg-icon type="right-caret" size="md">
                            </svg-icon>
                         </div>
                         <div class="CategoryCarousel-container">
@@ -733,10 +822,11 @@
                               </div>
                            </div>
                         </div>
-                        <div class="CategoryCarousel-paddle paddle-right" ng-click="carousel.onClickRight()">
-                           <svg-icon type="right-caret" size="md">
+                        <div class="CategoryCarousel-paddle paddle-left" ng-click="carousel.onClickLeft()">
+                           <svg-icon type="left-caret" size="md">
                            </svg-icon>
                         </div>
+                        
                      </div>
                   </category-carousel>
                </div>
@@ -750,12 +840,13 @@
                   <h4 class="tp-heading-4 Moments-moment-title">Home Improvement</h4>
                </div>
             </div>
-            <div class="page-grid theme-full-bleed-at-xs">
+            <div class="page-grid theme-full-bleed-at-xs" dir="rtl">
                <div class="column-lg-6">
                   <category-carousel count="11" responsive-grid="page">
                      <div class="CategoryCarousel">
-                        <div class="CategoryCarousel-paddle paddle-left" ng-click="carousel.onClickLeft()">
-                           <svg-icon type="left-caret" size="md">
+                        
+                        <div class="CategoryCarousel-paddle paddle-right" ng-click="carousel.onClickRight()">
+                           <svg-icon type="right-caret" size="md">
                            </svg-icon>
                         </div>
                         <div class="CategoryCarousel-container">
@@ -775,7 +866,7 @@
                                        onclick="customerQuestion({{$hmp->id}})" style="text-decoration: none;"
                                        >
                                     <img src="{{URL::to('public/uploads')}}/{{$hmp->image}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
+                                       <div class="ServiceBox-item-label" dir="rtl">
                                           <span class=" tp-heading-6 ">
                                           {{$hmp->name}}
                                           </span>
@@ -835,10 +926,11 @@
                            @endforeach
                         </div>
                         </div>
-                        <div class="CategoryCarousel-paddle paddle-right" ng-click="carousel.onClickRight()">
-                           <svg-icon type="right-caret" size="md">
+                        <div class="CategoryCarousel-paddle paddle-left" ng-click="carousel.onClickLeft()">
+                           <svg-icon type="left-caret" size="md">
                            </svg-icon>
                         </div>
+                        
                      </div>
                   </category-carousel>
                </div>
@@ -851,12 +943,13 @@
                   <h4 class="tp-heading-4 Moments-moment-title">Weddings and Events</h4>
                </div>
             </div>
-            <div class="page-grid theme-full-bleed-at-xs">
+            <div class="page-grid theme-full-bleed-at-xs" dir="rtl">
                <div class="column-lg-6">
                   <category-carousel count="9" responsive-grid="page">
                      <div class="CategoryCarousel">
-                        <div class="CategoryCarousel-paddle paddle-left" ng-click="carousel.onClickLeft()">
-                           <svg-icon type="left-caret" size="md">
+                        
+                        <div class="CategoryCarousel-paddle paddle-right" ng-click="carousel.onClickRight()">
+                           <svg-icon type="right-caret" size="md">
                            </svg-icon>
                         </div>
                         <div class="CategoryCarousel-container">
@@ -874,7 +967,7 @@
                                     <a class="ServiceBox-item"
                                       onclick="customerQuestion({{$evt->id}})" style="text-decoration: none;">
                                     <img src="{{URL::to('public/uploads')}}/{{$evt->image}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
+                                       <div class="ServiceBox-item-label" dir="rtl">
                                           <span class=" tp-heading-6 ">
                                           {{$evt->name}}
                                           </span>
@@ -934,10 +1027,11 @@
                            @endforeach
                            </div>
                         </div>
-                        <div class="CategoryCarousel-paddle paddle-right" ng-click="carousel.onClickRight()">
-                           <svg-icon type="right-caret" size="md">
+                        <div class="CategoryCarousel-paddle paddle-left" ng-click="carousel.onClickLeft()">
+                           <svg-icon type="left-caret" size="md">
                            </svg-icon>
                         </div>
+                        
                      </div>
                   </category-carousel>
                </div>
@@ -1009,12 +1103,13 @@
                   <h4 class="tp-heading-4 Moments-moment-title">Wellness</h4>
                </div>
             </div>
-            <div class="page-grid theme-full-bleed-at-xs">
+            <div class="page-grid theme-full-bleed-at-xs" dir="rtl">
                <div class="column-lg-6">
                   <category-carousel count="8" responsive-grid="page">
                      <div class="CategoryCarousel">
-                        <div class="CategoryCarousel-paddle paddle-left" ng-click="carousel.onClickLeft()">
-                           <svg-icon type="left-caret" size="md">
+                        
+                        <div class="CategoryCarousel-paddle paddle-right" ng-click="carousel.onClickRight()">
+                           <svg-icon type="right-caret" size="md">
                            </svg-icon>
                         </div>
                         <div class="CategoryCarousel-container">
@@ -1033,7 +1128,7 @@
                                        onclick="customerQuestion({{$wls->id}})" style="text-decoration: none;"
                                        >
                                     <img src="{{URL::to('public/uploads')}}/{{$wls->image}}" class="ServiceBox-item-image">
-                                       <div class="ServiceBox-item-label">
+                                       <div class="ServiceBox-item-label" dir="rtl">
                                           <span class=" tp-heading-6 ">
                                              {{$wls->name}}
                                           </span>
@@ -1093,10 +1188,11 @@
                            @endforeach
                            </div>
                         </div>
-                        <div class="CategoryCarousel-paddle paddle-right" ng-click="carousel.onClickRight()">
-                           <svg-icon type="right-caret" size="md">
+                        <div class="CategoryCarousel-paddle paddle-left" ng-click="carousel.onClickLeft()">
+                           <svg-icon type="left-caret" size="md">
                            </svg-icon>
                         </div>
+                        
                      </div>
                   </category-carousel>
                </div>
@@ -1108,14 +1204,18 @@
                   <h4 class="tp-heading-4 Moments-moment-title">Lessons</h4>
                </div>
             </div>
-            <div class="page-grid theme-full-bleed-at-xs">
+            <div class="page-grid theme-full-bleed-at-xs" dir="rtl">
                <div class="column-lg-6">
                   <category-carousel count="8" responsive-grid="page">
                      <div class="CategoryCarousel">
-                        <div class="CategoryCarousel-paddle paddle-left" ng-click="carousel.onClickLeft()">
-                           <svg-icon type="left-caret" size="md">
+                        
+                        <div class="CategoryCarousel-paddle paddle-right" ng-click="carousel.onClickRight()">
+                           <svg-icon type="right-caret" size="md">
                            </svg-icon>
                         </div>
+
+
+
                         <div class="CategoryCarousel-container">
                            <div class="CategoryCarousel-list">
                               <div class="CategoryCarousel-item">
@@ -1316,11 +1416,12 @@
                               </div>
                            </div>
                         </div>
-                        <div class="CategoryCarousel-paddle paddle-right" ng-click="carousel.onClickRight()">
-                           <svg-icon type="right-caret" size="md">
+                        
+                          <div class="CategoryCarousel-paddle paddle-left" ng-click="carousel.onClickLeft()">
+                           <svg-icon type="left-caret" size="md">
                            </svg-icon>
                         </div>
-                     </div>
+                    </div>
                   </category-carousel>
                </div>
             </div>
@@ -1331,14 +1432,16 @@
                   <h4 class="tp-heading-4 Moments-moment-title">Business</h4>
                </div>
             </div>
-            <div class="page-grid theme-full-bleed-at-xs">
+            <div class="page-grid theme-full-bleed-at-xs" dir="rtl">
                <div class="column-lg-6">
                   <category-carousel count="11" responsive-grid="page">
                      <div class="CategoryCarousel">
-                        <div class="CategoryCarousel-paddle paddle-left" ng-click="carousel.onClickLeft()">
-                           <svg-icon type="left-caret" size="md">
+                        <div class="CategoryCarousel-paddle paddle-right" ng-click="carousel.onClickRight()">
+                           <svg-icon type="right-caret" size="md">
                            </svg-icon>
                         </div>
+
+
                         <div class="CategoryCarousel-container">
                            <div class="CategoryCarousel-list">
                               <div class="CategoryCarousel-item">
@@ -1581,10 +1684,11 @@
                               </div>
                            </div>
                         </div>
-                        <div class="CategoryCarousel-paddle paddle-right" ng-click="carousel.onClickRight()">
-                           <svg-icon type="right-caret" size="md">
+                        <div class="CategoryCarousel-paddle paddle-left" ng-click="carousel.onClickLeft()">
+                           <svg-icon type="left-caret" size="md">
                            </svg-icon>
                         </div>
+                        
                      </div>
                   </category-carousel>
                </div>
@@ -1596,12 +1700,15 @@
                   <h4 class="tp-heading-4 Moments-moment-title">Pets</h4>
                </div>
             </div>
-            <div class="page-grid theme-full-bleed-at-xs">
+            <div class="page-grid theme-full-bleed-at-xs" dir="rtl">
                <div class="column-lg-6">
                   <category-carousel count="5" responsive-grid="page">
                      <div class="CategoryCarousel">
-                        <div class="CategoryCarousel-paddle paddle-left" ng-click="carousel.onClickLeft()">
-                           <svg-icon type="left-caret" size="md">
+                        
+
+
+                        <div class="CategoryCarousel-paddle paddle-right" ng-click="carousel.onClickRight()">
+                           <svg-icon type="right-caret" size="md">
                            </svg-icon>
                         </div>
                         <div class="CategoryCarousel-container">
@@ -1748,10 +1855,11 @@
                               </div>
                            </div>
                         </div>
-                        <div class="CategoryCarousel-paddle paddle-right" ng-click="carousel.onClickRight()">
-                           <svg-icon type="right-caret" size="md">
+                        <div class="CategoryCarousel-paddle paddle-left" ng-click="carousel.onClickLeft()">
+                           <svg-icon type="left-caret" size="md">
                            </svg-icon>
                         </div>
+                        
                      </div>
 
                   </category-carousel>

@@ -2209,7 +2209,9 @@ handheld and (max-device-width: 34.285714285714285em) {
 }
 .BrowseSection {
     font-size: 16px;
-    font-family: AvenirNext-Medium, "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: AvenirNext-Medium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    
 }
 .BrowseSection .BrowseSection-meta_tabs {
     display: flex;
@@ -2263,8 +2265,9 @@ handheld and (max-device-width: 34.285714285714285em) {
 .BrowseSection .BrowseSection-submetaIcon {
     height: 16px;
     width: 16px;
-    float: right;
+    float: left;
     fill: #bdc4c4
+    /*change*/
 }
 .BrowseSection .BrowseSection-submeta {
     display: inline-block;
@@ -2599,7 +2602,8 @@ handheld and (max-device-width: 34.285714285714285em) {
     text-align: left;
     position: absolute;
     bottom: 20px;
-    left: 20px
+    right: 20px;
+    /*change*/
 }
 .ProsSection .ImageBox .description .name {
     font-size: 21.99px;

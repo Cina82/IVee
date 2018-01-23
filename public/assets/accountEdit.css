@@ -1,0 +1,54 @@
+  .dynamic-row > [class*="column"]:first-child {
+    margin-left: 0;
+}
+.dynamic-row > [class*="column"]:first-child {
+    margin-left: 0;
+}
+.dynamic-column-8, .dynamic-row .column-8 {
+    width: 65.74585635%;
+}
+.dynamic-column-1, .dynamic-column-10, .dynamic-column-11, .dynamic-column-12, .dynamic-column-2, .dynamic-column-3, .dynamic-column-4, .dynamic-column-5, .dynamic-column-7, .dynamic-column-8, .dynamic-column-9, .dynamic-row .column-1, .dynamic-row .column-10, .dynamic-row .column-11, .dynamic-row .column-12, .dynamic-row .column-2, .dynamic-row .column-3, .dynamic-row .column-4, .dynamic-row .column-5, .dynamic-row .column-7, .dynamic-row .column-8, .dynamic-row .column-9 {
+    display: inline;
+    float: left;
+    margin: 0 0 0 2.76243094%;
+    min-height: 1px;
+}
+.column-8 {
+    width: 310px;
+}
+.column-1, .column-10, .column-11, .column-13, .column-14, .column-15, .column-16, .column-17, .column-18, .column-19, .column-2, .column-20, .column-21, .column-22, .column-23, .column-24, .column-3, .column-4, .column-5, .column-6, .column-7, .column-8, .column-9 {
+    display: inline;
+    float: left;
+    margin: 0 5px;
+    min-height: 1px;
+}
+body {
+    color: #575757;
+}
+body, input, textarea {
+    font-family: Arial,Verdana,sans-serif;
+}
+body {
+    font-size: 14px;
+}
+button, html, input, select, textarea {
+    font-family: sans-serif;
+}
+.wrapper.content {
+    margin: 20px auto;
+    min-height: 420px;
+}
+.wrapper {
+    width: 950px;
+    margin: 0 auto;
+    position: relative;
+}
+body {
+    color: #575757;
+}
+body, input, textarea {
+    font-family: Arial,Verdana,sans-serif;
+}
+body {
+    font-size: 14px;
+}

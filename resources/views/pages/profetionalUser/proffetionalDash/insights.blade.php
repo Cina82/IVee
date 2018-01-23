@@ -13,7 +13,7 @@
 <div class="pro-insights">
    <div class="tp-wrap-snap tp-wrap--bleed-below-small tp-grid">
       <div class="tp-col tp-col--12 tp-wrap--bleed-below-small">
-         <div class="pro-insights__page-header">
+         <div class="pro-insights__page-header" dir="rtl">
             <span class="pro-insights__page-name">Insights —</span>
             <span class="pro-insights__date-string">September 4 - Today</span>
          </div>
@@ -22,7 +22,7 @@
             <div class="Card">
                <span class="TooltipIcon theme-gray Card-tooltip" ng-click="card.onTooltipClick()"></span>
                <div ng-transclude="">
-                  <div class="pro-insights__activity ng-scope ng-isolate-scope" id="your-activity" waypoint-track="insights service activity">
+                  <div class="pro-insights__activity ng-scope ng-isolate-scope" id="your-activity" waypoint-track="insights service activity" dir="rtl">
                      <div class="pro-insights__card-title">
                         Your Activity
                      </div>
@@ -147,12 +147,13 @@
             </div>
          </card>
          @foreach($data as $dt)
+            @if(!empty($dt[0]))
          <card class="pro-insights__card ng-isolate-scope">
             <div class="Card">
                <span class="TooltipIcon theme-gray Card-tooltip" ng-click="card.onTooltipClick()"></span>
                <div ng-transclude="">
                   <div class="Card-section pro-category-insights__title-section ng-scope">
-                     <div class="pro-category-insights__title">
+                     <div class="pro-category-insights__title" dir="rtl">
                            <span class="pro-category-insights__title__text">
                               {{$dt[0]->serviceName}}
                            </span>
@@ -216,12 +217,13 @@
                </div>
             </div>
          </card>
+         @endif
         @endforeach
       </div>
    </div>
    <div class="tp-wrap-snap tp-grid">
       <div class="tp-col tp-col--12">
-         <div class="get-hired-guide">
+         <div class="get-hired-guide" style="text-align: right;">
             <div class="get-hired-guide__title ng-isolate-scope" waypoint-track="insights get hired more">
                Get Hired More
             </div>
@@ -229,10 +231,10 @@
                Tips from successful pros
             </div>
             <div class="get-hired-guide__guide">
-               <div class="get-hired-guide__get-help">
+               <div class="get-hired-guide__get-help" dir="rtl">
                   <img class="get-hired-guide__get-help__image" src="{{URL::to('public/assets/img/build-your-profile-e4fa5c8b.png')}}">
                   <div>
-                     <div class="get-hired-guide__get-help__title">
+                     <div class="get-hired-guide__get-help__title" >
                         Build your profile.
                      </div>
                      <div class="tp-color--muted">
@@ -243,7 +245,7 @@
                      </a>
                   </div>
                </div>
-               <div class="get-hired-guide__get-help">
+               <div class="get-hired-guide__get-help" dir="rtl">
                   <img class="get-hired-guide__get-help__image" src="{{URL::to('public/assets/img/get-reviews-0e011444.png')}}">
                   <div>
                      <div class="get-hired-guide__get-help__title">
@@ -257,7 +259,7 @@
                      </a>
                   </div>
                </div>
-               <div class="get-hired-guide__get-help">
+               <div class="get-hired-guide__get-help" dir="rtl">
                   <img class="get-hired-guide__get-help__image" src="{{URL::to('public/assets/img/set-preferences-9676643c.png')}}">
                   <div>
                      <div class="get-hired-guide__get-help__title">
@@ -271,7 +273,7 @@
                      </a>
                   </div>
                </div>
-               <div class="get-hired-guide__get-help">
+               <div class="get-hired-guide__get-help" dir="rtl">
                   <img class="get-hired-guide__get-help__image" src="{{URL::to('public/assets/img/winning-quote-48b93704.png')}}">
                   <div>
                      <div class="get-hired-guide__get-help__title">
@@ -285,7 +287,7 @@
                      </a>
                   </div>
                </div>
-               <div class="get-hired-guide__get-help">
+               <div class="get-hired-guide__get-help" dir="rtl">
                   <img class="get-hired-guide__get-help__image" src="https://static.thumbtackstatic.com/_assets/images/release/modules/get-hired-guide/images/follow-up-93536e1b.png">
                   <div>
                      <div class="get-hired-guide__get-help__title">
@@ -299,7 +301,7 @@
                      </a>
                   </div>
                </div>
-               <div class="get-hired-guide__get-help">
+               <div class="get-hired-guide__get-help" dir="rtl">
                   <img class="get-hired-guide__get-help__hired-image" src="{{URL::to('public/assets/img/hired-5670cda6.png')}}">
                   <div>
                      <div class="get-hired-guide__get-help__title">

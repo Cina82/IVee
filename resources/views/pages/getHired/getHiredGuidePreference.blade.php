@@ -26,14 +26,14 @@
                                     <div class="intro-content">
                                         <div class="intro-content__container tp-grid tp-grid--middle">
                                             <div class="intro-content__title-container tp-col tp-col--8">
-                                                <h2 class="intro-content__title">Make sure we’re sending you the right customers.</h2>
+                                                <h2 class="intro-content__title" dir="rtl">Make sure we’re sending you the right customers.</h2>
                                             </div>
                                             <div class="intro-content__step-icon-container tp-col tp-col--4">
                                                 <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/ghg_set-preferences.svg" class="intro-content__step-icon" />
                                             </div>
                                         </div>
 
-                                        <div class="intro-content__description">
+                                        <div class="intro-content__description" dir="rtl">
                                             <p>Find your customer “sweet spot.” Three main factors affect the kinds of customer requests you receive on Ivee: your job types, travel preferences, and availability.</p>
                                         </div>
 
@@ -95,7 +95,7 @@
 
                                     <hr class="tp-rule">
 
-                                    <h2 class="subsection_title tp-heading-4">Set your job type preferences.</h2>
+                                    <h2 class="subsection_title tp-heading-4" dir="rtl">Set your job type preferences.</h2>
 
                                     <div class="content-block">
                                         <div class="tp-grid">
@@ -122,7 +122,7 @@
                                             <div class="content-block__title tp-col tp-col--12 tp-Text--center tp-PushDouble--bottom">
                                                 Two optional adjustments: </div>
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <p><strong>Add or remove job types.</strong> Too many requests? Turn off less relevant job types. Not enough requests? Try turning on a few suggested job types. Start strong by selecting areas for which you can provide excellent service. Check out <a href="#">steps to turn job types on and off</a>.</p>
                                                 <p><strong>Set your job type preferences.</strong> For some job types (each one is different), you can set advanced preferences based on specific request details. For example, personal trainers can choose to only receive requests for certain customer fitness goals and session frequency. To adjust yours, select a job type from your <a href="#">Job Preferences</a> and un-check any types of requests you don’t want to receive. Focus on what you do best. Just because you could complete a job doesn’t mean you should always quote. Ask yourself, from the customer’s perspective, are you well qualified?</p>
                                             </div>
@@ -133,7 +133,7 @@
 
                                     <hr class="tp-rule">
 
-                                    <h2 class="subsection_title tp-heading-4">Adjust your travel preferences.</h2>
+                                    <h2 class="subsection_title tp-heading-4" dir="rtl">Adjust your travel preferences.</h2>
 
                                     <div class="image-section">
                                         <div class="tp-grid tp-grid--center">
@@ -146,7 +146,7 @@
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <p><strong>Choose where you work.</strong> Select your travel preferences for each job type from your <a href="#">Job Preferences</a> page. If you travel to your customers, add the zip codes where you work. If you work from a studio or office, select the “My customers travel to me” option. If your work can be done remotely, be sure to select “I work remotely (phone or internet)” to get requests from all over the country. Keep in mind you can select more than one option.</p>
                                             </div>
 
@@ -156,12 +156,12 @@
 
                                     <hr class="tp-rule">
 
-                                    <h2 class="subsection_title tp-heading-4">Update your calendar.</h2>
+                                    <h2 class="subsection_title tp-heading-4" dir="rtl">Update your calendar.</h2>
 
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <p>Manage your schedule with Ivee. You can view your calendar in your <a href="#">Account Settings</a> page. The calendar lets you block off the days and hours you’re unavailable so you only receive customer requests for times you’re free.</p>
                                             </div>
 
@@ -183,7 +183,7 @@
                                             <div class="content-block__title tp-col tp-col--12 tp-Text--center tp-PushDouble--bottom">
                                                 Three things to keep in mind: </div>
 
-                                            <div class="content-block__content tp-col tp-col--12">
+                                            <div class="content-block__content tp-col tp-col--12" dir="rtl">
                                                 <ol>
                                                     <li><strong>Block off fixed hours, whole days, or entire weeks.</strong> That way, the requests we send fit not only your business but your schedule, too.</li>
                                                     <li><strong>You can move ahead as many weeks as you need</strong> to block off upcoming vacations or ongoing projects. The calendar shows one week at a time.</li>
@@ -225,16 +225,16 @@
                                                             </div>
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Jacob and Jennifer Kendrick</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Jacob and Jennifer Kendrick</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Junk Removal</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">Junk Removal</div>
 
                                                                 <div class="testimonial-carousel__pro-stars-container">
-                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews"> (28 reviews)</span>
+                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews" dir="rtl"> (28 reviews)</span>
                                                                 </div>
 
                                                                 <div class="testimonial-carousel__pro-link-container">
-                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link">See Jacob and Jennifer’s full interview&nbsp;»</a>
+                                                                    <a href="#" target="_blank" class="testimonial-carousel__pro-link" dir="rtl">See Jacob and Jennifer’s full interview&nbsp;»</a>
                                                                 </div>
 
                                                             </div>
@@ -256,16 +256,16 @@
                                                             </div>
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">JR Gramstad</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">JR Gramstad</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Tax Accounting</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">Tax Accounting</div>
 
                                                                 <div class="testimonial-carousel__pro-stars-container">
-                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews"> (20 reviews)</span>
+                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews" dir="rtl"> (20 reviews)</span>
                                                                 </div>
 
                                                                 <div class="testimonial-carousel__pro-link-container">
-                                                                    <a href="https://www.thumbtack.com/blog/jr-gramstad-top-pro-interview/" target="_blank" class="testimonial-carousel__pro-link">See JR’s full interview&nbsp;»</a>
+                                                                    <a href="https://www.thumbtack.com/blog/jr-gramstad-top-pro-interview/" target="_blank" class="testimonial-carousel__pro-link" dir="rtl">See JR’s full interview&nbsp;»</a>
                                                                 </div>
 
                                                             </div>
@@ -287,16 +287,16 @@
                                                             </div>
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Kari Kerr</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Kari Kerr</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Dog Training</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">Dog Training</div>
 
                                                                 <div class="testimonial-carousel__pro-stars-container">
-                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews"> (44 reviews)</span>
+                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews" dir="rtl"> (44 reviews)</span>
                                                                 </div>
 
                                                                 <div class="testimonial-carousel__pro-link-container">
-                                                                    <a href="https://www.thumbtack.com/blog/top-pro-interview-kari-kerr/" target="_blank" class="testimonial-carousel__pro-link">See Kari’s full interview&nbsp;»</a>
+                                                                    <a href="https://www.thumbtack.com/blog/top-pro-interview-kari-kerr/" target="_blank" class="testimonial-carousel__pro-link" dir="rtl">See Kari’s full interview&nbsp;»</a>
                                                                 </div>
 
                                                             </div>
@@ -319,7 +319,7 @@
                                         <div class="tp-wrap">
                                             <div class="tp-grid tp-grid--middle">
 
-                                                <div class="footer-cta__title tp-col tp-col--12 tp-col--md-6">
+                                                <div class="footer-cta__title tp-col tp-col--12 tp-col--md-6" dir="rtl">
                                                     Are you ready to get the right requests?
                                                 </div>
                                                 <div class="footer-cta__button-container tp-col tp-col--12 tp-col--md-6">

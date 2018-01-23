@@ -1,5 +1,5 @@
 
-@if(collect(request()->segments())->last() == 'login' or collect(request()->segments())->last() == 'explore1')
+@if(collect(request()->segments())->last() == 'login' or collect(request()->segments())->last() == 'choose-account')
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 @endif
 <script src="{{URL::to('public/assets/jquery.browser-c000434a.js')}}">

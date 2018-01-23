@@ -1,9 +1,9 @@
 <div class="category-nav">
     <div class="tp-wrap-snap">
-        <div class="category-nav__heading tp-heading-4">All Services</div>
-        <ol class="nav-list">
+        <div class="category-nav__heading tp-heading-4" dir="rtl">All Services</div>
+        <ol class="nav-list" dir="rtl">
                             <li class="nav-list__item">
-                    <a href="{{URL::to('events')}}" class="nav-list__item__link">
+                    <a href="{{URL::to('events')}}" class="nav-list__item__link" style="text-decoration: none;">
                         <svg-icon
                             class="nav-list__item__icon icon-md"
                             type="category-group--events"
@@ -23,7 +23,7 @@
                     </a>
                 </li>
                             <li class="nav-list__item">
-                    <a href="{{URL::to('homeImprovement')}}" class="nav-list__item__link">
+                    <a href="{{URL::to('homeImprovement')}}" class="nav-list__item__link" style="text-decoration: none;">
                         <svg-icon
                             class="nav-list__item__icon icon-md"
                             type="category-group--home-improvement"
@@ -43,7 +43,7 @@
                     </a>
                 </li>
                             <li class="nav-list__item">
-                    <a href="{{URL::to('lessons')}}" class="nav-list__item__link">
+                    <a href="{{URL::to('lessons')}}" class="nav-list__item__link" style="text-decoration: none;">
                         <svg-icon
                             class="nav-list__item__icon icon-md"
                             type="category-group--lessons"
@@ -63,7 +63,7 @@
                     </a>
                 </li>
                             <li class="nav-list__item">
-                    <a href="{{URL::to('wellness')}}" class="nav-list__item__link">
+                    <a href="{{URL::to('wellness')}}" class="nav-list__item__link" style="text-decoration: none;">
                         <svg-icon
                             class="nav-list__item__icon icon-md"
                             type="category-group--wellness"
@@ -83,7 +83,7 @@
                     </a>
                 </li>
                             <li class="nav-list__item">
-                    <a href="{{URL::to('moreServices#category-group-business')}}" class="nav-list__item__link">
+                    <a href="{{URL::to('moreServices#category-group-business')}}" class="nav-list__item__link" style="text-decoration: none;">
                         <svg-icon
                             class="nav-list__item__icon icon-md"
                             type="category-group--business"
@@ -103,7 +103,7 @@
                     </a>
                 </li>
                             <li class="nav-list__item">
-                    <a href="{{URL::to('moreServices#category-group-crafts')}}" class="nav-list__item__link">
+                    <a href="{{URL::to('moreServices#category-group-crafts')}}" class="nav-list__item__link" style="text-decoration: none;">
                         <svg-icon
                             class="nav-list__item__icon icon-md"
                             type="category-group--crafts"
@@ -123,7 +123,7 @@
                     </a>
                 </li>
                             <li class="nav-list__item">
-                    <a href="{{URL::to('moreServices#category-group-designWeb')}}" class="nav-list__item__link">
+                    <a href="{{URL::to('moreServices#category-group-designWeb')}}" class="nav-list__item__link" style="text-decoration: none;">
                         <svg-icon
                             class="nav-list__item__icon icon-md"
                             type="category-group--design-and-web"
@@ -143,7 +143,7 @@
                     </a>
                 </li>
                             <li class="nav-list__item">
-                    <a href="{{URL::to('moreServices')}}" class="nav-list__item__link">
+                    <a href="{{URL::to('moreServices')}}" class="nav-list__item__link" style="text-decoration: none;">
                         <svg-icon
                             class="nav-list__item__icon icon-md"
                             type="category-group--more"

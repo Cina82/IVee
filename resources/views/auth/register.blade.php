@@ -11,7 +11,7 @@
                             {{ csrf_field() }}
 
                                 <div class="header header-primary text-center">
-                                    <h4>Register</h4>
+                                    <h4>ثبت نام</h4>
                                     <div class="social-line">
                                         <a href="#" class="btn btn-simple btn-just-icon">
                                             <i class="fa fa-facebook-square"></i>
@@ -85,7 +85,7 @@
                                 
                                 </div>
                                 <center>
-                                 <button class="btn btn-primary" type="submit">Register</button>
+                                 <button class="btn btn-primary" type="submit">ثبت نام</button>
                                 </center>
                                
                             </form>

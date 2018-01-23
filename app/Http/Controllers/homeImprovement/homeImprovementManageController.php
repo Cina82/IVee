@@ -14,7 +14,7 @@ class homeImprovementManageController extends Controller
     	$homeImprovement = DB::table('serviceQuestion')
             			->join('categoryServices', 'categoryServices.id', '=', 'serviceQuestion.categoryServiceId')
             			->select('categoryServices.id as id','categoryServices.categoryId as catId','categoryServices.name as name','categoryServices.image as image','serviceQuestion.id as qId','serviceQuestion.question as question')
-						->where('categoryServices.categoryId',10)
+						->where('categoryServices.categoryId',22)
 						->get();
 		
         return view('pages.homeImprovement.homeImprovement',compact('data','homeImprovement'));

@@ -121,6 +121,9 @@ class RegisterController extends Controller
                 'mobile.required'               => trans('Phone Number Invalid'),
                 'mobile.min'                    => trans('Phone Number Minimum 10 digits'),
                 'mobile.unique'                 => trans('phoneNumber Alredy Taken'),
+                'password.required'             => trans('auth.passwordRequired'),
+                'password.min'                  => trans('auth.PasswordMin'),
+                'password.max'                  => trans('auth.PasswordMax'),
             ]
             );
 
@@ -140,7 +143,6 @@ class RegisterController extends Controller
 
         if($data['id'] == 3)
         {
-
             $photo = $data['image'];
 
             $imagename = time().'.'.$photo->getClientOriginalExtension(); 
@@ -193,6 +195,7 @@ class RegisterController extends Controller
             'first_name'        => $data['name'],
             'last_name'         => $data['familyName'],
             'email'             => $data['email'],
+            'password'          => bcrypt($data['password']),
             'mobile'            => $data['mobile'],
             'user_role_id'      => $data['id'],
             'zipCode'           => $data['zipCode'],

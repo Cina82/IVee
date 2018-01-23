@@ -9,14 +9,15 @@
         <div class="tp-grid tp-grid--center">
             <div class="tp-col tp-col--12 tp-col--md-8">
                 <div class="pro-jobs-container__section-title">
-                    <h1 class="tp-heading-4">Services</h1><a class="pro-jobs-container__add-service" href="add-service/chooser">+ Add</a></div>
+                    <h1 class="tp-heading-4">Services</h1><a class="pro-jobs-container__add-service" href="{{URL::to('professionalDash/addService')}}">+ Add</a></div>
             </div>
         </div>
         <section class="pro-jobs-container__jobs tp-grid tp-grid--center tp-grid--flush">
             <div class="tp-col tp-col--12 tp-col--md-8">
-            @if(!empty($data))
+            
             @foreach($data as $dt)
-                <div class="job-card">
+                @if(!empty($dt[0]))
+                <div class="job-card" dir="rtl">
                     <div class="job-card__container">
                         <a class="job-card__info job-card__padded" href="">
                             <div>
@@ -46,10 +47,11 @@
                         </a>
                     </div>
                 </div>
+                @endif
             @endforeach
-            @endif
+            
 
-                <a class="pro-jobs-container__add-service pro-jobs-container__add-service--full-link" href="">+ Add Service</a>
+                <a class="pro-jobs-container__add-service pro-jobs-container__add-service--full-link" href="{{URL::to('professionalDash/addService')}}">+ Add Service</a>
 
             </div>
         </section>

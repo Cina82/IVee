@@ -18,6 +18,9 @@
 // Authentication Routes
     Auth::routes();
 
+Route::get('serviceSearch/{searchval}', 'serviceSearch\serviceSearchManageController@serviceSearch');
+Route::get('proServiceSearch/{searchval}', 'serviceSearch\serviceSearchManageController@proServiceSearch');
+
 // Public Routes
 Route::group(['middleware' => 'web'], function() {
     // Activation Routes
@@ -88,10 +91,17 @@ Route::get('saveServiceProvide','pro\proManageController@saveServiceProvide');
 
 Route::get('customerQuestion', 'customerQuestion\customerQuestionManageController@customerQuestion');
 Route::post('popupQuestionAdd', 'customerQuestion\customerQuestionManageController@popupQuestionAdd');
+Route::get('serviceQuestion/{id}', 'customerQuestion\customerQuestionManageController@serviceQuestion');
+
 Route::get('subCategoryOption{id}', 'Admin\subCategoryManageController@subCategoryOption');
 
 Route::get('viewQuotes/{serviceId}', 'customerDash\customerDashManageController@viewQuotes');
-
+Route::get('customer/settings','customerDash\customerDashManageController@settings');
+Route::get('customer/account','customerDash\customerDashManageController@account');
+Route::get('customer/notification','customerDash\customerDashManageController@notification');
+Route::get('customer/profile','customerDash\customerDashManageController@profile');
+Route::get('customer/accountEdit','customerDash\customerDashManageController@accountEdit');
+Route::post('customer/saveAccount','customerDash\customerDashManageController@saveAccount');
 
 
 
@@ -262,10 +272,20 @@ Route::get('paymentSetting', 'Admin\paymentSettingController@showPaymentSetting'
 
 Route::get('proffetionalDash/Requests', 'proffetionalDash\proffetionalDashController@Requests');
 Route::post('proffetionalDash/AddQuotesCredit', 'proffetionalDash\proffetionalDashController@AddQuotesCredit');
-
-Route::get('professionaolQuotes/{serviceId}/{custId}', 'proffetionalDash\proffetionalDashController@professionaolQuotes');
+Route::get('proffetionalDash/inProgress', 'proffetionalDash\proffetionalDashController@inProgress');
+Route::get('professionaolQuotes/{serviceId}/{custId}', 'proffetionalDash\proffetionalDashController@professionalQuotes');
 Route::get('professionaolDash/services', 'proffetionalDash\proffetionalDashController@viewServices');
+Route::get('professionalDash/addService', 'proffetionalDash\proffetionalDashController@addService');
+Route::get('professionalDash/guide', 'proffetionalDash\proffetionalDashController@guide');
+
+Route::get('proffetionalDash/calender', 'proffetionalDash\proffetionalDashController@celender');
+
+Route::get('professionalDash/saveService/{serviceId}', 'proffetionalDash\proffetionalDashController@saveService');
+
 Route::get('professionaolDash/insights', 'proffetionalDash\proffetionalDashController@insights');
+Route::get('professional/profile','proffetionalDash\proffetionalDashController@profile');
+Route::get('professional/settings', 'proffetionalDash\proffetionalDashController@settings');
+
 
 
 

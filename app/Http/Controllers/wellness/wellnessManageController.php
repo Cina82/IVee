@@ -15,7 +15,7 @@ class wellnessManageController extends Controller
     	$wellness = DB::table('serviceQuestion')
             			->join('categoryServices', 'categoryServices.id', '=', 'serviceQuestion.categoryServiceId')
             			->select('categoryServices.id as id','categoryServices.categoryId as catId','categoryServices.name as name','categoryServices.image as image','serviceQuestion.id as qId','serviceQuestion.question as question')
-						->where('categoryServices.categoryId',12)
+						->where('categoryServices.categoryId',23)
 						->get();
 		return view('pages.wellness.wellness',compact('data','wellness'));
     }

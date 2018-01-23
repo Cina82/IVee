@@ -5,12 +5,12 @@
 <div id="titlebar" class="single">
     <div class="container">
         <div class="sixteen columns">
-            <h2>About Us</h2>
+            <h2>درباره ما</h2>
             <nav id="breadcrumbs">
                 <ul>
-                    <li>You are here:</li>
-                    <li><a href="">Home</a></li>
-                    <li>About Us</li>
+                    <li>شما اینجا هستید</li>
+                    <li><a href="">خانه</a></li>
+                    <li>درباره ما</li>
                 </ul>
             </nav>
         </div>
@@ -20,7 +20,7 @@
 <div class="container">
     <div class="eleven columns">
         <div class="padding-right">
-            <p>Looking for a job in Malawi? You want to advertise jobs in Malawi?</p> 
+            <p>Looking for a job in Malawi? You want to advertise jobs in Malawi?</p>
             
             <p>Myjobo.com is Malawi's largest platform that connects people with jobs and entrepreneurship opportunities. Started by Malawians, we have since July 2014 been pioneering free online advertising of jobs in Malawi reaching out to thousands of job seekers everyday. We have the largest number of job vacancies online in Malawi updated everyday. We are building the largest CV database that will ease the recruitment processes for employers In Malawi.</p>
 

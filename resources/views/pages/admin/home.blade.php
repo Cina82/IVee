@@ -3,6 +3,17 @@
  <div class="content">
                 <div class="container-fluid">
                     <div class="row">
+                          <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card card-stats">
+                                <div class="card-header" data-background-color="pink"><i class="material-icons">account_box</i>
+                                    <!-- <i class="material-icons">content_copy</i> -->
+                                </div>
+                                <div class="card-content">
+                                    <p class="category">Users</p>
+                                    <h3 class="title">{{$user}}</h3>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="card card-stats">
                                 <div class="card-header" data-background-color="orange"><i class="material-icons">account_box</i>
@@ -12,27 +23,30 @@
                                     <p class="category">Customer</p>
                                     <h3 class="title">{{$cust}}</h3>
                                 </div>
-                                <div class="card-footer">
-                                    <div class="stats">
-                                        <!-- <i class="material-icons text-danger">warning</i> <a href="#pablo"></a> -->
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="card card-stats">
                                 <div class="card-header" data-background-color="green">
-                                    <i class="material-icons">store</i>
+                                    <i class="material-icons">account_box</i>
                                 </div>
                                 <div class="card-content">
                                     <p class="category">Professional</p>
                                     <h3 class="title">{{$proCust}}</h3>
                                 </div>
-                                <div class="card-footer">
-                                    <div class="stats">
-                                       <!--  <i class="material-icons">date_range</i>  -->
-                                    </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card card-stats">
+                                <div class="card-header" data-background-color="blue">
+                                    <i class="material-icons">account_box</i>
                                 </div>
+                                <div class="card-content">
+                                    <p class="category">Total Main Service</p>
+                                    <h3 class="title">{{$MainCategory}}</h3>
+                                </div>
+                                
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
@@ -44,14 +58,30 @@
                                     <p class="category">Total Service</p>
                                     <h3 class="title">{{$services}}</h3>
                                 </div>
-                                <div class="card-footer">
-                                    <div class="stats">
-                                      <!--   <i class="material-icons">local_offer</i> -->
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card card-stats">
+                                <div class="card-header" data-background-color="pink">
+                                    <i class="material-icons">info_outline</i>
+                                </div>
+                                <div class="card-content">
+                                    <p class="category">Total Registered Service</p>
+                                    <h3 class="title">{{$reqService}}</h3>
                                 </div>
                             </div>
                         </div>
-
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card card-stats">
+                                <div class="card-header" data-background-color="orange"><i class="material-icons">web</i>
+                                    <!-- <i class="material-icons">content_copy</i> -->
+                                </div>
+                                <div class="card-content">
+                                    <p class="category">web site visitors</p>
+                                    <h3 class="title">{{$webVisitor[0]['hits']}}</h3>
+                                </div>
+                            </div>
+                        </div>
                         <!-- <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="card card-stats">
                                 <div class="card-header" data-background-color="blue">

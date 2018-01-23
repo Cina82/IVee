@@ -61,7 +61,7 @@ class proManageController extends Controller
                     <a class='BrowseSection-submeta ng-binding' href='serviceProvide{$ss->id}'>
                       $name
                         <svg class='BrowseSection-submetaIcon'>
-                            <use xlink:href='#thumbprinticon-right-caret_16'></use>
+                            <use xlink:href='#thumbprinticon-left-caret_16'></use>
                         </svg>
 
                     </a>

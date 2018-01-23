@@ -490,7 +490,7 @@
 }
 .testimonial-videos__item__text {
     position: absolute;
-    left: 32px;
+    right: 32px;
     bottom: 32px
 }
 .testimonial-videos__item__play-icon {

@@ -13,6 +13,93 @@
     <script type="text/javascript" src="{{URL::to('public/wizardDemo/wizard.js')}}"></script>
 @endsection
 @section('content')
+<script>
+      $(document).ready(function()
+      {
+            $("#serviceSearch").keyup(function(){  
+               var searchval = $(this).val();
+                     if(searchval == ""){
+                        $("#suggesstion-box").hide();
+                     }
+                     else{ 
+                           $.ajax({
+                           'url':'{{ URL::to("serviceSearch") }}/'+searchval,
+                           'success':function(message)
+                           {
+                              $("#suggesstion-box").show();
+                              $("#suggesstion-box").html(message);
+                              $("#suggesstion-box").css("background","");
+                           } 
+                        }); 
+                     }
+            });
+      });
+
+
+      function selectdata (val) { 
+
+      var tn = document.getElementById("serviceSearchToken").value;
+      $.ajax({
+      'url':'{{ URL::to("serviceQuestion") }}/'+val,
+      'data':{tn:tn},
+      'success':function(message)
+      {
+            $("#searchSerivePopup").html(message);
+            $('#searchSerivePopup').wizard({
+                title: '',
+                validators: [{
+                    step: 1,
+                    validate: function () {
+                        
+                    }
+                }],
+                onSubmit: function () {
+                  
+                    $('<div>onSubmit called</div>').appendTo('#EventLog');
+                    $('#searchSerivePopup').wizard('end', {
+                        info: 'this is an info message',
+                        warning: 'this is a warning message',
+                        success: 'this is a success message',
+                        error: 'this is an error message',
+                        autoClose: false // close after 5 seconds
+                    });
+                },
+                onReset: function () {
+                    $('<div>onReset called</div>').appendTo('#EventLog');
+                    $('#TextBox1').val('');
+                    $('#TextBox2').val('');
+                },
+                onCancel: function () {
+                  
+                    $('<div>onCancel called</div>').appendTo('#EventLog');
+                },
+                onClose: function () {
+                    $('<div>onClose called</div>').appendTo('#EventLog');
+                },
+                onOpen: function () {
+                   var count = $("#searchSerivePopup .modal-dialog").length; 
+
+                    if(count > 1)
+                    { 
+                   
+                    $("#searchSerivePopup .modal-dialog:last").remove();
+                    }
+                    $('<div>onOpen called</div>').appendTo('#EventLog');
+                },
+                previousText: 'Back',
+                nextText: 'Next',
+                submitText: 'Submit',
+                showCancel: true,
+                showPrevious: true,
+                showProgress: true,
+                isModal: true,
+                autoOpen: false
+            });
+         $('#searchSerivePopup').wizard('open');
+      } 
+      });
+      }
+</script>
 <hero
    class="Hero "
    responsive-image
@@ -72,20 +159,11 @@
                      <div class="SearchForm-form-inputGroup multi-line-sm" dir="rtl">
                         <span class="SearchForm-form-query B2-S"
                            ng-class="{'dropdownOpen': suggestionsOpen}">
-                           <input class="query"
-                              ng-class="{'is-empty-state': isEmptyState}"
-                              required
-                              autocomplete="off"
-                              placeholder="?What service do you need"
-                              type="search"
-                              event-track="home page/start service query"
-                              event-track-on="keypress"
-                              event-track-data="{
-                              pageType: '0',
-                              searchOrigin: 'searchform-homepage',
-                              }"
-                              event-track-once
-                              />
+                          <input class="query"
+                                    placeholder="?What service do you need"
+                                    type="search"
+                                    id="serviceSearch" 
+                                    />
                            <div class="SearchForm-form-query-clearQuery">
                               <label
                                  ng-class="{'is-empty-state': isEmptyState}"
@@ -117,6 +195,11 @@
                         </button>
                      </div>
                   </form>
+                  <div id="suggesstion-box" style="display: none; padding-left: 200px; background: #fff;" ></div>
+                        <div class="wizard" id="searchSerivePopup" dir="rtl">
+                          <input name="_token" type="hidden" id="serviceSearchToken" value="{{ csrf_token() }}">
+                        </div>
+                     </div>
                </div>
             </div>
          </div>

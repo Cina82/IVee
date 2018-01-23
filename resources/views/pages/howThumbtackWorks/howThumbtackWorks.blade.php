@@ -36,14 +36,14 @@
                                     <div class="intro-content">
                                         <div class="intro-content__container tp-grid tp-grid--middle">
                                             <div class="intro-content__title-container tp-col tp-col--8">
-                                                <h2 class="intro-content__title">Find new customers and grow your business.</h2>
+                                                <h2 class="intro-content__title" dir="rtl">Find new customers and grow your business.</h2>
                                             </div>
                                             <div class="intro-content__step-icon-container tp-col tp-col--4">
                                                 <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/ghg_howto-icon.svg" class="intro-content__step-icon" />
                                             </div>
                                         </div>
 
-                                        <div class="intro-content__description">
+                                        <div class="intro-content__description" dir="rtl">
                                             <p>Whether you’re scaling your business, filling the gaps in your schedule, or just starting out, Ivee will help you find the right customers.</p>
                                         </div>
 
@@ -72,9 +72,9 @@
                                                         <div class="testimonial-carousel__pro">
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Lauren W.</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Lauren W.</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">San Francisco, California
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">San Francisco, California
                                                                     <br>Thumbtack customer</div>
 
                                                             </div>
@@ -97,7 +97,7 @@
                                             <iframe width="560" height="315" src="https://www.youtube.com/embed/gE1MDHzm65w?list=PLPz1npTzydS4xSzcmEYonzG7vPtRclobl" frameborder="0" allowfullscreen></iframe>
                                         </div>
 
-                                        <figcaption class="video-section__caption">
+                                        <figcaption class="video-section__caption" dir="rtl">
                                             Learn how Ivee works </figcaption>
                                     </figure>
                                     <hr class="tp-rule">
@@ -113,7 +113,7 @@
                                     <div class="content-block">
                                         <div class="tp-grid">
 
-                                            <div class="content-block__content tp-col tp-col--12 ">
+                                            <div class="content-block__content tp-col tp-col--12 " dir="rtl">
                                                 <p><strong>Customers come to Ivee to find local professionals.</strong></p>
                                                 <p>They need to hire someone for a project &#8211; like a kitchen renovation, a wedding or pretty much anything. We ask them specific questions, and they ask us to find local professionals to help.</p>
                                                 <p><strong>We send you those warm leads. </strong></p>
@@ -156,12 +156,12 @@
                                                             </div>
 
                                                             <div class="testimonial-carousel__pro-container">
-                                                                <div class="testimonial-carousel__pro-name">Carol White</div>
+                                                                <div class="testimonial-carousel__pro-name" dir="rtl">Carol White</div>
 
-                                                                <div class="testimonial-carousel__pro-profession">Photography</div>
+                                                                <div class="testimonial-carousel__pro-profession" dir="rtl">Photography</div>
 
                                                                 <div class="testimonial-carousel__pro-stars-container">
-                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews"> (28 reviews)</span>
+                                                                    <img src="https://www.thumbtack.com/pro-center/wp-content/themes/procenter/images/stars.svg" width="72" height="12" style="width:72px;height:12px;"><span class="testimonial-carousel__pro-reviews" dir="rtl"> (28 reviews)</span>
                                                                 </div>
 
                                                             </div>
@@ -192,7 +192,7 @@
                     <div class="tp-grid">
                         <div class="footer-block__container tp-col tp-col--12 tp-col--md-8 tp-col--md-offset-4 ">
                             <div class="footer-block__content">
-                                <span class="footer-block__title">Next article: Build your profile</span>
+                                <span class="footer-block__title" dir="rtl">Next article: Build your profile</span>
                                 <div class="footer-block__description">
                                     Get more clients with a profile that sets you apart. </div>
                             </div>

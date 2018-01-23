@@ -5,7 +5,7 @@
             <div class="tp-wrap">
                 <div class="tp-grid">
                     <div class="tp-col tp-col--12 tp-col--sm-12 tp-col--md-10">
-                        <h1 class="tp-heading-1 tp-color--white tp-weight--bold">
+                        <h1 class="tp-heading-1 tp-color--white tp-weight--bold" dir="rtl">
                     Get hired faster.<br>Tips from successful pros.             </h1>
                     </div>
 
@@ -136,9 +136,9 @@
                                             </div>
 
                                             <div class="ghg-steps__step__text">
-                                                <h2 class="ghg-steps__step__title" itemprop="headline">See how it works</h2>
-                                                <p class="ghg-steps__step__description">Find new customers on Ivee.</p>
-                                                <p class="ghg-steps__step__link">Learn more</p>
+                                                <h2 class="ghg-steps__step__title" itemprop="headline" dir="rtl">See how it works</h2>
+                                                <p class="ghg-steps__step__description" dir="rtl">Find new customers on Ivee.</p>
+                                                <p class="ghg-steps__step__link" dir="rtl">Learn more</p>
                                             </div>
 
                                         </div>
@@ -156,9 +156,9 @@
                                             </div>
 
                                             <div class="ghg-steps__step__text">
-                                                <h2 class="ghg-steps__step__title" itemprop="headline">Build your profile</h2>
-                                                <p class="ghg-steps__step__description">Add lots of photos and examples.</p>
-                                                <p class="ghg-steps__step__link">Learn more</p>
+                                                <h2 class="ghg-steps__step__title" itemprop="headline" dir="rtl">Build your profile</h2>
+                                                <p class="ghg-steps__step__description" dir="rtl">Add lots of photos and examples.</p>
+                                                <p class="ghg-steps__step__link" dir="rtl">Learn more</p>
                                             </div>
 
                                         </div>
@@ -176,9 +176,9 @@
                                             </div>
 
                                             <div class="ghg-steps__step__text">
-                                                <h2 class="ghg-steps__step__title" itemprop="headline">Get more reviews</h2>
-                                                <p class="ghg-steps__step__description">They don’t all have to be from Ivee.</p>
-                                                <p class="ghg-steps__step__link">Learn more</p>
+                                                <h2 class="ghg-steps__step__title" itemprop="headline" dir="rtl">Get more reviews</h2>
+                                                <p class="ghg-steps__step__description" dir="rtl">They don’t all have to be from Ivee.</p>
+                                                <p class="ghg-steps__step__link" dir="rtl">Learn more</p>
                                             </div>
 
                                         </div>
@@ -196,9 +196,9 @@
                                             </div>
 
                                             <div class="ghg-steps__step__text">
-                                                <h2 class="ghg-steps__step__title" itemprop="headline">Set your preferences</h2>
-                                                <p class="ghg-steps__step__description">Make sure we’re sending you the right customers.</p>
-                                                <p class="ghg-steps__step__link">Learn more</p>
+                                                <h2 class="ghg-steps__step__title" itemprop="headline" dir="rtl">Set your preferences</h2>
+                                                <p class="ghg-steps__step__description" dir="rtl">Make sure we’re sending you the right customers.</p>
+                                                <p class="ghg-steps__step__link" dir="rtl">Learn more</p>
                                             </div>
 
                                         </div>
@@ -216,9 +216,9 @@
                                             </div>
 
                                             <div class="ghg-steps__step__text">
-                                                <h2 class="ghg-steps__step__title" itemprop="headline">Send a winning quote</h2>
-                                                <p class="ghg-steps__step__description">Customize your price and message.</p>
-                                                <p class="ghg-steps__step__link">Learn more</p>
+                                                <h2 class="ghg-steps__step__title" itemprop="headline" dir="rtl">Send a winning quote</h2>
+                                                <p class="ghg-steps__step__description" dir="rtl">Customize your price and message.</p>
+                                                <p class="ghg-steps__step__link" dir="rtl">Learn more</p>
                                             </div>
 
                                         </div>
@@ -236,9 +236,9 @@
                                             </div>
 
                                             <div class="ghg-steps__step__text">
-                                                <h2 class="ghg-steps__step__title" itemprop="headline">Follow up</h2>
-                                                <p class="ghg-steps__step__description">Start a conversation and seal the deal.</p>
-                                                <p class="ghg-steps__step__link">Learn more</p>
+                                                <h2 class="ghg-steps__step__title" itemprop="headline" dir="rtl">Follow up</h2>
+                                                <p class="ghg-steps__step__description" dir="rtl">Start a conversation and seal the deal.</p>
+                                                <p class="ghg-steps__step__link" dir="rtl">Learn more</p>
                                             </div>
 
                                         </div>
@@ -256,9 +256,9 @@
                                             </div>
 
                                             <div class="ghg-steps__step__text">
-                                                <h2 class="ghg-steps__step__title" itemprop="headline">You're hired</h2>
-                                                <p class="ghg-steps__step__description">Here’s how to keep up your momentum.</p>
-                                                <p class="ghg-steps__step__link">Learn more</p>
+                                                <h2 class="ghg-steps__step__title" itemprop="headline" dir="rtl">You're hired</h2>
+                                                <p class="ghg-steps__step__description" dir="rtl">Here’s how to keep up your momentum.</p>
+                                                <p class="ghg-steps__step__link" dir="rtl">Learn more</p>
                                             </div>
 
                                         </div>
